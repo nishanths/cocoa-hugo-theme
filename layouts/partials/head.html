@@ -1,0 +1,14 @@
+<head>
+{{ partial "meta.html" . }}
+<base href="{{ .Site.BaseUrl }}">
+<title>
+{{ $URL := "/" }}
+{{ if eq $URL "/" }}
+    {{ .Site.Title }}
+{{ else }}
+    {{ .Title }} &middot; {{ .Site.Title }}
+{{ end }}
+</title>
+<link rel="canonical" href="{{ .Permalink }}">
+{{ partial "head_includes.html" . }}
+</head>

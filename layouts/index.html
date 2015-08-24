@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+<div class="section main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">Posts</div>
+            {{ range .Data.Pages.ByPublishDate }}
+                {{ if eq .Section "posts" }}
+                    {{ partial "li.html" . }}
+                {{ end }}
+            {{ end }}   
+        </div>
+    </div>
+</div>
+{{ partial "footer.html" . }}
+

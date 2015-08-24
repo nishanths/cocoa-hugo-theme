@@ -1,0 +1,11 @@
+name = "Cocoa"
+license = "MIT"
+description = "Clear typography and disturbance-free reading"
+homepage = "https://github.com/nishanths"
+tags = ["proxima-nova", "minimal", "clear"]
+features = ["blog", "themes", "responsive", "404"]
+min_version = 0.1
+
+[author]
+  name = "Nishanth Shanmugham"
+  homepage = "https://github.com/nishanths"

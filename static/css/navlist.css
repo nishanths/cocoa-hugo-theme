@@ -1,0 +1,9 @@
+.section.header nav ul li[data-switch-original]::after {
+    content: attr(data-switch-original);
+}
+
+@media (min-width: 550px) {
+    .section.header nav ul li[data-switch-change]::after {
+        content: attr(data-switch-change);
+    }
+}
