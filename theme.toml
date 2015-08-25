@@ -1,5 +1,6 @@
 name = "Cocoa"
 license = "MIT"
+licenselink = "https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE.md"
 description = "Clear typography and disturbance-free reading"
 homepage = "https://github.com/nishanths"
 tags = ["proxima-nova", "minimal", "clear"]

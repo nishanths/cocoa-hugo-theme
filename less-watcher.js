@@ -8,4 +8,3 @@ process.argv.slice(2).forEach(function(file) {
         }
     });
 });
-
