@@ -2,7 +2,11 @@
 
 A [Hugo](http://gohugo.io) theme with clear typograhy for easy, disturbance-free reading.
 
+<br />
+
 <img src="https://raw.githubusercontent.com/nishanths/cooca-hugo-theme/master/images/tn.png" width="500px">
+
+<br />
 
 # Table of Contents
 
@@ -83,7 +87,14 @@ Twitter = "//twitter.com/username"
 
 ## Less files
 
-The `.less` files used to generate `main.css` are available at the root of the repository.
+The `.less` files used to generate `main.css` are available at the root of the repository. Running:
+
+````
+$ lessc main.less static/css/main.css
+````
+
+should do the trick.
+
 
 # Screenshots
 
