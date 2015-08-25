@@ -97,7 +97,6 @@ For syntax highlighting, set `pygmentsuseclasses = true` in your `config.toml`. 
 
 ````toml
 [params]
-Author = "Firstname Lastname"
 DateForm = "Jan 2, 2006" # required
 Description = "eat, sleep, rave, repeat"
 Email = "username@hogwarts.edu"
