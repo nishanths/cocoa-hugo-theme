@@ -3,15 +3,13 @@
 <link rel="stylesheet" href="/css/pygments.css">
 <link rel="stylesheet" href="/css/main.css">
 {{ if .Site.Params.WebfontsFile }} 
-<link rel="stylesheet" href="{{ .Site.Params.WebfontsFile }}">
-{{ else }}
-<link rel="stylesheet" href="/css/webfonts.css">
+<link rel="stylesheet" href="/{{ .Site.Params.WebfontsFile }}">
 {{ end }}
 
 <!-- Icon -->
 <link rel="shortcut icon"
 {{ if .Site.Params.FaviconFile }}
-    href="/img/{{ .Site.Params.FaviconFile }}"
+    href="/{{ .Site.Params.FaviconFile }}"
 {{ else }}
     href="/img/favicon.ico"
 {{ end }}

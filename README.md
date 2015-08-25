@@ -102,13 +102,13 @@ DateForm = "Jan 2, 2006" # required
 Description = "eat, sleep, rave, repeat"
 Email = "username@hogwarts.edu"
 Facebook = "//facebook.com/username"
-FaviconFile = "myicon.ico" # relative to img/ directory, defaults to themes/cocoa/img/favicon.ico
+FaviconFile = "img/myicon.ico" # relative to static/ directory, defaults to the icon at themes/cocoa/img/favicon.ico
 GATracker = "<Google-Analytics-ID>"
 GitHub = "//github.com/username"
 Lang = "en" # <body lang="en">
 LinkedIn = "//linkedin.com/in/username"
 Twitter = "//twitter.com/username"
-WebfontsFile = "/css/mywebfontsfile.css" # relative to static directory, defaults to /css/webfonts.css 
+WebfontsFile = "css/mywebfontsfile.css" # relative to static/ directory, defaults to empty string 
 ````
 
 # Extras
