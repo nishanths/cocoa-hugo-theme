@@ -1,0 +1,25 @@
+baseurl = "http://hugo.spf13.com/"
+title = "Hugo Themes"
+author = "Steve Francia"
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+pygmentsuseclasses = true
+
+[permalinks]
+fixed = ":title/"
+posts = "posts/:slug/"
+
+[params]
+Author = "Steve Francia"
+DateForm = "Jan 2, 2006" # required
+Email = "username@hogwarts.edu"
+Facebook = "//facebook.com/username"
+GATracker = "<Google-Analytics-ID>"
+GitHub = "//github.com/username"
+Lang = "en" # <body lang="en">
+LinkedIn = "//linkedin.com/in/username"
+Twitter = "//twitter.com/username"
+# WebfontsFile = "css/mywebfontsfile.css" # relative to static/ directory, defaults to empty string

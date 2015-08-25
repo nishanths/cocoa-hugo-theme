@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fixeds on Hugo Themes</title>
+    <link>http://localhost:1313/fixed/</link>
+    <description>Recent content in Fixeds on Hugo Themes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 22 Aug 2015 06:42:21 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/fixed/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 22 Aug 2015 06:42:21 -0700</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;TODO: Page not complete yet.&lt;/p&gt;
+
+&lt;p&gt;Information about you.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>code</title>
+      <link>http://localhost:1313/code/</link>
+      <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
+      
+      <guid>http://localhost:1313/code/</guid>
+      <description>&lt;p&gt;TODO: Page not complete yet.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

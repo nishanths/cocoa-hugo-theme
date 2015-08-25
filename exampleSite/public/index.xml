@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Themes</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Hugo Themes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 22 Aug 2015 15:45:30 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Redirect webpages using HTML</title>
+      <link>http://localhost:1313/posts/redirect-webpages-html/</link>
+      <pubDate>Sat, 22 Aug 2015 15:45:30 -0700</pubDate>
+      
+      <guid>http://localhost:1313/posts/redirect-webpages-html/</guid>
+      <description>
+
+&lt;p&gt;Webpage redirection is great for automatically redirecting people visiting an old URL to a new URL where the content has moved to. It can be done using JavaScript, but there is also a convenient HTML-only solution.&lt;/p&gt;
+
+&lt;p&gt;To redirect visitors reaching &lt;code&gt;yourwebsite.com/blog&lt;/code&gt; to &lt;code&gt;yourwebsite.com/posts&lt;/code&gt;, add this to the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section of the HTML at &lt;code&gt;yourwebsite.com/blog&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;http-equiv=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;refresh&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;content=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;0;url=&amp;#39;/posts&amp;#39;&amp;quot;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;rel=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;canonical&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;/posts&amp;quot;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;walkthrough:afdc852818bb97af4efb4d34b2fcce3b&#34;&gt;walkthrough&lt;/h3&gt;
+
+&lt;p&gt;Setting &lt;code&gt;http-equiv=&amp;quot;refresh&amp;quot;&lt;/code&gt; in the first line performs the actual redirect. The number in the &lt;code&gt;content&lt;/code&gt; attribute specified in seconds tells the browser how long to wait before redirecting. In this example, &lt;code&gt;0&lt;/code&gt; redirects immediately. Increasing the wait may be useful for briefly displaying a 404 page before automatically switching to the home page. The &lt;code&gt;url&lt;/code&gt; specfies the destination for the redirect. In this example, we wanted to switch to &lt;code&gt;/posts&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The second line is optional; it helps search engines know which the preferred version of the page is. Usually, this is the redirect destination.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 22 Aug 2015 06:42:21 -0700</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;TODO: Page not complete yet.&lt;/p&gt;
+
+&lt;p&gt;Information about you.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>code</title>
+      <link>http://localhost:1313/code/</link>
+      <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
+      
+      <guid>http://localhost:1313/code/</guid>
+      <description>&lt;p&gt;TODO: Page not complete yet.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
