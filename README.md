@@ -52,7 +52,7 @@ $ hugo new fixed/about.md
 
 ## Fonts and Colors
 
-The primary font face is Proxima Nova in 400 and 700 weights. If you own the font, create a font face declarations like in the example below, and place it in `static/css/webfonts.css`:
+The primary font face is Proxima Nova in 400 and 700 weights. If you own the font, create a font face declarations like in the example below, and place it in the path specified in [`.Site.Params.WebfontsFile`](#site-variables):
 
 ````css
 @font-face {
@@ -108,6 +108,7 @@ GitHub = "//github.com/username"
 Lang = "en" # <body lang="en">
 LinkedIn = "//linkedin.com/in/username"
 Twitter = "//twitter.com/username"
+WebfontsFile = "/css/mywebfontsfile.css" # relative to static directory, defaults to /css/webfonts.css 
 ````
 
 # Extras
