@@ -134,7 +134,7 @@ should do the trick.
 # Example Sites
 
 * [http://nishanths.me](http://nishanths.me) • [source](https://github.com/nishanths/)
-* [Add yours](https://github.com/nishanths/cooca-hugo-theme/compare)
+* [Add yours by submitting a pull request](https://github.com/nishanths/nishanths.me/pulls)
 
 # Contributing
 
