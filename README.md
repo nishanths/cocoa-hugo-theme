@@ -20,18 +20,18 @@ A [Hugo](http://gohugo.io) theme with clear typograhy for easy, disturbance-free
 
 # Setup 
 
-From the root of your Hugo site, clone the theme into a folder named `cocoa` by running:
+From the root of your Hugo site, clone the theme into `themes/cocoa` by running:
 
 ````
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/nishanths/cocoa-hugo-theme cocoa
+$ git clone https://github.com/nishanths/cocoa-hugo-theme.git cocoa
 ````
 
 Then, generate static files by running:
 
 ````
-hugo -t cocoa
+$ hugo -t cocoa
 ````
 
 # Theme
@@ -52,10 +52,37 @@ $ hugo new fixed/about.md
 
 ## Fonts and Colors
 
-The primary font face is Proxima Nova. You will need to place your own copy of the font under ``. The monospace font face is Ubuntu Mono from Google Fonts. 
+The primary font face is Proxima Nova in 400 and 700 weights. If you own the font, create a font face declarations like in the example below, and place it in `static/css/webfonts.css`:
+
+````css
+@font-face {
+	font-family: 'ProximaNova';
+	font-weight: normal;
+	font-style: normal;
+	src: url('webfonts/2F00B2_0_0.eot');
+	src: url('webfonts/2F00B2_0_0.eot?#iefix') format('embedded-opentype'),
+	     url('webfonts/2F00B2_0_0.woff2') format('woff2'),
+	     url('webfonts/2F00B2_0_0.woff') format('woff'),
+	     url('webfonts/2F00B2_0_0.ttf') format('truetype');
+}
+  
+@font-face {
+	font-family: 'ProximaNova';
+	font-weight: bold;
+	font-style: normal;
+	src: url('webfonts/2F00B2_1_0.eot');
+	src: url('webfonts/2F00B2_1_0.eot?#iefix') format('embedded-opentype'),
+		  url('webfonts/2F00B2_1_0.woff2') format('woff2'),
+		  url('webfonts/2F00B2_1_0.woff') format('woff'),
+		  url('webfonts/2F00B2_1_0.ttf') format('truetype');
+}
+ 
+````
+
+If you do not provide Proxima Nova files, the fallback font face—Source Sans Pro—will be automatically used from Google Fonts. The primary monospace font face is Ubuntu Mono from Google Fonts.
 
 
-The main colors are 
+The main colors are:
 
 * `#333333`
 * `#b7b7b7`
