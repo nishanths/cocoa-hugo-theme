@@ -3,9 +3,11 @@
     <div class="container">
         <div class="content">
             {{ partial "page-heading" . }}
-            {{ range .Data.Pages.ByPublishDate }}
-            {{ partial "li.html" . }}
-            {{ end }}      
+            <ul>
+                {{ range .Data.Pages.ByPublishDate }}
+                {{ partial "li.html" . }}
+                {{ end }}
+            </ul>
         </div>
     </div>
 </div>
