@@ -250,7 +250,7 @@ body {
   justify-content: center;
 }
 .section.icons .content a {
-  margin-right: 4px;
+  margin-right: 6px;
   color: #fefefe;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -280,6 +280,7 @@ body {
     justify-content: flex-start;
   }
   .section.icons .content a {
+    margin-right: 4px;
     color: #b7b7b7;
   }
   .section.icons .content a:hover {
