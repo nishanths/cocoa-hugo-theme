@@ -47,7 +47,7 @@ body {
   width: 100%;
   min-height: 100%;
   font-weight: 400;
-  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial' sans-serif;
+  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
   color: #333333;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
@@ -165,7 +165,7 @@ body {
 }
 .section.header .name {
   font-size: 18px;
-  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial' sans-serif;
+  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -309,7 +309,7 @@ body {
 }
 .section.main .content .page-heading {
   font-size: 18px;
-  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial' sans-serif;
+  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -469,7 +469,7 @@ a {
 .section.main .content .markdown h5,
 .section.main .content .markdown h6 {
   font-size: 18px;
-  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial' sans-serif;
+  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-weight: 700;
