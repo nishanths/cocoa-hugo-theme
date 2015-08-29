@@ -1,9 +1,23 @@
 <!-- CSS -->
+
+{{ if eq true .Site.Params.CacheBuster }}
+
 <link rel="stylesheet" href="/css/reset.css">
 <link rel="stylesheet" href="/css/pygments.css">
 <link rel="stylesheet" href="/css/main.css">
-{{ if .Site.Params.WebfontsFile }} 
+{{ if .Site.Params.WebfontsFile }}
 <link rel="stylesheet" href="/{{ .Site.Params.WebfontsFile }}">
+{{ end }}
+
+{{ else }}
+
+<link rel="stylesheet" href="/css/reset.css?{{ .Now.Unix }}">
+<link rel="stylesheet" href="/css/pygments.css?{{ .Now.Unix }}">
+<link rel="stylesheet" href="/css/main.css?{{ .Now.Unix }}">
+{{ if .Site.Params.WebfontsFile }}
+<link rel="stylesheet" href="/{{ .Site.Params.WebfontsFile }}?{{ .Now.Unix }}">
+{{ end }}
+
 {{ end }}
 
 <!-- Icon -->
