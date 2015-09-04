@@ -24,7 +24,7 @@ a:active {
 }
 html {
   height: 100%;
-  font-size: 16px;
+  font-size: 18px;
 }
 body {
   display: -webkit-flex;
@@ -91,7 +91,7 @@ body {
 }
 @media (min-width: 550px) {
   .section {
-    padding: 0 20px;
+    padding: 0 18px;
     margin-left: 100px;
     margin-right: 100px;
     max-width: 900px;
@@ -177,7 +177,7 @@ body {
 }
 .section.header nav {
   font-size: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 .section.header nav ul {
   list-style: none;
@@ -264,10 +264,10 @@ body {
   color: #fefefe;
 }
 .section.icons .content a .icon {
-  font-size: 18px;
+  font-size: 1rem;
 }
 .section.icons .content a .icon.larger {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 @media (min-width: 550px) {
   .section.icons {
@@ -287,7 +287,7 @@ body {
     color: #333333;
   }
   .section.icons .content a .icon {
-    font-size: 16px;
+    font-size: 18px;
   }
   .section.icons .content a .icon.larger {
     font-size: 18px;
@@ -305,7 +305,7 @@ body {
 }
 .section.main .content {
   color: #333333;
-  font-size: 16px;
+  font-size: 18px;
 }
 .section.main .content .page-heading {
   font-size: 18px;
@@ -317,7 +317,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   color: #333333;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 .section.main .content .front-matter .page-heading {
   margin-bottom: 0;
@@ -330,7 +330,7 @@ body {
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 .section.main .content .front-matter .date,
 .section.main .content .front-matter .word-count,
@@ -421,26 +421,26 @@ body {
   color: #b7b7b7;
   min-width: 100px;
   text-align: right;
-  margin-right: 20px;
+  margin-right: 18px;
 }
 .section {
-  padding: 0 20px;
+  padding: 0 18px;
 }
 .section.header {
-  padding-top: 32px;
-  padding-bottom: 16px;
+  padding-top: 36px;
+  padding-bottom: 18px;
 }
 .section.icons {
   padding-top: 0;
-  padding-bottom: 32px;
+  padding-bottom: 36px;
 }
 .section.main {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 @media (min-width: 550px) {
   .container {
-    margin: 0 20px;
+    margin: 0 30px;
   }
   .section.header {
     padding-top: 60px;
@@ -501,7 +501,7 @@ a {
 .section.main .content .markdown code,
 .section.main .content .markdown pre {
   font-family: 'Ubuntu Mono', 'Menlo', monospace;
-  font-size: 15px;
+  font-size: 0.9rem;
   background-color: #f9f9f9;
 }
 .section.main .content .markdown code {

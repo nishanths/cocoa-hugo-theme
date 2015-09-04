@@ -7,7 +7,7 @@
 
 // Less variables
 
-@base-font-size: 16px;
+@base-font-size: 18px;
 @vspacing: @base-font-size*2;
 
 @monospace-font-stack: ~"'Ubuntu Mono', 'Menlo', monospace";
@@ -143,7 +143,7 @@ body {
 
 @media (min-width: 550px) {
     .section {
-        padding: 0 20px;
+        padding: 0 @vspacing/2;
         margin-left: 100px;
         margin-right: 100px;
         max-width: 900px;
@@ -285,10 +285,10 @@ body {
             }
 
             .icon {
-                font-size: 18px;
+                font-size: 1rem;
 
                 &.larger {
-                    font-size: 20px;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -313,7 +313,7 @@ body {
                 }
 
                 .icon {
-                    font-size: 16px;
+                    font-size: @base-font-size;
 
                     &.larger {
                         font-size: 18px;
@@ -335,7 +335,7 @@ body {
     
     .content {
         color: @black;
-        font-size: 16px;
+        font-size: @base-font-size;
 
         .page-heading {
             .heading();
@@ -443,7 +443,7 @@ body {
                     .meta();
                     min-width: 100px;
                     text-align: right;
-                    margin-right: 20px;
+                    margin-right: @vspacing/2;
                 }
             }
         }
@@ -453,7 +453,7 @@ body {
 // Spacing
 
 .section {
-    padding: 0 20px;
+    padding: 0 @vspacing/2;
 }
 
 .section.header {
@@ -475,7 +475,7 @@ body {
     @vspacing: 60px;
     
     .container {
-        margin: 0 20px;
+        margin: 0 @vspacing/2;
     }
 
     .section.header {

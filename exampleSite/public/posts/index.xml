@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hugo Themes</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://hugo.spf13.com/posts/</link>
     <description>Recent content in Posts on Hugo Themes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 22 Aug 2015 15:45:30 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://hugo.spf13.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Redirect webpages using HTML</title>
-      <link>http://localhost:1313/posts/redirect-webpages-html/</link>
+      <link>http://hugo.spf13.com/posts/redirect-webpages-html/</link>
       <pubDate>Sat, 22 Aug 2015 15:45:30 -0700</pubDate>
       
-      <guid>http://localhost:1313/posts/redirect-webpages-html/</guid>
+      <guid>http://hugo.spf13.com/posts/redirect-webpages-html/</guid>
       <description>
 
 &lt;p&gt;Webpage redirection is great for automatically redirecting people visiting an old URL to a new URL where the content has moved to. It can be done using JavaScript, but there is also a convenient HTML-only solution.&lt;/p&gt;
