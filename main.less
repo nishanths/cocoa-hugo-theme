@@ -1,18 +1,17 @@
 // Font imports:
 
+// Less variables
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(http://fonts.googleapis.com/css?family=Raleway:200);
 
-// Less variables
-
-@base-font-size: 18px;
+@base-font-size: 16px;
 @vspacing: @base-font-size*2;
 
 @monospace-font-stack: ~"'Ubuntu Mono', 'Menlo', monospace";
-@body-font-stack: ~"'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif";
-@heading-font-stack: ~"'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif";
+@body-font-stack: ~"'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif";
+@heading-font-stack: ~"'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif";
 @special-font-stack-1: ~"'Raleway', 'Helvetica Neue', 'Arial', sans-serif";
 
 @black: #333;
@@ -98,7 +97,7 @@ body {
     .justify-content(flex-start); // start sections at the top
     width: 100%;
     min-height: 100%;
-    font-weight: 400;
+    font-weight: 300;
     font-family: @body-font-stack;
     color: @black;
     line-height: 1.6;
@@ -285,10 +284,10 @@ body {
             }
 
             .icon {
-                font-size: 1rem;
+                font-size: 16px;
 
                 &.larger {
-                    font-size: 1.2rem;
+                    font-size: 18px;
                 }
             }
         }

@@ -24,7 +24,7 @@ a:active {
 }
 html {
   height: 100%;
-  font-size: 18px;
+  font-size: 16px;
 }
 body {
   display: -webkit-flex;
@@ -46,8 +46,8 @@ body {
   justify-content: flex-start;
   width: 100%;
   min-height: 100%;
-  font-weight: 400;
-  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 300;
+  font-family: 'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif;
   color: #333333;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
@@ -91,7 +91,7 @@ body {
 }
 @media (min-width: 550px) {
   .section {
-    padding: 0 18px;
+    padding: 0 16px;
     margin-left: 100px;
     margin-right: 100px;
     max-width: 900px;
@@ -165,7 +165,7 @@ body {
 }
 .section.header .name {
   font-size: 18px;
-  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -177,7 +177,7 @@ body {
 }
 .section.header nav {
   font-size: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 .section.header nav ul {
   list-style: none;
@@ -264,10 +264,10 @@ body {
   color: #fefefe;
 }
 .section.icons .content a .icon {
-  font-size: 1rem;
+  font-size: 16px;
 }
 .section.icons .content a .icon.larger {
-  font-size: 1.2rem;
+  font-size: 18px;
 }
 @media (min-width: 550px) {
   .section.icons {
@@ -287,7 +287,7 @@ body {
     color: #333333;
   }
   .section.icons .content a .icon {
-    font-size: 18px;
+    font-size: 16px;
   }
   .section.icons .content a .icon.larger {
     font-size: 18px;
@@ -305,11 +305,11 @@ body {
 }
 .section.main .content {
   color: #333333;
-  font-size: 18px;
+  font-size: 16px;
 }
 .section.main .content .page-heading {
   font-size: 18px;
-  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -317,7 +317,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   color: #333333;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 .section.main .content .front-matter .page-heading {
   margin-bottom: 0;
@@ -330,7 +330,7 @@ body {
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 .section.main .content .front-matter .date,
 .section.main .content .front-matter .word-count,
@@ -421,22 +421,22 @@ body {
   color: #b7b7b7;
   min-width: 100px;
   text-align: right;
-  margin-right: 18px;
+  margin-right: 16px;
 }
 .section {
-  padding: 0 18px;
+  padding: 0 16px;
 }
 .section.header {
-  padding-top: 36px;
-  padding-bottom: 18px;
+  padding-top: 32px;
+  padding-bottom: 16px;
 }
 .section.icons {
   padding-top: 0;
-  padding-bottom: 36px;
+  padding-bottom: 32px;
 }
 .section.main {
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 @media (min-width: 550px) {
   .container {
@@ -469,7 +469,7 @@ a {
 .section.main .content .markdown h5,
 .section.main .content .markdown h6 {
   font-size: 18px;
-  font-family: 'ProximaNova', 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -501,7 +501,7 @@ a {
 .section.main .content .markdown code,
 .section.main .content .markdown pre {
   font-family: 'Ubuntu Mono', 'Menlo', monospace;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   background-color: #f9f9f9;
 }
 .section.main .content .markdown code {
@@ -525,7 +525,7 @@ a {
 .section.main .content .markdown pre code {
   /* enclosed by 4 backticks (````) */
   padding: 0;
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 .section.main .content .markdown p {
   /* Invoked by line break */
