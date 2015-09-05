@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(http://fonts.googleapis.com/css?family=Raleway:200);
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,700);
 .dark {
   color: #333333 !important;
 }
@@ -9,7 +9,7 @@
   color: #b7b7b7 !important;
 }
 .accent {
-  color: #21bb5b !important;
+  color: #2eaf5e !important;
 }
 *,
 *:before,
@@ -165,7 +165,7 @@ body {
 }
 .section.header .name {
   font-size: 18px;
-  font-family: 'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -309,7 +309,7 @@ body {
 }
 .section.main .content .page-heading {
   font-size: 18px;
-  font-family: 'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -460,7 +460,7 @@ body {
   }
 }
 a {
-  color: #21bb5b;
+  color: #2eaf5e;
 }
 .section.main .content .markdown h1,
 .section.main .content .markdown h2,
@@ -469,7 +469,7 @@ a {
 .section.main .content .markdown h5,
 .section.main .content .markdown h6 {
   font-size: 18px;
-  font-family: 'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-weight: 700;
