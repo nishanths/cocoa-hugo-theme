@@ -476,7 +476,7 @@ a {
   color: #2eaf5e;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 .section.main .content .markdown h1,
 .section.main .content .markdown h2,
@@ -601,7 +601,6 @@ img {
   }
 }
 .section.main .content .markdown img {
-  display: block;
   margin: 0 0 1rem;
   max-width: 100%;
 }
