@@ -11,6 +11,19 @@
 .accent {
   color: #2eaf5e !important;
 }
+@media (min-width: 550px) {
+  .small-screens-only {
+    display: none;
+  }
+}
+.large-screens-only {
+  display: none;
+}
+@media (min-width: 550px) {
+  .large-screens-only {
+    display: initial;
+  }
+}
 *,
 *:before,
 *:after {
@@ -461,6 +474,9 @@ body {
 }
 a {
   color: #2eaf5e;
+}
+img {
+  width: 100%;
 }
 .section.main .content .markdown h1,
 .section.main .content .markdown h2,
