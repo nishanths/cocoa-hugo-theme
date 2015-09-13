@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(http://fonts.googleapis.com/css?family=Raleway:200,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,500,700);
 .dark {
   color: #333333 !important;
 }
@@ -191,6 +191,7 @@ body {
 .section.header nav {
   font-size: 14px;
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 .section.header nav ul {
   list-style: none;
