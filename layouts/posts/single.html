@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-
-{{ partial "head.html" . }}
-
-<body lang="{{ .Site.Params.Lang }}">
+{{ partial "header_only_narrow.html" . }}
 
 <div class="section main post">
     <div class="container">
         <div class="content">
             <div class="front-matter">
-                <a href="{{ .Permalink }}">{{ partial "page-heading.html" . }}</a>
+                <div class="title-container">
+                    <div class="page-heading">
+                        <a href="{{ .Permalink }}">{{ if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }}{{ end }}</a>
+                    </div>
+                    <div class="initials"><a href="{{ .Site.BaseUrl }}">{{ .Site.Params.Initials }}</a></div>
+                </div>
                 <div class="meta">
                     <div class="date">{{ .Date.Format .Site.Params.DateForm }}</div>
-                    <div class="word-count"><div class="middot"></div>{{ if eq 1 .FuzzyWordCount }}{{ .FuzzyWordCount }} word{{ else }}{{ .FuzzyWordCount }} words{{ end }}</div>
                     <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
                 </div>
             </div>

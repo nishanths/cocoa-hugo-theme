@@ -150,7 +150,7 @@ body {
   }
 }
 .section.header {
-  background-color: #333333;
+  background-color: #f7f7f7;
 }
 .section.header .container {
   -webkit-align-items: center;
@@ -187,7 +187,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   color: #333333;
-  color: #fefefe;
+  color: #555555;
 }
 .section.header nav {
   font-size: 13px;
@@ -214,14 +214,14 @@ body {
   margin-right: 0;
 }
 .section.header nav ul li {
-  color: #fefefe;
+  color: #999999;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 .section.header nav ul li:hover {
-  color: #fefefe;
+  color: #b7b7b7;
 }
 @media (min-width: 550px) {
   .section.header {
@@ -257,7 +257,7 @@ body {
   }
 }
 .section.icons {
-  background-color: #333333;
+  background-color: #f7f7f7;
 }
 .section.icons .container {
   -webkit-align-items: center;
@@ -272,7 +272,7 @@ body {
 .section.icons .content a {
   margin-left: 6px;
   margin-right: 6px;
-  color: #fefefe;
+  color: #999999;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -285,7 +285,7 @@ body {
   margin-right: 0;
 }
 .section.icons .content a:hover {
-  color: #fefefe;
+  color: #b7b7b7;
 }
 .section.icons .content a .icon {
   font-size: 16px;

@@ -19,8 +19,11 @@
 
 @black: #333;
 @gray: #b7b7b7;
-@accent: #0096cc;
-@black-background: @black;
+@accent: #0096cc; // jasonlong.me blue
+@background: #f7f7f7;
+@compensated-black: #555;
+@compensated-gray: #999;
+@compensated-gray-hover: @gray;
 @white: #fefefe;
 @milk: #fefefe;
 
@@ -170,7 +173,7 @@ body {
 // Header section
 
 .section.header {
-    background-color: @black-background;
+    background-color: @background;
 
     .container {
         .align-items(center);
@@ -185,7 +188,7 @@ body {
 
     .name {
         .heading();
-        color: @white;
+        color: @compensated-black;
     }
 
     nav {
@@ -214,11 +217,11 @@ body {
         }
 
         ul li {
-            color: @milk;
+            color: @compensated-gray;
             .transition(~'color @{transition-speed-1} @{in-sine}');
 
             &:hover {
-                color: @white
+                color: @compensated-gray-hover;
             }
         }
     }
@@ -262,7 +265,7 @@ body {
 // Icons
 
 .section.icons {
-    background-color: @black-background;
+    background-color: @background;
 
     .container {
         .align-items(center);
@@ -273,7 +276,7 @@ body {
         a {
             margin-left: 6px;
             margin-right: 6px;
-            color: @milk;
+            color: @compensated-gray;
             .transition(~'color @{transition-speed-1} @{in-sine}');
 
             &:first-child {
@@ -285,7 +288,7 @@ body {
             }
 
             &:hover {
-                color: @white;
+                color: @compensated-gray-hover;
             }
 
             .icon {
