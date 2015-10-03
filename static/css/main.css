@@ -10,7 +10,7 @@
   color: #b7b7b7 !important;
 }
 .accent {
-  color: #2eaf5e !important;
+  color: #0096cc !important;
 }
 @media (min-width: 550px) {
   .small-screens-only {
@@ -485,7 +485,7 @@ body {
   }
 }
 a {
-  color: #2eaf5e;
+  color: #0096cc;
 }
 img {
   max-width: 100%;
