@@ -1,13 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
-@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(http://fonts.googleapis.com/css?family=Raleway:700);
-@import url(https://fonts.googleapis.com/css?family=Raleway+Dots);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
 .dark {
-  color: #333333 !important;
+  color: #444444 !important;
 }
 .light {
-  color: #b7b7b7 !important;
+  color: #999999 !important;
 }
 .accent {
   color: #0096cc !important;
@@ -60,9 +59,9 @@ body {
   justify-content: flex-start;
   width: 100%;
   min-height: 100%;
-  font-weight: 300;
-  font-family: 'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif;
-  color: #333333;
+  font-weight: 400;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  color: #444444;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -74,6 +73,9 @@ body {
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
+  }
+  .narrow {
+    display: none !important;
   }
 }
 .icon {
@@ -186,11 +188,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  color: #444444;
   color: #555555;
 }
 .section.header nav {
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
@@ -240,20 +242,20 @@ body {
     align-items: flex-start;
   }
   .section.header .name {
-    color: #333333;
+    color: #444444;
   }
   .section.header nav {
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 0;
   }
   .section.header nav ul {
     text-align: left;
   }
   .section.header nav ul li {
-    color: #b7b7b7;
+    color: #999999;
   }
   .section.header nav ul li:hover {
-    color: #333333;
+    color: #444444;
   }
 }
 .section.icons {
@@ -288,10 +290,10 @@ body {
   color: #b7b7b7;
 }
 .section.icons .content a .icon {
-  font-size: 16px;
+  font-size: 20px;
 }
 .section.icons .content a .icon.larger {
-  font-size: 18px;
+  font-size: 22px;
 }
 @media (min-width: 550px) {
   .section.icons {
@@ -304,18 +306,18 @@ body {
     justify-content: flex-start;
   }
   .section.icons .content a {
-    margin-left: 2px;
-    margin-right: 2px;
-    color: #b7b7b7;
+    margin-left: 3px;
+    margin-right: 3px;
+    color: #999999;
   }
   .section.icons .content a:hover {
-    color: #333333;
+    color: #444444;
   }
   .section.icons .content a .icon {
-    font-size: 16px;
+    font-size: 18px;
   }
   .section.icons .content a .icon.larger {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 .section.main .container {
@@ -329,8 +331,42 @@ body {
   justify-content: flex-start;
 }
 .section.main .content {
-  color: #333333;
+  color: #444444;
   font-size: 16px;
+}
+.section.main .content .title-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+.section.main .content .title-container .initials {
+  display: none;
+  font-size: 18px;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  letter-spacing: -0.005rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: #444444;
+  color: #999999;
+}
+.section.main .content .title-container .initials a {
+  color: #999999;
+  -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+.section.main .content .title-container .initials a:hover {
+  color: #444444;
 }
 .section.main .content .page-heading {
   font-size: 18px;
@@ -341,7 +377,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  color: #444444;
   margin-bottom: 16px;
 }
 .section.main .content .front-matter .page-heading {
@@ -349,7 +385,7 @@ body {
 }
 .section.main .content .front-matter .meta {
   font-size: 14px;
-  color: #b7b7b7;
+  color: #999999;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -377,6 +413,9 @@ body {
   .section.main .content .front-matter .reading-time .middot {
     display: initial;
   }
+  .section.main .content .title-container .initials {
+    display: initial;
+  }
 }
 .section.main .container.f04 {
   -webkit-justify-content: center;
@@ -402,7 +441,7 @@ body {
 .section.main .container.f04 .content .num {
   margin: 30px 0px 30px 0;
   font-weight: 200;
-  font-family: 'Raleway Dots', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 50px;
 }
 .section.main .container.f04 .content .detail {
@@ -443,7 +482,7 @@ body {
 }
 .section.main .container .content .post-item .meta {
   font-size: 14px;
-  color: #b7b7b7;
+  color: #999999;
   min-width: 100px;
   text-align: right;
   margin-right: 16px;
@@ -486,9 +525,19 @@ body {
 }
 a {
   color: #0096cc;
+  -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+a:hover {
+  color: #007199;
 }
 img {
   max-width: 100%;
+}
+.page-heading a {
+  color: #444444;
 }
 .section.main .content .markdown h1,
 .section.main .content .markdown h2,
@@ -504,7 +553,7 @@ img {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  color: #444444;
 }
 .section.main .content .markdown h1 {
   font-size: 1.75rem;
@@ -530,7 +579,7 @@ img {
 .section.main .content .markdown pre {
   font-family: 'Ubuntu Mono', 'Menlo', monospace;
   font-size: 0.98rem;
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
 }
 .section.main .content .markdown code {
   /* enclosed by single backtick (`) */
@@ -584,18 +633,18 @@ img {
   position: relative;
   margin: 1.75rem 0;
   border: 0;
-  border-top: 1px solid #d1d1d1;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #b3b3b3;
+  border-top: 1px solid #cccccc;
 }
 .section.main .content .markdown abbr {
   font-size: 0.85rem;
   font-weight: bold;
-  color: #666666;
+  color: #777777;
   text-transform: uppercase;
 }
 .section.main .content .markdown abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #d1d1d1;
+  border-bottom: 1px dotted #b3b3b3;
 }
 .section.main .content .markdown blockquote {
   padding: .5rem 1rem;
@@ -629,5 +678,5 @@ img {
 }
 .section.main .content .markdown tbody tr:nth-child(odd) td,
 .section.main .content .markdown tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
 }

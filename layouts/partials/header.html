@@ -10,9 +10,10 @@
         <div class="content">
             <nav>
                 <ul>
-                    <a href="/posts"><li>Posts</li></a>
-                    <a href="/about"><li>About</li></a>
-                    <a href="/code"><li>Code</li></a>
+                    <a href="/posts/"><li>Posts</li></a>
+                    <a href="/about/"><li>About</li></a>
+                    <a href="/code/"><li>Code</li></a>
+                    {{ if .Site.Params.ResumeLink }}<a href={{ .Site.Params.ResumeLink }}><li>Resume</li></a>{{ end }}
                 </ul>
             </nav>
             <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>

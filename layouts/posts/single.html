@@ -11,14 +11,14 @@
                     <div class="initials"><a href="{{ .Site.BaseUrl }}">{{ .Site.Params.Initials }}</a></div>
                 </div>
                 <div class="meta">
-                    <div class="date">{{ .Date.Format .Site.Params.DateForm }}</div>
+                    <div class="date" title="{{ .Date.Format .Site.Params.DateFormFull }}">{{ .Date.Format .Site.Params.DateForm }}</div>
                     <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
                 </div>
             </div>
             <div class="markdown">
                 {{ .Content }}
                 <br>
-                <p><a href="/posts">Back to posts</a></p>
+                <p><a href="/posts/">Back to posts</a></p>
             </div>
         </div>
     </div>

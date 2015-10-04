@@ -1,11 +1,9 @@
 // Font imports
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
-@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(http://fonts.googleapis.com/css?family=Raleway:700);
-@import url(https://fonts.googleapis.com/css?family=Raleway+Dots);
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
 
 // Less variables
 
@@ -13,17 +11,18 @@
 @vspacing: @base-font-size*2;
 
 @monospace-font-stack: ~"'Ubuntu Mono', 'Menlo', monospace";
-@body-font-stack: ~"'ProximaNova', 'Helvetica Neue', 'Arial', sans-serif";
+@body-font-stack: ~"'Open Sans', 'Helvetica Neue', 'Arial', sans-serif";
 @heading-font-stack: ~"'Raleway', 'Helvetica Neue', 'Arial', sans-serif";
-@special-font-stack-1: ~"'Raleway Dots', 'Helvetica Neue', 'Arial', sans-serif";
+@special-font-stack-1: ~"'Raleway', 'Helvetica Neue', 'Arial', sans-serif";
 
-@black: #333;
-@gray: #b7b7b7;
+@black: #444;
+@gray: #999;
 @accent: #0096cc; // jasonlong.me blue
+@link-hover: #007199; // jasonlong.me hover blue
 @background: #f7f7f7;
 @compensated-black: #555;
 @compensated-gray: #999;
-@compensated-gray-hover: @gray;
+@compensated-gray-hover: #b7b7b7;
 @white: #fefefe;
 @milk: #fefefe;
 
@@ -93,7 +92,7 @@ body {
     .justify-content(flex-start); // start sections at the top
     width: 100%;
     min-height: 100%;
-    font-weight: 300;
+    font-weight: 400;
     font-family: @body-font-stack;
     color: @black;
     line-height: 1.6;
@@ -107,6 +106,10 @@ body {
 @media (min-width: 550px) {
     body {
         .justify-content(center); // vertically center all sections
+    }
+
+    .narrow {
+        display: none !important;
     }
 }
 
@@ -192,7 +195,7 @@ body {
     }
 
     nav {
-        font-size: 13px;
+        font-size: 14px;
         margin-bottom: floor(@vspacing/2);
         text-transform: uppercase;
         // font-weight: 600;
@@ -244,7 +247,7 @@ body {
         }
 
         nav {
-            font-size: 12px;
+            font-size: 13px;
             margin-bottom: 0;
 
             ul {
@@ -292,10 +295,10 @@ body {
             }
 
             .icon {
-                font-size: 16px;
+                font-size: 20px;
 
                 &.larger {
-                    font-size: 18px;
+                    font-size: 22px;
                 }
             }
         }
@@ -312,8 +315,8 @@ body {
 
         .content {
             a {
-                margin-left: 2px;
-                margin-right: 2px;
+                margin-left: 3px;
+                margin-right: 3px;
                 color: @gray;
 
                 &:hover {
@@ -321,10 +324,10 @@ body {
                 }
 
                 .icon {
-                    font-size: @base-font-size;
+                    font-size: 18px;
 
                     &.larger {
-                        font-size: 18px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -344,6 +347,26 @@ body {
     .content {
         color: @black;
         font-size: @base-font-size;
+        
+        .title-container {
+            .flex-display();
+            .justify-content(space-between);
+
+            .initials {
+                display: none;
+                .heading();
+                color: @gray;
+
+                a {
+                    color: @gray;
+                    .transition(~'color @{transition-speed-1} @{in-sine}');
+
+                    &:hover {
+                        color: @black;
+                    }
+                }
+            }
+        }
 
         .page-heading {
             .heading();
@@ -384,6 +407,12 @@ body {
         .content {
             .front-matter {
                 .date, .word-count, .reading-time .middot {
+                    display: initial;
+                }
+            }
+
+            .title-container {
+                .initials {
                     display: initial;
                 }
             }
@@ -509,10 +538,19 @@ body {
 
 a {
     color: @accent;
+    .transition(~'color @{transition-speed-1} @{in-sine}');
+    
+    &:hover {
+        color: @link-hover;
+    }
 }
 
 img {
     max-width: 100%;
+}
+
+.page-heading a {
+    color: @black;
 }
 
 @import 'markdown';
