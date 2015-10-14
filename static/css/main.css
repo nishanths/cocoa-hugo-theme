@@ -3,10 +3,10 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:700);
 .dark {
-  color: #444444 !important;
+  color: #444 !important;
 }
 .light {
-  color: #999999 !important;
+  color: #999 !important;
 }
 .accent {
   color: #0096cc !important;
@@ -60,8 +60,8 @@ body {
   width: 100%;
   min-height: 100%;
   font-weight: 400;
-  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
-  color: #444444;
+  font-family: 'Proxima Nova', 'Helvetica Neue', 'Arial', sans-serif;
+  color: #444;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -188,8 +188,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #444444;
-  color: #555555;
+  color: #444;
+  color: #555;
 }
 .section.header nav {
   font-size: 14px;
@@ -216,7 +216,7 @@ body {
   margin-right: 0;
 }
 .section.header nav ul li {
-  color: #999999;
+  color: #999;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -242,7 +242,7 @@ body {
     align-items: flex-start;
   }
   .section.header .name {
-    color: #444444;
+    color: #444;
   }
   .section.header nav {
     font-size: 13px;
@@ -252,10 +252,10 @@ body {
     text-align: left;
   }
   .section.header nav ul li {
-    color: #999999;
+    color: #999;
   }
   .section.header nav ul li:hover {
-    color: #444444;
+    color: #444;
   }
 }
 .section.icons {
@@ -274,7 +274,7 @@ body {
 .section.icons .content a {
   margin-left: 6px;
   margin-right: 6px;
-  color: #999999;
+  color: #999;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -308,10 +308,10 @@ body {
   .section.icons .content a {
     margin-left: 3px;
     margin-right: 3px;
-    color: #999999;
+    color: #999;
   }
   .section.icons .content a:hover {
-    color: #444444;
+    color: #444;
   }
   .section.icons .content a .icon {
     font-size: 18px;
@@ -331,7 +331,7 @@ body {
   justify-content: flex-start;
 }
 .section.main .content {
-  color: #444444;
+  color: #444;
   font-size: 16px;
 }
 .section.main .content .title-container {
@@ -355,18 +355,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #444444;
-  color: #999999;
+  color: #444;
+  color: #999;
 }
 .section.main .content .title-container .initials a {
-  color: #999999;
+  color: #999;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 .section.main .content .title-container .initials a:hover {
-  color: #444444;
+  color: #444;
 }
 .section.main .content .page-heading {
   font-size: 18px;
@@ -377,7 +377,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #444444;
+  color: #444;
   margin-bottom: 16px;
 }
 .section.main .content .front-matter .page-heading {
@@ -385,7 +385,7 @@ body {
 }
 .section.main .content .front-matter .meta {
   font-size: 14px;
-  color: #999999;
+  color: #999;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -482,7 +482,7 @@ body {
 }
 .section.main .container .content .post-item .meta {
   font-size: 14px;
-  color: #999999;
+  color: #999;
   min-width: 100px;
   text-align: right;
   margin-right: 16px;
@@ -536,8 +536,17 @@ a:hover {
 img {
   max-width: 100%;
 }
+img.profile {
+  min-width: 100%;
+}
+@media (min-width: 550px) {
+  img.profile {
+    min-width: 400px;
+    max-width: 400px !important;
+  }
+}
 .page-heading a {
-  color: #444444;
+  color: #444;
 }
 .section.main .content .markdown h1,
 .section.main .content .markdown h2,
@@ -553,7 +562,7 @@ img {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #444444;
+  color: #444;
 }
 .section.main .content .markdown h1 {
   font-size: 1.75rem;

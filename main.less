@@ -11,7 +11,7 @@
 @vspacing: @base-font-size*2;
 
 @monospace-font-stack: ~"'Ubuntu Mono', 'Menlo', monospace";
-@body-font-stack: ~"'Open Sans', 'Helvetica Neue', 'Arial', sans-serif";
+@body-font-stack: ~"'Proxima Nova', 'Helvetica Neue', 'Arial', sans-serif";
 @heading-font-stack: ~"'Raleway', 'Helvetica Neue', 'Arial', sans-serif";
 @special-font-stack-1: ~"'Raleway', 'Helvetica Neue', 'Arial', sans-serif";
 
@@ -547,6 +547,17 @@ a {
 
 img {
     max-width: 100%;
+}
+
+img.profile {
+  min-width:100%;
+}
+
+@media (min-width: 550px) {
+  img.profile {
+    min-width: 400px;
+    max-width: 400px !important;
+  }
 }
 
 .page-heading a {
