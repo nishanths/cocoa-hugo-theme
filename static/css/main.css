@@ -9,7 +9,7 @@
   color: #999 !important;
 }
 .accent {
-  color: #0096cc !important;
+  color: #f46d2c !important;
 }
 @media (min-width: 550px) {
   .small-screens-only {
@@ -60,7 +60,7 @@ body {
   width: 100%;
   min-height: 100%;
   font-weight: 400;
-  font-family: 'Proxima Nova', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'ProximaNova', 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
   color: #444;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
@@ -524,14 +524,14 @@ body {
   }
 }
 a {
-  color: #0096cc;
+  color: #f46d2c;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 a:hover {
-  color: #007199;
+  color: #de5a1d;
 }
 img {
   max-width: 100%;
