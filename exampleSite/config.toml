@@ -1,11 +1,12 @@
-baseurl = "http://hugo.spf13.com/"
-title = "Hugo Themes"
-author = "Steve Francia"
+baseurl = "https://nishanths.github.io/"
+builddrafts = false
 canonifyurls = true
 contentdir = "content"
 languageCode = "en-US"
 layoutdir = "layouts"
 publishdir = "public"
+author = "Nishanth Shanmugham"
+title = "Nishanth Shanmugham"
 pygmentsuseclasses = true
 
 [permalinks]
@@ -13,13 +14,17 @@ fixed = ":title/"
 posts = "posts/:slug/"
 
 [params]
-Author = "Steve Francia"
-DateForm = "Jan 2, 2006" # required
-Email = "username@hogwarts.edu"
-Facebook = "//facebook.com/username"
-GATracker = "<Google-Analytics-ID>"
-GitHub = "//github.com/username"
-Lang = "en" # <body lang="en">
-LinkedIn = "//linkedin.com/in/username"
-Twitter = "//twitter.com/username"
-# WebfontsFile = "css/mywebfontsfile.css" # relative to static/ directory, defaults to empty string
+Author = "Nishanth Shanmugham"
+CacheBuster = true
+DateForm = "Jan 2, 2006"
+DateFormFull = "Mon Jan 2 2006 15:04:05 MST"
+Description = "The website description"
+Email = "nishanths@utexas.edu"
+FaviconFile = "img/leaf.ico"
+GATracker = "<Google-Analyics-ID>"
+GitHub = "//github.com/nishanths"
+Initials = "ns" # displayed on single post page
+Lang = "en"
+LinkedIn = "//linkedin.com/in/nshanmugham"
+Twitter = "//twitter.com/nshanmugham"
+# WebfontsFile = "css/proximanova.css"

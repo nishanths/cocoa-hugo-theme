@@ -5,13 +5,14 @@ title = "About"
 
 +++
 
-TODO: Page not complete yet.
+I'm a software engineer and student at UT Austin. I primarily program in JavaScript. I currently work at Evernote. I also teach a web development class as part of <a href="//cs.utexas.edu/users/mad">MAD</a>, a computer science campus organization.
 
-Information about you.
+I love soccer and mediterranean food. You can find recent open source work on <a target="_blank" href="//github.com/nishanths">GitHub</a>.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Please feel free to get in touch at <a href="mailto:nishanths@utexas.edu">nishanths@utexas.edu</a>.
+
+<img src="//s.gravatar.com/avatar/9e766e4880d9a79fd1244c1b04dc31fe?size=4096&default=retro" class="profile">
+
+<br />
+
+<a href="colophon/">About this site</a>

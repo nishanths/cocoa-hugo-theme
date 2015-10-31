@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nishanth Shanmugham</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Nishanth Shanmugham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 25 Aug 2015 17:09:14 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Use @ instead of HEAD</title>
+      <link>http://localhost:1313/posts/use-at-instead-of-head/</link>
+      <pubDate>Tue, 25 Aug 2015 17:09:14 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/use-at-instead-of-head/</guid>
+      <description>&lt;p&gt;I recently discovered that from git version &lt;a href=&#34;https://github.com/git/git/blob/master/Documentation/RelNotes/1.8.5.txt#L100&#34;&gt;1.8.5&lt;/a&gt; onwards, &lt;code&gt;@&lt;/code&gt; can replace &lt;code&gt;HEAD&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;git reset --hard @~2
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;git rebase -i @~10
+&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;git diff @~2..@~3
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;And also in most scenarios &lt;code&gt;HEAD&lt;/code&gt; can be left out completely, so you can say:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;git reset -- @&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;instead of:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nv&#34;&gt;$ &lt;/span&gt;git reset -- HEAD@&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It takes some getting used to, but it&amp;rsquo;s definitely faster than typing &lt;code&gt;HEAD&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Redirect webpages using HTML</title>
+      <link>http://localhost:1313/posts/redirect-webpages-html/</link>
+      <pubDate>Sat, 22 Aug 2015 15:45:30 -0700</pubDate>
+      
+      <guid>http://localhost:1313/posts/redirect-webpages-html/</guid>
+      <description>
+
+&lt;p&gt;Webpage redirection is great for automatically redirecting people visiting an old URL to a new URL where the content has moved to. It can be done using JavaScript, but there is also a convenient HTML-only solution.&lt;/p&gt;
+
+&lt;p&gt;To redirect visitors reaching &lt;code&gt;yourwebsite.com/blog&lt;/code&gt; to &lt;code&gt;yourwebsite.com/posts&lt;/code&gt;, add this to the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section of the HTML at &lt;code&gt;yourwebsite.com/blog&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;http-equiv=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;refresh&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;content=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;0;url=&amp;#39;/posts&amp;#39;&amp;quot;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;nt&#34;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;rel=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;canonical&amp;quot;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;quot;/posts&amp;quot;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;walkthrough:afdc852818bb97af4efb4d34b2fcce3b&#34;&gt;walkthrough&lt;/h3&gt;
+
+&lt;p&gt;Setting &lt;code&gt;http-equiv=&amp;quot;refresh&amp;quot;&lt;/code&gt; in the first line performs the actual redirect. The number in the &lt;code&gt;content&lt;/code&gt; attribute specified in seconds tells the browser how long to wait before redirecting. In this example, &lt;code&gt;0&lt;/code&gt; redirects immediately. Increasing the wait may be useful for briefly displaying a 404 page before automatically switching to the home page. The &lt;code&gt;url&lt;/code&gt; specfies the destination for the redirect. In this example, we wanted to switch to &lt;code&gt;/posts&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The second line is optional; it helps search engines know which the preferred version of the page is. Usually, this is the redirect destination.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 22 Aug 2015 06:42:21 -0700</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a software engineer and student at UT Austin. I primarily program in JavaScript. I currently work at Evernote. I also teach a web development class as part of &lt;a href=&#34;//cs.utexas.edu/users/mad&#34;&gt;MAD&lt;/a&gt;, a computer science campus organization.&lt;/p&gt;
+
+&lt;p&gt;I love soccer and mediterranean food. You can find recent open source work on &lt;a target=&#34;_blank&#34; href=&#34;//github.com/nishanths&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please feel free to get in touch at &lt;a href=&#34;mailto:nishanths@utexas.edu&#34;&gt;nishanths@utexas.edu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;//s.gravatar.com/avatar/9e766e4880d9a79fd1244c1b04dc31fe?size=4096&amp;default=retro&#34; class=&#34;profile&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;colophon/&#34;&gt;About this site&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>colophon</title>
+      <link>http://localhost:1313/colophon/</link>
+      <pubDate>Sat, 22 Aug 2015 06:28:26 -0700</pubDate>
+      
+      <guid>http://localhost:1313/colophon/</guid>
+      <description>&lt;p&gt;This website is the place where I write about JavaScript, git, and tech. It is also a personal homepage.&lt;/p&gt;
+
+&lt;p&gt;The site is built with &lt;a target=&#34;_blank&#34; href=&#34;//gohugo.io&#34;&gt;Hugo&lt;/a&gt;—a static site generator made with Go and is hosted on GitHub Pages. The website &lt;a target=&#34;_blank&#34; href=&#34;//github.com/nishanths/nishanths.me&#34;&gt;source code&lt;/a&gt; is available on GitHub. It uses the &lt;a target=&#34;_blank&#34; href=&#34;//github.com/nishanths/cocoa-hugo-theme&#34;&gt;cocoa&lt;/a&gt; theme. The posts are written in Markdown.&lt;/p&gt;
+
+&lt;p&gt;The primary font face is Proxima Nova and the monospace font face is Ubuntu Mono. The social icons are from the Ionicons font set. CSS classes for code syntax highlighting are inserted during compile-time by Hugo using Pygments.&lt;/p&gt;
+
+&lt;p&gt;If you find errors, &lt;a href=&#34;https://github.com/nishanths/nishanths.me/issues/new&#34;&gt;please let me know&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>http://localhost:1313/code/</link>
+      <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
+      
+      <guid>http://localhost:1313/code/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nishanths/iterators.js&#34;&gt;iterators.js&lt;/a&gt;: Useful functional iterators for node and the browser&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nishanths/spitfire-live&#34;&gt;Spitfire&lt;/a&gt;: HackTX 2015, Winner – a real-time rhyming assistant&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nishanths/markdown-viewer-component&#34;&gt;markdown-viewer-component&lt;/a&gt;: Web Component that renders Markdown placed inside an element as HTML&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nishanths/cocoa-hugo-theme&#34;&gt;cocoa-hugo-theme&lt;/a&gt;: Distraction-free reading theme for Hugo, the static site generator&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nishanths/slack-texts&#34;&gt;slack-texts&lt;/a&gt;: Important channel messages also sent to your phone via SMS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nishanths/YWeatherAPI&#34;&gt;YWeatherAPI&lt;/a&gt;: Powerful Yahoo! Weather API wrapper for Mac and iOS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/utcsmad/umad-website-2015&#34;&gt;uMAD 2015&lt;/a&gt;: Website for the student developer conference built with Middleman&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nishanths/what-s-playing&#34;&gt;What&amp;rsquo;s Playing&lt;/a&gt;: Desktop notifications for online music playback changes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nishanths/QuickCal&#34;&gt;QuickCal&lt;/a&gt;: Highlight and add dates from any website to Google Calendar&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nishanths/youtube-pause-chrome&#34;&gt;YouTube Pause&lt;/a&gt;: Spacebar pauses the video instead of scrolling down the page. &lt;a href=&#34;http://www.cnet.com/how-to/chrome-pause-youtube-videos-with-the-spacebar/&#34;&gt;CNET&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://duckduckgo.com/?q=ISBN+number+0-06-250217-4&amp;amp;ia=books&#34;&gt;ISBN Search&lt;/a&gt;: DuckDuckGo module to lookup book information by ISBN&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://duckduckgo.com/?q=html+encode+the+paragraph+sign&amp;amp;ia=answer&#34;&gt;HTML Entities Encoder &amp;amp;&lt;/a&gt; &lt;a href=&#34;https://duckduckgo.com/?q=decoded+html+for+%26%23x00a5%3B&amp;amp;ia=answer&#34;&gt;Decoder&lt;/a&gt;: Encode and decode HTML entities on DuckDuckGo using natural queries&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nishanths/auto-browser&#34;&gt;Auto-Browser&lt;/a&gt;: HackTX 2014, Top 10&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about-this-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about-this-site/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;http://localhost:1313/colophon&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0;url=/colophon&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;http://localhost:1313/posts&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0;url=/posts&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;http://localhost:1313/code&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0;url=/code&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/resume/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0;url=//cl.ly/0v2m3E0c0p2t/shanmugham-resume.pdf&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/writing/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&#34;canonical&#34; href=&#34;http://localhost:1313/posts&#34;/&gt;
+    &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34;/&gt;
+    &lt;meta http-equiv=&#34;refresh&#34; content=&#34;0;url=/posts&#34;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
