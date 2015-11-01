@@ -1,8 +1,8 @@
 # Cocoa
 
-A consistent [Hugo](http://gohugo.io) theme with clear typograhy and colors.
+A consistent [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clear typograhy and colors.
 
-<img src="" width="500px">
+![](http://i.imgur.com/AJVyzJd.png)
 
 # Table of Contents
 
@@ -50,17 +50,36 @@ $ hugo new fixed/about.md
 
 ## Site variables
 
-Please see the sample `config.toml` under the `exampleSite/` directory. 
+Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml) under the `exampleSite/` directory. 
 
 
 # Screenshots
 
-<img src="" width="700px">
+**Posts index (small screens)**
 
+![](http://i.imgur.com/CXVUZvj.png)
+
+**About page (small screens)**
+
+![](http://i.imgur.com/oLABRtU.png)
+
+**About page (large screens)**
+
+![](http://i.imgur.com/Srt8x7c.png)
+
+**Single post (large screens)**
+
+![](http://i.imgur.com/AJVyzJd.png)
 
 # Contributing
 
 Pull requests are welcome!
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request on GitHub
 
 # License
 
