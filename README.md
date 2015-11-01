@@ -2,7 +2,7 @@
 
 A consistent [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clear typograhy and colors.
 
-![](http://i.imgur.com/AJVyzJd.png)
+<img src="http://i.imgur.com/AJVyzJd.png" width="500">
 
 # Table of Contents
 
@@ -55,21 +55,7 @@ Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-th
 
 # Screenshots
 
-**Posts index (small screens)**
-
-![](http://i.imgur.com/CXVUZvj.png)
-
-**About page (small screens)**
-
-![](http://i.imgur.com/oLABRtU.png)
-
-**About page (large screens)**
-
-![](http://i.imgur.com/Srt8x7c.png)
-
-**Single post (large screens)**
-
-![](http://i.imgur.com/AJVyzJd.png)
+See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://github.com/nishanths/cocoa-hugo-theme/tree/master/images) directory!
 
 # Contributing
 
