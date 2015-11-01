@@ -11,7 +11,7 @@ I love soccer and mediterranean food. You can find recent open source work on <a
 
 Please feel free to get in touch at <a href="mailto:nishanths@utexas.edu">nishanths@utexas.edu</a>.
 
-<img src="//s.gravatar.com/avatar/9e766e4880d9a79fd1244c1b04dc31fe?size=4096&default=retro" class="profile">
+<img src="//placehold.it/1000x1000" class="profile">
 
 <br />
 

@@ -3,9 +3,9 @@ license = "MIT"
 licenselink = "https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE.md"
 description = "Clear typography and disturbance-free reading"
 homepage = "https://github.com/nishanths"
-tags = ["proxima-nova", "minimal", "clear"]
-features = ["blog", "themes", "responsive", "404"]
-min_version = 0.1
+tags = ["open-sans", "minimal", "clear", "ionicons"]
+features = ["blog", "themes", "responsive", "404", "icons"]
+min_version = 0.13
 
 [author]
   name = "Nishanth Shanmugham"

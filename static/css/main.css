@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:700);
 .dark {
-  color: #444 !important;
+  color: #111 !important;
 }
 .light {
   color: #999 !important;
@@ -60,8 +60,8 @@ body {
   width: 100%;
   min-height: 100%;
   font-weight: 400;
-  font-family: 'ProximaNova', 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
-  color: #444;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  color: #111;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -188,7 +188,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #444;
+  color: #111;
   color: #555;
 }
 .section.header nav {
@@ -242,7 +242,7 @@ body {
     align-items: flex-start;
   }
   .section.header .name {
-    color: #444;
+    color: #111;
   }
   .section.header nav {
     font-size: 13px;
@@ -255,7 +255,7 @@ body {
     color: #999;
   }
   .section.header nav ul li:hover {
-    color: #444;
+    color: #111;
   }
 }
 .section.icons {
@@ -311,7 +311,7 @@ body {
     color: #999;
   }
   .section.icons .content a:hover {
-    color: #444;
+    color: #111;
   }
   .section.icons .content a .icon {
     font-size: 18px;
@@ -331,7 +331,7 @@ body {
   justify-content: flex-start;
 }
 .section.main .content {
-  color: #444;
+  color: #111;
   font-size: 16px;
 }
 .section.main .content .title-container {
@@ -355,7 +355,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #444;
+  color: #111;
   color: #999;
 }
 .section.main .content .title-container .initials a {
@@ -366,7 +366,7 @@ body {
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 .section.main .content .title-container .initials a:hover {
-  color: #444;
+  color: #111;
 }
 .section.main .content .page-heading {
   font-size: 18px;
@@ -377,7 +377,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #444;
+  color: #111;
   margin-bottom: 16px;
 }
 .section.main .content .front-matter .page-heading {
@@ -546,7 +546,7 @@ img.profile {
   }
 }
 .page-heading a {
-  color: #444;
+  color: #111;
 }
 .section.main .content .markdown h1,
 .section.main .content .markdown h2,
@@ -562,7 +562,7 @@ img.profile {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #444;
+  color: #111;
 }
 .section.main .content .markdown h1 {
   font-size: 1.75rem;
@@ -648,7 +648,7 @@ img.profile {
 .section.main .content .markdown abbr {
   font-size: 0.85rem;
   font-weight: bold;
-  color: #777777;
+  color: #444444;
   text-transform: uppercase;
 }
 .section.main .content .markdown abbr[title] {
