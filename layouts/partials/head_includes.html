@@ -1,8 +1,8 @@
 <!-- HTTPS -->
 
 <script type="text/javascript">
-    var baseUrl = '{{ .Site.BaseUrl }}';
-    var host = baseUrl.substring(0, baseUrl.length - 1).replace(/\//g, '');
+    var baseURL = '{{ .Site.BaseURL }}';
+    var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
     if ((host === window.location.host) && (window.location.protocol !== 'https:')) {
         window.location.protocol = 'https:';
     }
