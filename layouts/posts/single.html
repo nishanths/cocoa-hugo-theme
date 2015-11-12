@@ -8,7 +8,7 @@
                     <div class="page-heading">
                         <a href="{{ .Permalink }}">{{ if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }}{{ end }}</a>
                     </div>
-                    <div class="initials"><a href="{{ .Site.BaseUrl }}">{{ .Site.Params.Initials }}</a></div>
+                    <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
                 </div>
                 <div class="meta">
                     <div class="date" title="{{ .Date.Format .Site.Params.DateFormFull }}">{{ .Date.Format .Site.Params.DateForm }}</div>
