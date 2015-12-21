@@ -521,6 +521,7 @@ body {
     padding-bottom: 0;
   }
   .section.main .container .content .post-item {
+    display: flex;
     list-style: none;
   }
   .section.main .container .content .post-item .meta {
