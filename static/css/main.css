@@ -518,6 +518,13 @@ body {
     padding-top: 0;
     padding-bottom: 0;
   }
+  .section.main .container .content .post-item {
+    display: list-item;
+    list-style: disc inside;
+  }
+  .section.main .container .content .post-item .meta {
+    display: none;
+  }
   .section.main.post {
     padding-top: 60px;
     padding-bottom: 60px;
