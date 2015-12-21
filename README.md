@@ -8,6 +8,7 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 * Suited for blogging and personal webpages
 * Disqus support
 * Built-in support for 404 pages
+* Syntax highlighting
 
 <img src="http://i.imgur.com/jdstF9j.png" width="600">
 
@@ -16,6 +17,7 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 * [Getting Started](#getting-started)
 * [Usage](#usage)
 * [Screenshots](#screenshots)
+* [Changelog](#changelog)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -57,6 +59,10 @@ Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-th
 
 An example site is available under the `exampleSite/` directory. 
 
+# Screenshots
+
+See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://github.com/nishanths/cocoa-hugo-theme/tree/master/images) directory!
+
 # Changelog
 
 > v0.2.0
@@ -67,11 +73,6 @@ An example site is available under the `exampleSite/` directory.
 > v0.1.0
 
 * Initial release
-
-
-# Screenshots
-
-See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://github.com/nishanths/cocoa-hugo-theme/tree/master/images) directory!
 
 # Contributing
 
