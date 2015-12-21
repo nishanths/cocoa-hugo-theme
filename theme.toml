@@ -1,11 +1,11 @@
 name = "Cocoa"
 license = "MIT"
 licenselink = "https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE.md"
-description = "Clear typography and disturbance-free reading"
+description = "Consistent, responsive theme with clean typography"
 homepage = "https://github.com/nishanths"
-tags = ["open-sans", "minimal", "clear", "ionicons"]
-features = ["blog", "themes", "responsive", "404", "icons"]
-min_version = 0.13
+tags = ["open-sans", "minimal", "clean", "ionicons", "comments"]
+features = ["blog", "responsive", "404", "icons", "disqus"]
+min_version = 0.15
 
 [author]
   name = "Nishanth Shanmugham"
