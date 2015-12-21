@@ -9,7 +9,7 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 * Disqus support
 * Built-in support for 404 pages
 
-<img src="http://i.imgur.com/VRVAxeS.png" width="400">
+<img src="http://i.imgur.com/jdstF9j.png" width="600">
 
 # Table of Contents
 
