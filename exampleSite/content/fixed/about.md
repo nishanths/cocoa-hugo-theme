@@ -5,14 +5,14 @@ title = "About"
 
 +++
 
-I'm a software engineer and student at UT Austin. I primarily program in JavaScript. I currently work at Evernote. I also teach a web development class as part of <a href="//cs.utexas.edu/users/mad">MAD</a>, a computer science campus organization.
+Along with [Ford Prefect](https://en.wikipedia.org/wiki/Ford_Prefect_\(character\)), Dent barely escapes the Earth's destruction as it is demolished to make way for a *hyperspace bypass*. Arthur spends the next several years, still wearing his dressing gown, helplessly launched from crisis to crisis while trying to straighten out his lifestyle. 
 
-I love soccer and mediterranean food. You can find recent open source work on <a target="_blank" href="//github.com/nishanths">GitHub</a>.
+> He rather enjoys tea, but seems to have trouble obtaining it in the far reaches of the galaxy. 
 
-Please feel free to get in touch at <a href="mailto:nishanths@utexas.edu">nishanths@utexas.edu</a>.
+In time, he learns how to fly and carves a niche for himself as a sandwich-maker.
 
-<img src="//placehold.it/1000x1000" class="profile">
+<img src="//placehold.it/300x300" class="profile">
 
 <br />
 
-<a href="colophon/">About this site</a>
+[About this site](colophon/)

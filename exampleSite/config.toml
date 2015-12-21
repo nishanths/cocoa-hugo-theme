@@ -1,29 +1,30 @@
-baseurl = "https://nishanths.github.io/"
+baseurl = "https://you.github.io/" # TODO
 builddrafts = false
 canonifyurls = true
 contentdir = "content"
 languageCode = "en-US"
 layoutdir = "layouts"
 publishdir = "public"
-author = "Nishanth Shanmugham"
-title = "Nishanth Shanmugham"
+author = "Arthur Dent"
+title = "Arthur Dent"
 pygmentsuseclasses = true
+disqusShortname = "cocoaexamplesite" # TODO: optional, comment out to disable Disqus
 
 [permalinks]
 fixed = ":title/"
 posts = "posts/:slug/"
 
 [params]
-Author = "Nishanth Shanmugham"
+Author = "Arthur Dent"
 CacheBuster = true
 DateForm = "Jan 2, 2006"
 DateFormFull = "Mon Jan 2 2006 15:04:05 MST"
-Description = "The website description"
-Email = "nishanths@utexas.edu"
+Description = "Don't panic"
+Email = "you@example.space" # TODO:
 FaviconFile = "img/leaf.ico"
-GATracker = "<Google-Analyics-ID>"
-GitHub = "//github.com/nishanths"
-Initials = "ns" # displayed on single post page
+GATracker = "XYZ" # TODO:
+GitHub = "//github.com/you" # TODO:
+Initials = "ad" # displayed on single post page
 Lang = "en"
-LinkedIn = "//linkedin.com/in/nshanmugham"
-Twitter = "//twitter.com/nshanmugham"
+LinkedIn = "//linkedin.com/in/you" # TODO:
+Twitter = "//twitter.com/you" # TODO:

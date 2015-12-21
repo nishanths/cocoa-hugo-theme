@@ -647,6 +647,12 @@ img.profile {
   list-style-type: disc;
   list-style-position: inside;
 }
+.section.main .content .markdown em {
+  font-style: italic;
+}
+.section.main .content .markdown strong {
+  font-weight: 700;
+}
 .section.main .content .markdown hr {
   position: relative;
   margin: 1.75rem 0;
