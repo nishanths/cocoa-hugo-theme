@@ -478,11 +478,13 @@ body {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  list-style: none;
+  display: list-item;
+  list-style: disc inside;
 }
 .section.main .container .content .post-item .meta {
   font-size: 14px;
   color: #999;
+  display: none;
   min-width: 100px;
   text-align: right;
   margin-right: 16px;
@@ -519,11 +521,10 @@ body {
     padding-bottom: 0;
   }
   .section.main .container .content .post-item {
-    display: list-item;
-    list-style: disc inside;
+    list-style: none;
   }
   .section.main .container .content .post-item .meta {
-    display: none;
+    display: block;
   }
   .section.main.post {
     padding-top: 60px;
