@@ -1,8 +1,15 @@
 # Cocoa
 
-A consistent [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clear typograhy and colors.
+A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typograhy.
 
-<img src="http://i.imgur.com/AJVyzJd.png" width="500">
+#### Features
+
+* Responsive
+* Suited for blogging and personal webpages
+* Disqus support
+* Built-in support for 404 pages
+
+<img src="http://i.imgur.com/VRVAxeS.png" width="400">
 
 # Table of Contents
 
@@ -28,18 +35,12 @@ hugo -t cocoa
 
 # Usage
 
-This section describes how to create content that works well with this theme.
+#### Creating Content
 
-## Example site
-
-An example site is available under the `exampleSite/` directory. 
-
-## Creating Content
-
-* Posts should go under a `content/posts` directory. Typically you would run:
+* Posts should generally go under a `content/posts` directory. Typically you would run:
 
 ````
-hugo new posts/new-post.md
+hugo new posts/your-new-post.md
 ````
 
 * Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `contents` directory.
@@ -48,9 +49,24 @@ hugo new posts/new-post.md
 $ hugo new fixed/about.md
 ````
 
-## Site variables
+#### Site variables
 
 Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml) under the `exampleSite/` directory. 
+
+#### Example site
+
+An example site is available under the `exampleSite/` directory. 
+
+# Changelog
+
+> v0.2.0
+
+* Added Disqus support. To enable Disqus, add `disqusShortname = "XYZ"` to `config.toml`. More details: <http://gohugo.io/extras/comments/>.
+* In the posts list, replaced date with bullets at smaller screen widths.
+
+> v0.1.0
+
+* Initial release
 
 
 # Screenshots
@@ -59,7 +75,7 @@ See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://gith
 
 # Contributing
 
-Pull requests are welcome!
+Pull requests, bug fixes, and new features are welcome!
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b my-new-feature`)
