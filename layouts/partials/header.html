@@ -5,23 +5,22 @@
 
 <body lang="{{ .Site.Params.Lang }}">
 
-<div class="section header"> 
+<section class="header"> 
     <div class="container">
         <div class="content">
+            <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>
             <nav>
                 <ul>
-                    <a href="/posts/"><li>Posts</li></a>
+                    <a href="/blog/"><li>Blog</li></a>
                     <a href="/about/"><li>About</li></a>
                     <a href="/code/"><li>Code</li></a>
-                    {{ if .Site.Params.ResumeLink }}<a href={{ .Site.Params.ResumeLink }}><li>Resume</li></a>{{ end }}
                 </ul>
             </nav>
-            <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>
         </div>
     </div>
-</div>
+</section>
 
-<div class="section icons">
+<section class="icons">
     <div class="container">
         <div class="content">
 
@@ -62,4 +61,4 @@
         {{ end }}
         </div>
     </div>
-</div>
+</section>

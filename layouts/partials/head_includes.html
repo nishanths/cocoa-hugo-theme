@@ -15,18 +15,20 @@
 <link rel="stylesheet" href="/css/reset.css">
 <link rel="stylesheet" href="/css/pygments.css">
 <link rel="stylesheet" href="/css/main.css">
-{{ if .Site.Params.WebfontsFile }}
-<link rel="stylesheet" href="/{{ .Site.Params.WebfontsFile }}">
-{{ end }}
+
+{{range .Site.Params.ExtraCssFiles}}
+    <link rel="stylesheet" href="{{.}}">
+{{end}}
 
 {{ else }}
 
 <link rel="stylesheet" href="/css/reset.css?{{ .Now.Unix }}">
 <link rel="stylesheet" href="/css/pygments.css?{{ .Now.Unix }}">
 <link rel="stylesheet" href="/css/main.css?{{ .Now.Unix }}">
-{{ if .Site.Params.WebfontsFile }}
-<link rel="stylesheet" href="/{{ .Site.Params.WebfontsFile }}?{{ .Now.Unix }}">
-{{ end }}
+
+{{range .Site.Params.ExtraCssFiles}}
+    <link rel="stylesheet" href="{{.}}?{{ .Now.Unix }}">
+{{end}}
 
 {{ end }}
 

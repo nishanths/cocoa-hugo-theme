@@ -3,26 +3,30 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
 
 // Less variables
 
 @base-font-size: 16px;
 @vspacing: @base-font-size*2;
 
+@wide-1-breakpoint: 600px;
+
 @monospace-font-stack: ~"'Ubuntu Mono', 'Menlo', monospace";
 @body-font-stack: ~"'Open Sans', 'Helvetica Neue', 'Arial', sans-serif";
 @heading-font-stack: ~"'Raleway', 'Helvetica Neue', 'Arial', sans-serif";
 @special-font-stack-1: ~"'Raleway', 'Helvetica Neue', 'Arial', sans-serif";
 
-@black: #111;
-@gray: #999;
-@accent: rgba(244,109,44,1);
-@link-hover: rgba(222,90,29,1);
+@black: #333;
+@gray: #777;
+// accent colors from hermanradtke.com
+@accent: #428bca; // alt: rgba(244,109,44,1);
+@link-hover: #2a6496; // alt: rgba(222,90,29,1);
 @complementary-accent: #1DA1DE;
 @background: #f7f7f7;
 @compensated-black: #555;
 @compensated-gray: #999;
+@compensated-black-hover: #111;
 @compensated-gray-hover: #b7b7b7;
 @white: #fefefe;
 @milk: #fefefe;
@@ -104,13 +108,15 @@ body {
     font-smoothing: subpixel-antialiased;
 }
 
-@media (min-width: 550px) {
+@media (min-width: @wide-1-breakpoint) {
     body {
         .justify-content(center); // vertically center all sections
     }
-
-    .narrow {
-        display: none !important;
+    
+    .non-narrow {
+        &.zero-top-spacing {
+            padding-top: 0 !important; 
+        }
     }
 }
 
@@ -126,7 +132,7 @@ body {
 //
 // Both classes are flex elements
 
-.section {
+section {
     .flex-display();
     // Sections position their containers centrally, with spacing to the sides
     // The containers can then move their children around as needed.
@@ -140,8 +146,8 @@ body {
     width: 100%;
 }
 
-@media (min-width: 550px) {
-    .section {
+@media (min-width: @wide-1-breakpoint) {
+    section {
         padding: 0 @vspacing/2;
         margin-left: 100px;
         margin-right: 100px;
@@ -151,24 +157,24 @@ body {
 
 // Sections order
 
-.section.header {
+section.header {
     .flex-order(0);
 }
-.section.icons {
+section.icons {
     .flex-order(1);
 }
-.section.main {
+section.main {
     .flex-order(2);
 }
 
-@media (min-width: 550px) {
-    .section.header {
+@media (min-width: @wide-1-breakpoint) {
+    section.header {
         .flex-order(0);
     }
-    .section.icons {
+    section.icons {
         .flex-order(2);
     }
-    .section.main {
+    section.main {
         .flex-order(1);
     }
 }
@@ -176,7 +182,7 @@ body {
 // Styles for sections and contents
 // Header section
 
-.section.header {
+section.header {
     background-color: @background;
 
     .container {
@@ -199,7 +205,7 @@ body {
         font-size: 14px;
         margin-bottom: floor(@vspacing/2);
         text-transform: uppercase;
-        // font-weight: 600;
+        font-family: @heading-font-stack;
 
         ul {
             list-style: none;
@@ -221,18 +227,19 @@ body {
         }
 
         ul li {
-            color: @compensated-gray;
+            color: @compensated-black;
+            font-weight: 500;
             .transition(~'color @{transition-speed-1} @{in-sine}');
 
             &:hover {
-                color: @compensated-gray-hover;
+                color: @compensated-black-hover;
             }
         }
     }
 }
 
-@media (min-width: 550px) {
-    .section.header {
+@media (min-width: @wide-1-breakpoint) {
+    section.header {
         background-color: transparent;
 
         .container {
@@ -248,7 +255,7 @@ body {
         }
 
         nav {
-            font-size: 13px;
+            font-size: 14px;
             margin-bottom: 0;
 
             ul {
@@ -268,7 +275,7 @@ body {
 
 // Icons
 
-.section.icons {
+section.icons {
     background-color: @background;
 
     .container {
@@ -280,7 +287,7 @@ body {
         a {
             margin-left: 6px;
             margin-right: 6px;
-            color: @compensated-gray;
+            color: @compensated-black;
             .transition(~'color @{transition-speed-1} @{in-sine}');
 
             &:first-child {
@@ -292,7 +299,7 @@ body {
             }
 
             &:hover {
-                color: @compensated-gray-hover;
+                color: @compensated-black-hover;
             }
 
             .icon {
@@ -306,8 +313,8 @@ body {
     }
 }
 
-@media (min-width: 550px) {
-    .section.icons {
+@media (min-width: @wide-1-breakpoint) {
+    section.icons {
         background-color: transparent;
 
         .container {
@@ -339,7 +346,7 @@ body {
 
 // Main section
 
-.section.main {
+section.main {
     .container {
         .align-items(center);
         .justify-content(flex-start);
@@ -403,8 +410,8 @@ body {
     }
 }
 
-@media (min-width: 550px) {
-    .section.main {
+@media (min-width: @wide-1-breakpoint) {
+    section.main {
         .content {
             .front-matter {
                 .date, .word-count, .reading-time .middot {
@@ -414,7 +421,7 @@ body {
 
             .title-container {
                 .initials {
-                    display: initial;
+                    display: none;
                 }
             }
         }
@@ -423,7 +430,7 @@ body {
 
 // 404 page
 
-.section.main {
+section.main {
     .container.f04 {
         .justify-content(center);
 
@@ -446,8 +453,8 @@ body {
     }
 }
 
-@media (min-width: 550px) {
-    .section.main {
+@media (min-width: @wide-1-breakpoint) {
+    section.main {
         .container.f04 {
             .justify-content(flex-start);
 
@@ -469,7 +476,7 @@ body {
 
 // Post item
 
-.section.main {
+section.main {
     .container {
         .content {
             .post-item {
@@ -493,43 +500,43 @@ body {
 
 // Spacing
 
-.section {
+section {
     padding: 0 @vspacing/2;
 }
 
-.section.header {
+section.header {
     padding-top: @vspacing;
     padding-bottom: floor(@vspacing/2);
 }
 
-.section.icons {
+section.icons {
     padding-top: 0;
     padding-bottom: @vspacing;
 }
 
-.section.main {
+section.main {
     padding-top: @vspacing;
     padding-bottom: @vspacing;
 }
 
-@media (min-width: 550px) {
+@media (min-width: @wide-1-breakpoint) {
     @vspacing: 60px;
 
     .container {
         margin: 0 @vspacing/2;
     }
 
-    .section.header {
+    section.header {
         padding-top: @vspacing;
         padding-bottom: @vspacing;
     }
 
-    .section.icons {
+    section.icons {
         padding-top: @vspacing;
         padding-bottom: @vspacing;
     }
 
-    .section.main {
+    section.main {
         padding-top: 0;
         padding-bottom: 0;
 
@@ -547,7 +554,7 @@ body {
         }
     }
 
-    .section.main.post {
+    section.main.post {
         padding-top: @vspacing;
         padding-bottom: @vspacing;
     }
@@ -570,10 +577,10 @@ img.profile {
   min-width:100%;
 }
 
-@media (min-width: 550px) {
+@media (min-width: @wide-1-breakpoint) {
   img.profile {
-    min-width: 400px;
-    max-width: 400px !important;
+    min-width: 300px;
+    max-width: 300px !important;
   }
 }
 

@@ -10,7 +10,7 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 * Built-in support for 404 pages
 * Syntax highlighting
 
-<img src="http://i.imgur.com/jdstF9j.png" width="600">
+<img src="http://i.imgur.com/jdstF9j.png" width="800">
 
 # Table of Contents
 
@@ -21,7 +21,7 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 * [Contributing](#contributing)
 * [License](#license)
 
-# Getting Started 
+## Getting Started 
 
 From the root of your Hugo site, clone the theme into `themes/cocoa` by running:
 
@@ -35,14 +35,14 @@ Then, generate your site's files by running:
 hugo -t cocoa
 ````
 
-# Usage
+## Usage
 
 #### Creating Content
 
-* Posts should generally go under a `content/posts` directory. Typically you would run:
+* Posts should generally go under a `content/blog` directory. Typically you would run:
 
 ````
-hugo new posts/your-new-post.md
+hugo new blog/your-new-post.md
 ````
 
 * Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `contents` directory.
@@ -59,11 +59,21 @@ Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-th
 
 An example site is available under the `exampleSite/` directory. 
 
-# Screenshots
+## Screenshots
 
 See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://github.com/nishanths/cocoa-hugo-theme/tree/master/images) directory!
 
-# Changelog
+## Changelog
+
+> v0.3.0
+
+- Change color from orange to blue; improve colors elsewhere
+- Change `div.section` to `section`
+- Rename  `posts` directory to `blog`
+- Add ability to specify extra CSS files in `config.toml`
+- Removed `WebFontsFile` feature from `config.toml`
+- Remove the initials displayed on top right of single post pages
+- Update example site
 
 > v0.2.0
 
@@ -74,7 +84,7 @@ See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://gith
 
 * Initial release
 
-# Contributing
+## Contributing
 
 Pull requests, bug fixes, and new features are welcome!
 
@@ -84,6 +94,6 @@ Pull requests, bug fixes, and new features are welcome!
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request on GitHub
 
-# License
+## License
 
 Licensed under the MIT License. See the [LICENSE](https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE.md) file for more details.

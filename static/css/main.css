@@ -1,15 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
 .dark {
-  color: #111 !important;
+  color: #333 !important;
 }
 .light {
-  color: #999 !important;
+  color: #777 !important;
 }
 .accent {
-  color: #f46d2c !important;
+  color: #428bca !important;
 }
 @media (min-width: 550px) {
   .small-screens-only {
@@ -61,27 +61,27 @@ body {
   min-height: 100%;
   font-weight: 400;
   font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
-  color: #111;
+  color: #333;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased;
 }
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   body {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
   }
-  .narrow {
-    display: none !important;
+  .non-narrow.zero-top-spacing {
+    padding-top: 0 !important;
   }
 }
 .icon {
   text-rendering: geometricPrecision !important;
 }
-.section {
+section {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -105,56 +105,56 @@ body {
   display: flex;
   width: 100%;
 }
-@media (min-width: 550px) {
-  .section {
+@media (min-width: 600px) {
+  section {
     padding: 0 16px;
     margin-left: 100px;
     margin-right: 100px;
     max-width: 750px;
   }
 }
-.section.header {
+section.header {
   -webkit-order: 0;
   -moz-order: 0;
   -ms-order: 0;
   order: 0;
 }
-.section.icons {
+section.icons {
   -webkit-order: 1;
   -moz-order: 1;
   -ms-order: 1;
   order: 1;
 }
-.section.main {
+section.main {
   -webkit-order: 2;
   -moz-order: 2;
   -ms-order: 2;
   order: 2;
 }
-@media (min-width: 550px) {
-  .section.header {
+@media (min-width: 600px) {
+  section.header {
     -webkit-order: 0;
     -moz-order: 0;
     -ms-order: 0;
     order: 0;
   }
-  .section.icons {
+  section.icons {
     -webkit-order: 2;
     -moz-order: 2;
     -ms-order: 2;
     order: 2;
   }
-  .section.main {
+  section.main {
     -webkit-order: 1;
     -moz-order: 1;
     -ms-order: 1;
     order: 1;
   }
 }
-.section.header {
+section.header {
   background-color: #f7f7f7;
 }
-.section.header .container {
+section.header .container {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -164,7 +164,7 @@ body {
   -ms-justify-content: center;
   justify-content: center;
 }
-.section.header .content {
+section.header .content {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -179,7 +179,7 @@ body {
   -ms-align-items: center;
   align-items: center;
 }
-.section.header .name {
+section.header .name {
   font-size: 18px;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
@@ -188,15 +188,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #111;
+  color: #333;
   color: #555;
 }
-.section.header nav {
+section.header nav {
   font-size: 14px;
   margin-bottom: 16px;
   text-transform: uppercase;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
 }
-.section.header nav ul {
+section.header nav ul {
   list-style: none;
   text-align: center;
   display: -webkit-inline-flex;
@@ -205,63 +206,64 @@ body {
   display: -ms-inline-flex;
   display: inline-flex;
 }
-.section.header nav ul a {
+section.header nav ul a {
   margin-left: 6px;
   margin-right: 6px;
 }
-.section.header nav ul a:first-child {
+section.header nav ul a:first-child {
   margin-left: 0;
 }
-.section.header nav ul a:last-child {
+section.header nav ul a:last-child {
   margin-right: 0;
 }
-.section.header nav ul li {
-  color: #999;
+section.header nav ul li {
+  color: #555;
+  font-weight: 500;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
-.section.header nav ul li:hover {
-  color: #b7b7b7;
+section.header nav ul li:hover {
+  color: #111;
 }
-@media (min-width: 550px) {
-  .section.header {
+@media (min-width: 600px) {
+  section.header {
     background-color: transparent;
   }
-  .section.header .container {
+  section.header .container {
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
     justify-content: flex-start;
   }
-  .section.header .content {
+  section.header .content {
     -webkit-align-items: flex-start;
     -moz-align-items: flex-start;
     -ms-align-items: flex-start;
     align-items: flex-start;
   }
-  .section.header .name {
-    color: #111;
+  section.header .name {
+    color: #333;
   }
-  .section.header nav {
-    font-size: 13px;
+  section.header nav {
+    font-size: 14px;
     margin-bottom: 0;
   }
-  .section.header nav ul {
+  section.header nav ul {
     text-align: left;
   }
-  .section.header nav ul li {
-    color: #999;
+  section.header nav ul li {
+    color: #777;
   }
-  .section.header nav ul li:hover {
-    color: #111;
+  section.header nav ul li:hover {
+    color: #333;
   }
 }
-.section.icons {
+section.icons {
   background-color: #f7f7f7;
 }
-.section.icons .container {
+section.icons .container {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -271,56 +273,56 @@ body {
   -ms-justify-content: center;
   justify-content: center;
 }
-.section.icons .content a {
+section.icons .content a {
   margin-left: 6px;
   margin-right: 6px;
-  color: #999;
+  color: #555;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
-.section.icons .content a:first-child {
+section.icons .content a:first-child {
   margin-left: 0;
 }
-.section.icons .content a:last-child {
+section.icons .content a:last-child {
   margin-right: 0;
 }
-.section.icons .content a:hover {
-  color: #b7b7b7;
+section.icons .content a:hover {
+  color: #111;
 }
-.section.icons .content a .icon {
+section.icons .content a .icon {
   font-size: 20px;
 }
-.section.icons .content a .icon.larger {
+section.icons .content a .icon.larger {
   font-size: 22px;
 }
-@media (min-width: 550px) {
-  .section.icons {
+@media (min-width: 600px) {
+  section.icons {
     background-color: transparent;
   }
-  .section.icons .container {
+  section.icons .container {
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
     justify-content: flex-start;
   }
-  .section.icons .content a {
+  section.icons .content a {
     margin-left: 3px;
     margin-right: 3px;
-    color: #999;
+    color: #777;
   }
-  .section.icons .content a:hover {
-    color: #111;
+  section.icons .content a:hover {
+    color: #333;
   }
-  .section.icons .content a .icon {
+  section.icons .content a .icon {
     font-size: 18px;
   }
-  .section.icons .content a .icon.larger {
+  section.icons .content a .icon.larger {
     font-size: 20px;
   }
 }
-.section.main .container {
+section.main .container {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -330,11 +332,11 @@ body {
   -ms-justify-content: flex-start;
   justify-content: flex-start;
 }
-.section.main .content {
-  color: #111;
+section.main .content {
+  color: #333;
   font-size: 16px;
 }
-.section.main .content .title-container {
+section.main .content .title-container {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -345,7 +347,7 @@ body {
   -ms-justify-content: space-between;
   justify-content: space-between;
 }
-.section.main .content .title-container .initials {
+section.main .content .title-container .initials {
   display: none;
   font-size: 18px;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
@@ -355,20 +357,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #111;
-  color: #999;
+  color: #333;
+  color: #777;
 }
-.section.main .content .title-container .initials a {
-  color: #999;
+section.main .content .title-container .initials a {
+  color: #777;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
-.section.main .content .title-container .initials a:hover {
-  color: #111;
+section.main .content .title-container .initials a:hover {
+  color: #333;
 }
-.section.main .content .page-heading {
+section.main .content .page-heading {
   font-size: 18px;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
@@ -377,15 +379,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #111;
+  color: #333;
   margin-bottom: 16px;
 }
-.section.main .content .front-matter .page-heading {
+section.main .content .front-matter .page-heading {
   margin-bottom: 0;
 }
-.section.main .content .front-matter .meta {
+section.main .content .front-matter .meta {
   font-size: 14px;
-  color: #999;
+  color: #777;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -393,37 +395,37 @@ body {
   display: flex;
   margin-bottom: 32px;
 }
-.section.main .content .front-matter .date,
-.section.main .content .front-matter .word-count,
-.section.main .content .front-matter .reading-time .middot {
+section.main .content .front-matter .date,
+section.main .content .front-matter .word-count,
+section.main .content .front-matter .reading-time .middot {
   display: none;
 }
-.section.main .content .front-matter .middot {
+section.main .content .front-matter .middot {
   font-size: 6px;
   margin: 0 6px;
   display: inline;
   vertical-align: middle;
 }
-.section.main .content .front-matter .middot:before {
+section.main .content .front-matter .middot:before {
   content: "•";
 }
-@media (min-width: 550px) {
-  .section.main .content .front-matter .date,
-  .section.main .content .front-matter .word-count,
-  .section.main .content .front-matter .reading-time .middot {
+@media (min-width: 600px) {
+  section.main .content .front-matter .date,
+  section.main .content .front-matter .word-count,
+  section.main .content .front-matter .reading-time .middot {
     display: initial;
   }
-  .section.main .content .title-container .initials {
-    display: initial;
+  section.main .content .title-container .initials {
+    display: none;
   }
 }
-.section.main .container.f04 {
+section.main .container.f04 {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
 }
-.section.main .container.f04 .content {
+section.main .container.f04 .content {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -438,37 +440,37 @@ body {
   -ms-align-items: center;
   align-items: center;
 }
-.section.main .container.f04 .content .num {
+section.main .container.f04 .content .num {
   margin: 30px 0px 30px 0;
   font-weight: 200;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 50px;
 }
-.section.main .container.f04 .content .detail {
+section.main .container.f04 .content .detail {
   margin-bottom: 40px;
 }
-@media (min-width: 550px) {
-  .section.main .container.f04 {
+@media (min-width: 600px) {
+  section.main .container.f04 {
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
     justify-content: flex-start;
   }
-  .section.main .container.f04 .content {
+  section.main .container.f04 .content {
     -webkit-align-items: flex-start;
     -moz-align-items: flex-start;
     -ms-align-items: flex-start;
     align-items: flex-start;
   }
-  .section.main .container.f04 .content .num {
+  section.main .container.f04 .content .num {
     margin: 0 0 10px 0;
     font-size: 32px;
   }
-  .section.main .container.f04 .content .detail {
+  section.main .container.f04 .content .detail {
     margin-bottom: 30px;
   }
 }
-.section.main .container .content .post-item {
+section.main .container .content .post-item {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -481,66 +483,66 @@ body {
   display: list-item;
   list-style: disc inside;
 }
-.section.main .container .content .post-item .meta {
+section.main .container .content .post-item .meta {
   font-size: 14px;
-  color: #999;
+  color: #777;
   display: none;
   min-width: 100px;
   text-align: right;
   margin-right: 16px;
 }
-.section {
+section {
   padding: 0 16px;
 }
-.section.header {
+section.header {
   padding-top: 32px;
   padding-bottom: 16px;
 }
-.section.icons {
+section.icons {
   padding-top: 0;
   padding-bottom: 32px;
 }
-.section.main {
+section.main {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   .container {
     margin: 0 30px;
   }
-  .section.header {
+  section.header {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .section.icons {
+  section.icons {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .section.main {
+  section.main {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .section.main .container .content .post-item {
+  section.main .container .content .post-item {
     display: flex;
     list-style: none;
   }
-  .section.main .container .content .post-item .meta {
+  section.main .container .content .post-item .meta {
     display: block;
   }
-  .section.main.post {
+  section.main.post {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 a {
-  color: #f46d2c;
+  color: #428bca;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 a:hover {
-  color: #de5a1d;
+  color: #2a6496;
 }
 img {
   max-width: 100%;
@@ -548,21 +550,21 @@ img {
 img.profile {
   min-width: 100%;
 }
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   img.profile {
-    min-width: 400px;
-    max-width: 400px !important;
+    min-width: 300px;
+    max-width: 300px !important;
   }
 }
 .page-heading a {
-  color: #111;
+  color: #333;
 }
-.section.main .content .markdown h1,
-.section.main .content .markdown h2,
-.section.main .content .markdown h3,
-.section.main .content .markdown h4,
-.section.main .content .markdown h5,
-.section.main .content .markdown h6 {
+section.main .content .markdown h1,
+section.main .content .markdown h2,
+section.main .content .markdown h3,
+section.main .content .markdown h4,
+section.main .content .markdown h5,
+section.main .content .markdown h6 {
   font-size: 18px;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
@@ -571,41 +573,41 @@ img.profile {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #111;
+  color: #333;
 }
-.section.main .content .markdown h1 {
+section.main .content .markdown h1 {
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
-.section.main .content .markdown h2 {
+section.main .content .markdown h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.section.main .content .markdown h3 {
+section.main .content .markdown h3 {
   font-size: 1em;
   margin-bottom: 1rem;
 }
-.section.main .content .markdown h4,
-.section.main .content .markdown h5,
-.section.main .content .markdown h6 {
+section.main .content .markdown h4,
+section.main .content .markdown h5,
+section.main .content .markdown h6 {
   font-size: 1rem;
   margin-bottom: 1rem;
   letter-spacing: none;
   text-transform: none;
 }
-.section.main .content .markdown code,
-.section.main .content .markdown pre {
+section.main .content .markdown code,
+section.main .content .markdown pre {
   font-family: 'Ubuntu Mono', 'Menlo', monospace;
   font-size: 0.98rem;
   background-color: #f7f7f7;
 }
-.section.main .content .markdown code {
+section.main .content .markdown code {
   /* enclosed by single backtick (`) */
   padding: .15em .5em;
   color: #a10c31;
   border-radius: 2px;
 }
-.section.main .content .markdown pre {
+section.main .content .markdown pre {
   /* Hugo specific: consider using the 'highlight' shortcode */
   display: block;
   margin-top: 1rem;
@@ -617,90 +619,90 @@ img.profile {
   word-break: break-all;
   word-wrap: break-word;
 }
-.section.main .content .markdown pre code {
+section.main .content .markdown pre code {
   /* enclosed by 4 backticks (````) */
   padding: 0;
   font-size: 0.9rem;
 }
-.section.main .content .markdown p {
+section.main .content .markdown p {
   /* Invoked by line break */
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1em;
 }
-.section.main .content .markdown ul,
-.section.main .content .markdown ol,
-.section.main .content .markdown dl {
+section.main .content .markdown ul,
+section.main .content .markdown ol,
+section.main .content .markdown dl {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
-.section.main .content .markdown dt {
+section.main .content .markdown dt {
   font-weight: bold;
 }
-.section.main .content .markdown dd {
+section.main .content .markdown dd {
   margin-bottom: .5rem;
 }
-.section.main .content .markdown ul {
+section.main .content .markdown ul {
   margin-bottom: 1.25rem;
 }
-.section.main .content .markdown li {
+section.main .content .markdown li {
   list-style-type: disc;
   list-style-position: inside;
 }
-.section.main .content .markdown em {
+section.main .content .markdown em {
   font-style: italic;
 }
-.section.main .content .markdown strong {
+section.main .content .markdown strong {
   font-weight: 700;
 }
-.section.main .content .markdown hr {
+section.main .content .markdown hr {
   position: relative;
   margin: 1.75rem 0;
   border: 0;
-  border-top: 1px solid #b3b3b3;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #919191;
+  border-top: 1px solid #aaaaaa;
 }
-.section.main .content .markdown abbr {
+section.main .content .markdown abbr {
   font-size: 0.85rem;
   font-weight: bold;
-  color: #444444;
+  color: #666666;
   text-transform: uppercase;
 }
-.section.main .content .markdown abbr[title] {
+section.main .content .markdown abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #b3b3b3;
+  border-bottom: 1px dotted #919191;
 }
-.section.main .content .markdown blockquote {
+section.main .content .markdown blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
   color: #7a7a7a;
   border-left: .25rem solid #e5e5e5;
 }
-.section.main .content .markdown blockquote p:last-child {
+section.main .content .markdown blockquote p:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 550px) {
-  .section.main .content .markdown blockquote {
+  section.main .content .markdown blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
   }
 }
-.section.main .content .markdown img {
+section.main .content .markdown img {
   margin: 1rem 0;
   max-width: 100%;
 }
-.section.main .content .markdown table {
+section.main .content .markdown table {
   margin-bottom: 1rem;
   width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
 }
-.section.main .content .markdown td,
-.section.main .content .markdown th {
+section.main .content .markdown td,
+section.main .content .markdown th {
   padding: .25rem .5rem;
   border: 1px solid #e5e5e5;
 }
-.section.main .content .markdown tbody tr:nth-child(odd) td,
-.section.main .content .markdown tbody tr:nth-child(odd) th {
+section.main .content .markdown tbody tr:nth-child(odd) td,
+section.main .content .markdown tbody tr:nth-child(odd) th {
   background-color: #f7f7f7;
 }
