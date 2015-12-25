@@ -64,8 +64,6 @@ body {
   color: #111;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: subpixel-antialiased;
-  font-smoothing: subpixel-antialiased;
 }
 @media (min-width: 600px) {
   body {
