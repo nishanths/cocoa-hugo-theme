@@ -574,6 +574,8 @@ section.main .content .markdown h6 {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   color: #333;
+  text-transform: none;
+  margin-top: 1.75rem;
 }
 section.main .content .markdown h1 {
   font-size: 1.75rem;
@@ -659,8 +661,8 @@ section.main .content .markdown hr {
   position: relative;
   margin: 1.75rem 0;
   border: 0;
-  border-top: 1px solid #919191;
-  border-top: 1px solid #aaaaaa;
+  border-top: 1px solid #808080;
+  border-top: 1px solid #999999;
 }
 section.main .content .markdown abbr {
   font-size: 0.85rem;
@@ -670,7 +672,7 @@ section.main .content .markdown abbr {
 }
 section.main .content .markdown abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #919191;
+  border-bottom: 1px dotted #808080;
 }
 section.main .content .markdown blockquote {
   padding: .5rem 1rem;
