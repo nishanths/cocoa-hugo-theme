@@ -18,6 +18,7 @@
 @special-font-stack-1: ~"'Raleway', 'Helvetica Neue', 'Arial', sans-serif";
 
 @black: #333;
+@black-content: #111;
 @gray: #666;
 // accent colors from hermanradtke.com
 @accent: #428bca; // alt: rgba(244,109,44,1);
@@ -99,7 +100,7 @@ body {
     min-height: 100%;
     font-weight: 400;
     font-family: @body-font-stack;
-    color: @black;
+    color: @black-content;
     line-height: 1.6;
     text-rendering: optimizeLegibility !important;
     // TODO: Uncomment when moz supports at subpixel level
@@ -353,7 +354,7 @@ section.main {
     }
 
     .content {
-        color: @black;
+        color: @black-content;
         font-size: @base-font-size;
         
         .title-container {

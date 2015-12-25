@@ -61,7 +61,7 @@ body {
   min-height: 100%;
   font-weight: 400;
   font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
-  color: #333;
+  color: #111;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -333,7 +333,7 @@ section.main .container {
   justify-content: flex-start;
 }
 section.main .content {
-  color: #333;
+  color: #111;
   font-size: 16px;
 }
 section.main .content .title-container {
