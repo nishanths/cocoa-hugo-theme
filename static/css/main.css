@@ -6,7 +6,7 @@
   color: #333 !important;
 }
 .light {
-  color: #777 !important;
+  color: #666 !important;
 }
 .accent {
   color: #428bca !important;
@@ -254,7 +254,7 @@ section.header nav ul li:hover {
     text-align: left;
   }
   section.header nav ul li {
-    color: #777;
+    color: #666;
   }
   section.header nav ul li:hover {
     color: #333;
@@ -310,7 +310,7 @@ section.icons .content a .icon.larger {
   section.icons .content a {
     margin-left: 3px;
     margin-right: 3px;
-    color: #777;
+    color: #666;
   }
   section.icons .content a:hover {
     color: #333;
@@ -358,10 +358,10 @@ section.main .content .title-container .initials {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   color: #333;
-  color: #777;
+  color: #666;
 }
 section.main .content .title-container .initials a {
-  color: #777;
+  color: #666;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -387,7 +387,7 @@ section.main .content .front-matter .page-heading {
 }
 section.main .content .front-matter .meta {
   font-size: 14px;
-  color: #777;
+  color: #666;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -485,7 +485,7 @@ section.main .container .content .post-item {
 }
 section.main .container .content .post-item .meta {
   font-size: 14px;
-  color: #777;
+  color: #666;
   display: none;
   min-width: 100px;
   text-align: right;
