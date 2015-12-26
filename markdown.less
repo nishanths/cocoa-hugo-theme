@@ -48,7 +48,6 @@ code, pre {
 code {
     /* enclosed by single backtick (`) */
     padding: .15em .5em;
-    color: darken(#d01040, 10%);
     border-radius: 2px;
 }
 
@@ -69,6 +68,13 @@ pre code {
     /* enclosed by 4 backticks (````) */
     padding: 0;
     font-size: 0.9rem;
+}
+
+a code {
+    color: @accent !important;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 // 
