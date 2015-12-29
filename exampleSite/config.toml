@@ -9,6 +9,7 @@ author = "Arthur Dent"
 title = "Arthur Dent"
 pygmentsuseclasses = true
 disqusShortname = "cocoaexamplesite" # TODO: optional, comment out to disable Disqus
+pluralizelisttitles = false
 
 [permalinks]
 fixed = ":title/"
