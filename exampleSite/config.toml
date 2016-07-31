@@ -1,4 +1,4 @@
-baseurl = "https://you.github.io/" # TODO
+baseurl = "https://you.github.io/" 
 builddrafts = false
 canonifyurls = true
 contentdir = "content"
@@ -8,7 +8,7 @@ publishdir = "public"
 author = "Arthur Dent"
 title = "Arthur Dent"
 pygmentsuseclasses = true
-disqusShortname = "cocoaexamplesite" # TODO: optional, comment out to disable Disqus
+disqusShortname = "cocoaexamplesite" # Comment out to disable Disqus.
 pluralizelisttitles = false
 
 [permalinks]
@@ -21,12 +21,12 @@ CacheBuster = true
 DateForm = "Jan 2, 2006"
 DateFormFull = "Mon Jan 2 2006 15:04:05 MST"
 Description = "Don't panic"
-Email = "you@example.space" # TODO:
+Email = "you@example.space"
 FaviconFile = "img/leaf.ico"
-GATracker = "XYZ" # TODO:
-GitHub = "//github.com/you" # TODO:
-Initials = "ad" # displayed on single post page; DEPRECATED in v0.3.0
+GATracker = "XYZ"
+GitHub = "//github.com/you"
+Initials = "ad" # Displayed on single post page; DEPRECATED in v0.3.0.
 Lang = "en"
-LinkedIn = "//linkedin.com/in/you" # TODO:
-Twitter = "//twitter.com/you" # TODO:
-ExtraCssFiles = [ "/css/override.css" ] # relative to public directory
+LinkedIn = "//linkedin.com/in/you"
+Twitter = "//twitter.com/you"
+ExtraCssFiles = [ "/css/override.css" ] # Root at `public` directory, add/remove files as necessary.
