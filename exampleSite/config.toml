@@ -29,4 +29,4 @@ Initials = "ad" # Displayed on single post page; DEPRECATED in v0.3.0.
 Lang = "en"
 LinkedIn = "//linkedin.com/in/you"
 Twitter = "//twitter.com/you"
-ExtraCssFiles = [ "/css/override.css" ] # Root at `public` directory, add/remove files as necessary.
+ExtraCssFiles = [ "/css/override.css" ] # In your `static/css`, add/remove files as necessary.

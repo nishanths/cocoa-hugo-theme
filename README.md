@@ -51,13 +51,13 @@ hugo new blog/your-new-post.md
 $ hugo new fixed/about.md
 ````
 
-#### Site variables
+#### config.toml
 
-Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml) under the `exampleSite/` directory. 
+Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml) in `exampleSite/`.
 
 #### Example site
 
-An example site is available under the `exampleSite/` directory. 
+An example site is available in `exampleSite/`.
 
 ## Screenshots
 
