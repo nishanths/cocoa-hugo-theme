@@ -10,6 +10,11 @@
 
 <!-- CSS -->
 
+{{ if .Site.Params.HighlightJS }}
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+{{ end }}
+
+
 {{ if eq true .Site.Params.CacheBuster }}
 
 <link rel="stylesheet" href="/css/reset.css">
