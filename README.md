@@ -2,6 +2,8 @@
 
 A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typograhy.
 
+[__Demo__](http://themes.gohugo.io/theme/cocoa/)
+
 #### Features
 
 * Responsive
@@ -44,6 +46,8 @@ hugo -t cocoa
 ````
 hugo new blog/your-new-post.md
 ````
+
+(You may need to set `draft = false` in the new post's front matter for it to appear on your site.)
 
 * Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `contents` directory.
 
