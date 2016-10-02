@@ -59,6 +59,12 @@
                 <i class="icon ion-ios-email larger"></i>
             </a>
         {{ end }}
+
+        {{ if .Site.RSSLink }}
+            <a href="{{ .Site.RSSLink }}">
+                <i class="icon ion-social-rss larger"></i>
+            </a>
+        {{ end }}
         </div>
     </div>
 </section>
