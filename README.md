@@ -39,6 +39,10 @@ hugo -t cocoa
 
 ## Usage
 
+#### config.toml
+
+Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml) in `exampleSite/`.
+
 #### Creating Content
 
 * Posts should generally go under a `content/blog` directory. Typically you would run:
@@ -47,17 +51,13 @@ hugo -t cocoa
 hugo new blog/your-new-post.md
 ````
 
-(You may need to set `draft = false` in the new post's front matter for it to appear on your site.)
+You may need to set `draft = false` in the new post's front matter for it to appear on your site.
 
 * Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `contents` directory.
 
 ````
 $ hugo new fixed/about.md
 ````
-
-#### config.toml
-
-Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml) in `exampleSite/`.
 
 #### Example site
 

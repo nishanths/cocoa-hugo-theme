@@ -274,6 +274,9 @@ section.icons .container {
   -ms-justify-content: center;
   justify-content: center;
 }
+section.icons .content {
+  width: auto;
+}
 section.icons .content a {
   margin-left: 6px;
   margin-right: 6px;
