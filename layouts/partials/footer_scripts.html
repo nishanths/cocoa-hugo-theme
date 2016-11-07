@@ -1,18 +1,18 @@
 <!-- Google Analytics -->
-{{ if .Site.Params.GATracker }}
+{{ if .Site.Param "GATracker" }}
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <script type="text/javascript">
 try {
-    var pageTracker = _gat._getTracker("{{ .Site.Params.GATracker }}");
+    var pageTracker = _gat._getTracker("{{ .Site.Param "GATracker" }}");
     pageTracker._trackPageview();
 } catch(err) {}
 </script>
 {{ end }}
 
-{{ if .Site.Params.HighlightJS }}
+{{ if .Site.Param "HighlightJS" }}
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 
   <script type="text/javascript">
