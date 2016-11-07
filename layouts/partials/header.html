@@ -3,12 +3,12 @@
 
 {{ partial "head.html" . }}
 
-<body lang="{{ .Site.Params.Lang }}">
+<body lang="{{ .Site.Param "Lang" }}">
 
 <section class="header"> 
     <div class="container">
         <div class="content">
-            <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>
+            <a href="/"><div class="name">{{ .Site.Param "Author" }}</div></a>
             <nav>
                 <ul>
                     <a href="/blog/"><li>Blog</li></a>
@@ -24,38 +24,38 @@
     <div class="container">
         <div class="content">
 
-        {{ if .Site.Params.GitHub }}
-            <a href="{{ .Site.Params.GitHub }}" target="_blank">
+        {{ if .Site.Param "GitHub" }}
+            <a href="{{ .Site.Param "GitHub" }}" target="_blank">
                 <i class="icon ion-social-github"></i>
             </a>
         {{ end }}
         
-        {{ if .Site.Params.Twitter }}
-            <a href="{{ .Site.Params.Twitter }}" target="_blank">
+        {{ if .Site.Param "Twitter" }}
+            <a href="{{ .Site.Param "Twitter" }}" target="_blank">
                 <i class="icon ion-social-twitter"></i>
             </a>
         {{ end }}
 
-        {{ if .Site.Params.LinkedIn }}
-            <a href="{{ .Site.Params.LinkedIn }}" target="_blank">
+        {{ if .Site.Param "LinkedIn" }}
+            <a href="{{ .Site.Param "LinkedIn" }}" target="_blank">
                 <i class="icon ion-social-linkedin"></i>
             </a>
         {{ end }}
 
-        {{ if .Site.Params.Facebook }}
-            <a href="{{ .Site.Params.Facebook }}" target="_blank">
+        {{ if .Site.Param "Facebook" }}
+            <a href="{{ .Site.Param "Facebook" }}" target="_blank">
                 <i class="icon ion-social-facebook larger"></i>
             </a>
         {{ end }}
 
-        {{ if .Site.Params.SoundCloud }}
-            <a href="{{ .Site.Params.SoundCloud }}" target="_blank">
+        {{ if .Site.Param "SoundCloud" }}
+            <a href="{{ .Site.Param "SoundCloud" }}" target="_blank">
                 <i class="icon ion-ios-musical-notes larger"></i>
             </a>
         {{ end }}
 
-        {{ if .Site.Params.Email }}
-            <a href="mailto:{{ .Site.Params.Email }}">
+        {{ if .Site.Param "Email" }}
+            <a href="mailto:{{ .Site.Param "Email" }}">
                 <i class="icon ion-ios-email larger"></i>
             </a>
         {{ end }}
