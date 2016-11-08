@@ -17,6 +17,8 @@ blog = "blog/:slug/"
 
 [params]
 Author = "Arthur Dent"
+# Gravatar = "" # do not use in the same time as Avatar
+# Avatar = "" # path to image in static dir e.g img/avatar.png (do not use in the same time as Gravatar)
 CacheBuster = true
 DateForm = "Jan 2, 2006"
 DateFormFull = "Mon Jan 2 2006 15:04:05 MST"
@@ -30,5 +32,5 @@ Initials = "ad" # Displayed on single post page; DEPRECATED in v0.3.0.
 Lang = "en"
 LinkedIn = "//linkedin.com/in/you"
 Twitter = "//twitter.com/you"
-Gravatar = "abcdef"
+
 ExtraCssFiles = [ "/css/override.css" ] # In your `static/css`, add/remove files as necessary.
