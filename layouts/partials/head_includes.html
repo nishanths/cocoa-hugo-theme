@@ -10,18 +10,18 @@
 
 <!-- CSS -->
 
-{{ if (.Site.Param "HighlightJS") }}
+{{ if .Site.Params.highlightjs }}
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 {{ end }}
 
 
-{{ if eq true (.Site.Param "CacheBuster") }}
+{{ if eq true .Site.Params.cachebuster }}
 
 <link rel="stylesheet" href="/css/reset.css">
 <link rel="stylesheet" href="/css/pygments.css">
 <link rel="stylesheet" href="/css/main.css">
 
-{{range (.Site.Param "ExtraCssFiles")}}
+{{range .Site.Params.extracssfiles}}
     <link rel="stylesheet" href="{{.}}">
 {{end}}
 
@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="/css/pygments.css?{{ .Now.Unix }}">
 <link rel="stylesheet" href="/css/main.css?{{ .Now.Unix }}">
 
-{{range (.Site.Param "ExtraCssFiles")}}
+{{range .Site.Params.extracssfiles}}
     <link rel="stylesheet" href="{{.}}?{{ .Now.Unix }}">
 {{end}}
 
@@ -39,8 +39,8 @@
 
 <!-- Icon -->
 <link rel="shortcut icon"
-{{ if (.Site.Param "FaviconFile") }}
-    href="/{{ .Site.Param "FaviconFile" }}"
+{{ if .Site.Params.faviconfile }}
+    href="/{{ .Site.Params.faviconfile }}"
 {{ else }}
     href="/img/favicon.ico"
 {{ end }}

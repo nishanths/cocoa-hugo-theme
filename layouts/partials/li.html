@@ -1,4 +1,4 @@
 <li class="post-item">
-    <span class="meta">{{ .Date.Format (.Site.Param "DateForm") }}</span>
+    <span class="meta">{{ .Date.Format .Site.Params.dateform }}</span>
     <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
 </li>

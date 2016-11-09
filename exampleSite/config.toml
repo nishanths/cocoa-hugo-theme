@@ -8,7 +8,7 @@ publishdir = "public"
 author = "Arthur Dent"
 title = "Arthur Dent"
 pygmentsuseclasses = true
-disqusShortname = "cocoaexamplesite" # Comment out to disable Disqus.
+disqusshortname = "cocoaexamplesite" # Comment out to disable Disqus.
 pluralizelisttitles = false
 
 [permalinks]
@@ -16,21 +16,21 @@ fixed = ":title/"
 blog = "blog/:slug/"
 
 [params]
-Author = "Arthur Dent"
-# Gravatar = "" # do not use in the same time as Avatar
-# Avatar = "" # path to image in static dir e.g img/avatar.png (do not use in the same time as Gravatar)
-CacheBuster = true
-DateForm = "Jan 2, 2006"
-DateFormFull = "Mon Jan 2 2006 15:04:05 MST"
-Description = "Don't panic"
-Email = "you@example.space"
-FaviconFile = "img/leaf.ico"
-GATracker = "XYZ"
-GitHub = "//github.com/you"
-HighlightJS = true
-Initials = "ad" # Displayed on single post page; DEPRECATED in v0.3.0.
-Lang = "en"
-LinkedIn = "//linkedin.com/in/you"
-Twitter = "//twitter.com/you"
+author = "Arthur Dent"
+# gravatar = "" # do not use in the same time as Avatar
+# avatar = "" # path to image in static dir e.g img/avatar.png (do not use in the same time as Gravatar)
+cachebuster = true
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "Don't panic"
+email = "you@example.space"
+faviconfile = "img/leaf.ico"
+gatracker = "XYZ"
+github = "//github.com/you"
+highlightjs = true
+initials = "ad" # Displayed on single post page; DEPRECATED in v0.3.0.
+lang = "en"
+linkedin = "//linkedin.com/in/you"
+twitter = "//twitter.com/you"
 
-ExtraCssFiles = [ "/css/override.css" ] # In your `static/css`, add/remove files as necessary.
+extracssfiles = [ "/css/override.css" ] # In your `static/css`, add/remove files as necessary.

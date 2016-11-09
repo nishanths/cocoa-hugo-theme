@@ -9,7 +9,7 @@
                     <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
                 </div>
                 <div class="meta">
-                    <div class="date" title="{{ .Date.Format (.Site.Param "DateFormFull") }}">{{ .Date.Format (.Site.Param "DateForm") }}</div>
+                    <div class="date" title="{{ .Date.Format .Site.Params.dateformfull }}">{{ .Date.Format .Site.Params.dateform }}</div>
                     <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
                 </div>
             </div>
