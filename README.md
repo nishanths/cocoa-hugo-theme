@@ -43,6 +43,8 @@ hugo -t cocoa
 
 Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml) in `exampleSite/`.
 
+Note that if you already use cocoa but have updated to Hugo 0.18, you must lowercase every params of your existing `config.toml`. (like in the sample)
+
 #### Creating Content
 
 * Posts should generally go under a `content/blog` directory. Typically you would run:
