@@ -81,7 +81,7 @@ See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://gith
 
 > v0.2.0
 
-* Added Disqus support. To enable Disqus, add `disqusShortname = "XYZ"` to `config.toml`. More details: <http://gohugo.io/extras/comments/>.
+* Added Disqus support. To enable Disqus, add `disqusshortname = "XYZ"` to `config.toml`. More details: <http://gohugo.io/extras/comments/>.
 * In the posts list, replaced date with bullets at smaller screen widths.
 
 > v0.1.0
