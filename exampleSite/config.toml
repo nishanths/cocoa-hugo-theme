@@ -28,6 +28,7 @@ faviconfile = "img/leaf.ico"
 gatracker = "XYZ"
 github = "//github.com/you"
 highlightjs = true
+# highlightjslanguages = ["go"] # additional languages not included in the "common" set
 initials = "ad" # Displayed on single post page; DEPRECATED in v0.3.0.
 lang = "en"
 linkedin = "//linkedin.com/in/you"
