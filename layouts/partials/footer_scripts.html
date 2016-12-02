@@ -13,7 +13,10 @@ try {
 {{ end }}
 
 {{ if .Site.Params.highlightjs }}
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+  {{ range .Site.Params.highlightjslanguages }}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/{{.}}.min.js"></script>
+  {{ end }}
 
   <script type="text/javascript">
     hljs.initHighlightingOnLoad();
