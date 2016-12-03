@@ -15,17 +15,7 @@
 {{ end }}
 
 
-{{ if eq true .Site.Params.cachebuster }}
-
-<link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/pygments.css">
-<link rel="stylesheet" href="/css/main.css">
-
-{{range .Site.Params.extracssfiles}}
-    <link rel="stylesheet" href="{{.}}">
-{{end}}
-
-{{ else }}
+{{ if .Site.Params.cachebuster }}
 
 <link rel="stylesheet" href="/css/reset.css?{{ .Now.Unix }}">
 <link rel="stylesheet" href="/css/pygments.css?{{ .Now.Unix }}">
@@ -33,6 +23,16 @@
 
 {{range .Site.Params.extracssfiles}}
     <link rel="stylesheet" href="{{.}}?{{ .Now.Unix }}">
+{{end}}
+
+{{ else }}
+
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/pygments.css">
+<link rel="stylesheet" href="/css/main.css">
+
+{{range .Site.Params.extracssfiles}}
+    <link rel="stylesheet" href="{{.}}">
 {{end}}
 
 {{ end }}
