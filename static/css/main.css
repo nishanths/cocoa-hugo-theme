@@ -577,7 +577,6 @@ section.main .content .markdown h6 {
   font-size: 18px;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
-  text-transform: uppercase;
   font-weight: 700;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -604,7 +603,6 @@ section.main .content .markdown h6 {
   font-size: 1rem;
   margin-bottom: 1rem;
   letter-spacing: none;
-  text-transform: none;
 }
 section.main .content .markdown code,
 section.main .content .markdown pre {
