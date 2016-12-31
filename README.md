@@ -1,30 +1,32 @@
 # Cocoa
 
-A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typograhy.
+A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typograhy. The primary typefaces are Open Sans, Raleway, and Ubuntu Mono.
 
 [__Demo__](http://themes.gohugo.io/theme/cocoa/)
 
+See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://github.com/nishanths/cocoa-hugo-theme/tree/master/images) directory for screen shots!
+
 #### Features
+
 
 * Responsive
 * Suited for blogging and personal webpages
 * Disqus support
-* Built-in support for 404 pages
-* Syntax highlighting, thanks to [andy4thehuynh](https://github.com/andy4thehuynh)
-* [Gravatar support](https://github.com/nishanths/cocoa-hugo-theme/pull/25), thanks to [remeh](https://github.com/remeh)
-* [RSS](https://github.com/nishanths/cocoa-hugo-theme/pull/16), thanks to [mvrilo](https://github.com/mvrilo)
-* Cache busting
+* Built-in 404 page
+* Syntax highlighting, by [@andy4thehuynh](https://github.com/andy4thehuynh)
+* [Gravatar](https://github.com/nishanths/cocoa-hugo-theme/pull/25) profile image, by [@remeh](https://github.com/remeh)
+* RSS feed and icon, by [@mvrilo](https://github.com/mvrilo)
+* [Cache busting](https://github.com/nishanths/cocoa-hugo-theme/commit/2e598e5b739c0529ba0d8ec305066ad209f4317f#diff-0bcd4f78d920797d1ae8c184a6554729R18)
 
-<img src="http://i.imgur.com/jdstF9j.png" width="800">
-
-# Table of Contents
+## Table of Contents
 
 * [Getting Started](#getting-started)
 * [Usage](#usage)
-* [Screenshots](#screenshots)
 * [Changelog](#changelog)
 * [Contributing](#contributing)
 * [License](#license)
+
+<img src="http://i.imgur.com/jdstF9j.png" width="800">
 
 ## Getting Started 
 
@@ -43,7 +45,7 @@ hugo -t cocoa
 Or serve the site and visit `localhost:1313` in your browser:
 
 ```
-hugo -t cocoa serve
+hugo -t cocoa --watch serve
 ```
 
 ## Usage
@@ -73,40 +75,9 @@ $ hugo new fixed/about.md
 
 An example site is available in `exampleSite/`.
 
-## Screenshots
-
-See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://github.com/nishanths/cocoa-hugo-theme/tree/master/images) directory!
-
 ## Changelog
 
-> master
-
-- Add highlight.js [#12](https://github.com/nishanths/cocoa-hugo-theme/pull/12)
-- Add Gravatar and static image support [#25](https://github.com/nishanths/cocoa-hugo-theme/pull/25)
-- Don't send Referrer header on links [#39](https://github.com/nishanths/cocoa-hugo-theme/pull/39)
-- Lowercase config.toml params (for hugo 0.18 compatibility) [#24](https://github.com/nishanths/cocoa-hugo-theme/pull/24)
-- Update _default/single to be same as fixed/single.html [#36](https://github.com/nishanths/cocoa-hugo-theme/pull/36)
-- Add RSS feed+icon [#16](https://github.com/nishanths/cocoa-hugo-theme/pull/16)
-- Fix cache buster [#32](https://github.com/nishanths/cocoa-hugo-theme/issues/32)
-
-> v0.3.0
-
-- Change color from orange to blue; improve colors elsewhere
-- Change `div.section` to `section`
-- Rename  `posts` directory to `blog`
-- Add ability to specify extra CSS files in `config.toml`
-- Removed `WebFontsFile` feature from `config.toml`
-- Remove the initials displayed on top right of single post pages
-- Update example site
-
-> v0.2.0
-
-* Added Disqus support. To enable Disqus, add `disqusshortname = "XYZ"` to `config.toml`. More details: <http://gohugo.io/extras/comments/>.
-* In the posts list, replaced date with bullets at smaller screen widths.
-
-> v0.1.0
-
-* Initial release
+See [Changelog](https://github.com/nishanths/cocoa-hugo-theme/wiki/Changelog) in the wiki.
 
 ## Contributing
 
@@ -120,4 +91,4 @@ Pull requests, bug fixes, and new features are welcome!
 
 ## License
 
-Licensed under the MIT License. See the [LICENSE](https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE.md) file for more details.
+Licensed under the MIT License. See the [LICENSE](https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE) file for more details.
