@@ -8,7 +8,6 @@ See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://gith
 
 #### Features
 
-
 * Responsive
 * Suited for blogging and personal webpages
 * Disqus support
@@ -17,6 +16,11 @@ See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://gith
 * [Gravatar](https://github.com/nishanths/cocoa-hugo-theme/pull/25) profile image, by [@remeh](https://github.com/remeh)
 * RSS feed and icon, by [@mvrilo](https://github.com/mvrilo)
 * [Cache busting](https://github.com/nishanths/cocoa-hugo-theme/commit/2e598e5b739c0529ba0d8ec305066ad209f4317f#diff-0bcd4f78d920797d1ae8c184a6554729R18)
+* Google Analytics
+
+Features are optional and can be individually enabled/disable in your [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml).
+
+<img src="http://i.imgur.com/jdstF9j.png" width="800">
 
 ## Table of Contents
 
@@ -25,8 +29,6 @@ See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://gith
 * [Changelog](#changelog)
 * [Contributing](#contributing)
 * [License](#license)
-
-<img src="http://i.imgur.com/jdstF9j.png" width="800">
 
 ## Getting Started 
 

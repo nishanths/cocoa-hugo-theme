@@ -1,37 +1,41 @@
-baseurl = "https://you.github.io/"
-builddrafts = false
-canonifyurls = true
-contentdir = "content"
-languageCode = "en-US"
-layoutdir = "layouts"
-publishdir = "public"
-author = "Arthur Dent"
-title = "Arthur Dent"
-pygmentsuseclasses = true
-disqusshortname = "cocoaexamplesite" # Comment out to disable Disqus.
+baseurl             = "https://you.github.io/"
+builddrafts         = false
+canonifyurls        = true
+contentdir          = "content"
+languageCode        = "en-US"
+layoutdir           = "layouts"
+publishdir          = "public"
+author              = "Arthur Dent"
+title               = "Arthur Dent"
+pygmentsuseclasses  = true
+disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
 pluralizelisttitles = false
+googleAnalytics     = "UA-123-45"
 
 [permalinks]
 fixed = ":title/"
-blog = "blog/:slug/"
+blog  = "blog/:slug/"
 
 [params]
-author = "Arthur Dent"
-# gravatar = "" # do not use in the same time as Avatar
-# avatar = "" # path to image in static dir e.g img/avatar.png (do not use in the same time as Gravatar)
-cachebuster = true # add the current unix timestamp in query string for cache busting css assets
-dateform = "Jan 2, 2006"
+author       = "Arthur Dent"
+cachebuster  = true # add the current unix timestamp in query string for cache busting css assets
+dateform     = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-description = "Don't panic"
-email = "you@example.space"
-faviconfile = "img/leaf.ico"
-gatracker = "XYZ"
-github = "//github.com/you"
-highlightjs = true
-# highlightjslanguages = ["go"] # additional languages not included in the "common" set
-initials = "ad" # Displayed on single post page; DEPRECATED in v0.3.0.
-lang = "en"
-linkedin = "//linkedin.com/in/you"
-twitter = "//twitter.com/you"
+description  = "Don't panic"
+email        = "you@example.space"
+faviconfile  = "img/leaf.ico"
+github       = "//github.com/you"
+highlightjs  = true
+lang         = "en"
+linkedin     = "//linkedin.com/in/you"
+twitter      = "//twitter.com/you"
 
-extracssfiles = [ "/css/override.css" ] # In your `static/css`, add/remove files as necessary.
+# gravatar             = ""     # do not use in the same time as avatar
+# avatar               = ""     # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+# highlightjslanguages = ["go"] # additional languages not included in the "common" set
+
+extracssfiles = [ "/css/override.css" ] # In your `static` directory, add/remove files as necessary.
+
+# The following are DEPRECATED.
+gatracker              = "XYZ" # use googleAnalytics instead
+initials               = "ad"  # displayed on single post page; deprecated in v0.3.0.
