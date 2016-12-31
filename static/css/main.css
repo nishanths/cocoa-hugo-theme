@@ -607,7 +607,7 @@ section.main .content .markdown h6 {
 section.main .content .markdown code,
 section.main .content .markdown pre {
   font-family: 'Ubuntu Mono', 'Menlo', monospace;
-  font-size: 0.98rem;
+  font-size: 1rem;
   background-color: #f7f7f7;
 }
 section.main .content .markdown code {
@@ -628,9 +628,9 @@ section.main .content .markdown pre {
   word-wrap: break-word;
 }
 section.main .content .markdown pre code {
-  /* enclosed by 4 backticks (````) */
+  /* enclosed by 3 backticks (```) */
   padding: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 section.main .content .markdown a code {
   color: #428bca !important;
