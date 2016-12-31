@@ -49,9 +49,7 @@ hugo -t cocoa serve
 
 #### config.toml
 
-Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml) in `exampleSite/`.
-
-Note that if you already use cocoa but have updated to Hugo 0.18, you must lowercase every params of your existing `config.toml`. (like in the sample)
+Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml). Note that if you already use cocoa but have updated to Hugo 0.18, you must lowercase every params of your existing `config.toml`. (like in the sample)
 
 #### Creating posts
 
@@ -87,7 +85,7 @@ See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://gith
 - Don't send Referrer header on links [#39](https://github.com/nishanths/cocoa-hugo-theme/pull/39)
 - Lowercase config.toml params (for hugo 0.18 compatibility) [#24](https://github.com/nishanths/cocoa-hugo-theme/pull/24)
 - Update _default/single to be same as fixed/single.html [#36](https://github.com/nishanths/cocoa-hugo-theme/pull/36)
-- Add RSS feed+icon [#16](https://github.com/nishanths/cocoa-hugo-theme/pull/16]
+- Add RSS feed+icon [#16](https://github.com/nishanths/cocoa-hugo-theme/pull/16)
 
 > v0.3.0
 
