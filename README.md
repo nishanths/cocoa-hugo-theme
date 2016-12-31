@@ -10,7 +10,9 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 * Suited for blogging and personal webpages
 * Disqus support
 * Built-in support for 404 pages
-* Syntax highlighting
+* Syntax highlighting, thanks to [andy4thehuynh](https://github.com/andy4thehuynh)
+* [Gravatar support](https://github.com/nishanths/cocoa-hugo-theme/pull/25), thanks to [remeh](https://github.com/remeh)
+* [RSS](https://github.com/nishanths/cocoa-hugo-theme/pull/16), thanks to [mvrilo](https://github.com/mvrilo)
 
 <img src="http://i.imgur.com/jdstF9j.png" width="800">
 
@@ -37,6 +39,12 @@ Then, generate your site's files by running:
 hugo -t cocoa
 ````
 
+Or serve the site and visit `localhost:1313` in your browser:
+
+```
+hugo -t cocoa serve
+```
+
 ## Usage
 
 #### config.toml
@@ -45,17 +53,18 @@ Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-th
 
 Note that if you already use cocoa but have updated to Hugo 0.18, you must lowercase every params of your existing `config.toml`. (like in the sample)
 
-#### Creating Content
+#### Creating posts
 
-* Posts should generally go under a `content/blog` directory. Typically you would run:
+Posts should generally go under a `content/blog` directory. Typically you would run:
 
 ````
 hugo new blog/your-new-post.md
 ````
+For posts to appear on your site, you may need `draft = false` in the post's front matter or use the `--buildDrafts` option when building.
 
-You may need to set `draft = false` in the new post's front matter for it to appear on your site.
+#### Creating fixed pages
 
-* Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `contents` directory.
+Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `contents` directory.
 
 ````
 $ hugo new fixed/about.md
@@ -70,6 +79,15 @@ An example site is available in `exampleSite/`.
 See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://github.com/nishanths/cocoa-hugo-theme/tree/master/images) directory!
 
 ## Changelog
+
+> master
+
+- Add highlight.js (#12)
+- Add Gravatar and static image support (#25)
+- Don't send Referrer header on links (#39)
+- Lowercase config.toml params (for hugo 0.18 compatibility) (#24)
+- Update _default/single to be same as fixed/single.html (#36)
+- Add RSS feed+icon (#16)
 
 > v0.3.0
 
