@@ -14,19 +14,25 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
 {{ end }}
 
+
 {{ if .Site.Params.cachebuster }}
-<link rel="stylesheet" href="/css/reset.css?t={{ .Now.Unix }}">
-<link rel="stylesheet" href="/css/pygments.css?t={{ .Now.Unix }}">
-<link rel="stylesheet" href="/css/main.css?t={{ .Now.Unix }}">
+{{ $t := .Now.Unix }}
+<link rel="stylesheet" href="/css/reset.css?t={{$t}}">
+<link rel="stylesheet" href="/css/pygments.css?t={{$t}}">
+<link rel="stylesheet" href="/css/main.css?t={{$t}}">
+{{range .Site.Params.extracssfiles}}
+    <link rel="stylesheet" href="{{.}}?t={{$t}}">
+{{ end }}
+
 {{ else }}
+
 <link rel="stylesheet" href="/css/reset.css">
 <link rel="stylesheet" href="/css/pygments.css">
 <link rel="stylesheet" href="/css/main.css">
-{{ end }}
-
 {{range .Site.Params.extracssfiles}}
     <link rel="stylesheet" href="{{.}}">
 {{end}}
+{{ end }}
 
 <!-- Icon -->
 <link rel="shortcut icon"
