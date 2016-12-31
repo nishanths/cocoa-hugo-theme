@@ -82,12 +82,12 @@ See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://gith
 
 > master
 
-- Add highlight.js nishanths/cocoa-hugo-theme#12
-- Add Gravatar and static image support nishanths/cocoa-hugo-theme#25
-- Don't send Referrer header on links nishanths/cocoa-hugo-theme#39
-- Lowercase config.toml params (for hugo 0.18 compatibility) nishanths/cocoa-hugo-theme#24
-- Update _default/single to be same as fixed/single.html nishanths/cocoa-hugo-theme#36
-- Add RSS feed+icon nishanths/cocoa-hugo-theme#16
+- Add highlight.js [#12](https://github.com/nishanths/cocoa-hugo-theme/pull/12)
+- Add Gravatar and static image support [#25](https://github.com/nishanths/cocoa-hugo-theme/pull/25)
+- Don't send Referrer header on links [#39](https://github.com/nishanths/cocoa-hugo-theme/pull/39)
+- Lowercase config.toml params (for hugo 0.18 compatibility) [#24](https://github.com/nishanths/cocoa-hugo-theme/pull/24)
+- Update _default/single to be same as fixed/single.html [#36](https://github.com/nishanths/cocoa-hugo-theme/pull/36)
+- Add RSS feed+icon [#16](https://github.com/nishanths/cocoa-hugo-theme/pull/16]
 
 > v0.3.0
 
