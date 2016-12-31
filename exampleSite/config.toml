@@ -1,4 +1,4 @@
-baseurl = "https://you.github.io/" 
+baseurl = "https://you.github.io/"
 builddrafts = false
 canonifyurls = true
 contentdir = "content"
@@ -19,7 +19,7 @@ blog = "blog/:slug/"
 author = "Arthur Dent"
 # gravatar = "" # do not use in the same time as Avatar
 # avatar = "" # path to image in static dir e.g img/avatar.png (do not use in the same time as Gravatar)
-# cachebuster = false # FIXME: See issue #32.
+cachebuster = true # add the current unix timestamp in query string for cache busting css assets
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Don't panic"
