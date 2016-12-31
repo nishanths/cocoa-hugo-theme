@@ -13,6 +13,7 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 * Syntax highlighting, thanks to [andy4thehuynh](https://github.com/andy4thehuynh)
 * [Gravatar support](https://github.com/nishanths/cocoa-hugo-theme/pull/25), thanks to [remeh](https://github.com/remeh)
 * [RSS](https://github.com/nishanths/cocoa-hugo-theme/pull/16), thanks to [mvrilo](https://github.com/mvrilo)
+* Cache busting
 
 <img src="http://i.imgur.com/jdstF9j.png" width="800">
 
@@ -86,6 +87,7 @@ See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://gith
 - Lowercase config.toml params (for hugo 0.18 compatibility) [#24](https://github.com/nishanths/cocoa-hugo-theme/pull/24)
 - Update _default/single to be same as fixed/single.html [#36](https://github.com/nishanths/cocoa-hugo-theme/pull/36)
 - Add RSS feed+icon [#16](https://github.com/nishanths/cocoa-hugo-theme/pull/16)
+- Fix cache buster [#32](https://github.com/nishanths/cocoa-hugo-theme/issues/32)
 
 > v0.3.0
 
