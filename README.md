@@ -1,6 +1,6 @@
 # Cocoa
 
-A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typograhy. The primary typefaces are Open Sans, Raleway, and Ubuntu Mono.
+A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typography. The primary typefaces are Open Sans, Raleway, and Ubuntu Mono.
 
 [__Demo__](http://themes.gohugo.io/theme/cocoa/)
 
@@ -18,7 +18,7 @@ See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://gith
 * [Cache busting](https://github.com/nishanths/cocoa-hugo-theme/commit/2e598e5b739c0529ba0d8ec305066ad209f4317f#diff-0bcd4f78d920797d1ae8c184a6554729R18)
 * Google Analytics
 
-Features are optional and can be individually enabled/disable in your [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml).
+Most features are optional and can be individually enabled/disabled in your [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml).
 
 <img src="http://i.imgur.com/jdstF9j.png" width="800">
 
@@ -67,7 +67,7 @@ For posts to appear on your site, you may need `draft = false` in the post's fro
 
 #### Creating fixed pages
 
-Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `contents` directory.
+Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `content` directory.
 
 ````
 $ hugo new fixed/about.md
