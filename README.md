@@ -4,57 +4,54 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 
 [__Demo__](http://themes.gohugo.io/theme/cocoa/)
 
-See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://github.com/nishanths/cocoa-hugo-theme/tree/master/images) directory for screen shots!
-
 #### Features
 
+```
 * Responsive
 * Suited for blogging and personal webpages
 * Disqus support
 * Built-in 404 page
-* Syntax highlighting, by [@andy4thehuynh](https://github.com/andy4thehuynh)
-* [Gravatar](https://github.com/nishanths/cocoa-hugo-theme/pull/25) profile image, by [@remeh](https://github.com/remeh)
-* RSS feed and icon, by [@mvrilo](https://github.com/mvrilo)
-* [Cache busting](https://github.com/nishanths/cocoa-hugo-theme/commit/2e598e5b739c0529ba0d8ec305066ad209f4317f#diff-0bcd4f78d920797d1ae8c184a6554729R18)
+* Syntax highlighting, by @andy4thehuynh
+* Gravatar or static profile image, by @remeh
+* RSS feed and icon, by @mvrilo
+* Cache busting
 * Google Analytics
+```
 
 Most features are optional and can be individually enabled/disabled in your [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml).
 
+<img src="https://raw.githubusercontent.com/nishanths/cocoa-hugo-theme/master/images/tn.png" width="800">
 <img src="http://i.imgur.com/jdstF9j.png" width="800">
+
 
 ## Table of Contents
 
-* [Getting Started](#getting-started)
+* [Quick start](#quick-start)
 * [Usage](#usage)
 * [Development](#development)
 * [Changelog](#changelog)
 * [License](#license)
 
-## Getting Started 
+## Quick start 
 
 From the root of your Hugo site, clone the theme into `themes/cocoa` by running:
 
-````
-git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa
-````
+```sh
+# Clone theme into the themes/cocoa directory
+$ git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa
 
-Then, generate your site's files by running:
+# Generate site files into the public directory
+$ hugo -t cocoa
 
-````
-hugo -t cocoa
-````
-
-Or serve the site and visit `localhost:1313` in your browser:
-
-```
-hugo -t cocoa --watch serve
+# Or, serve your site and visit localhost:1313 in your browser
+$ hugo -t cocoa --watch serve
 ```
 
 ## Usage
 
 #### config.toml
 
-Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml). Note that if you already use cocoa but have updated to Hugo 0.18, you must lowercase every params of your existing `config.toml`. (like in the sample)
+Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml). Note that if you already use cocoa but have updated to Hugo 0.18, you must lowercase every params of your existing `config.toml` (like in the sample).
 
 #### Creating posts
 
@@ -72,10 +69,6 @@ Fixed pages such as an About page should preferably go under a `content/fixed` o
 ````
 $ hugo new fixed/about.md
 ````
-
-#### Example site
-
-An example site is available in `exampleSite/`.
 
 ## Development
 
