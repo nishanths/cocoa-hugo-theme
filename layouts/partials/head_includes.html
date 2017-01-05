@@ -22,6 +22,8 @@
 {{ if .Site.Params.cachebuster }}
 
     {{ $t := .Now.Unix }}
+    <link rel="stylesheet" href="/css/reset.css?t={{$t}}">
+    <link rel="stylesheet" href="/css/pygments.css?t={{$t}}">
     <link rel="stylesheet" href="/css/main.css?t={{$t}}">
     {{range .Site.Params.extracssfiles}}
         <link rel="stylesheet" href="{{.}}?t={{$t}}">
@@ -29,6 +31,8 @@
 
 {{ else }}
 
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/pygments.css">
     <link rel="stylesheet" href="/css/main.css">
     {{range .Site.Params.extracssfiles}}
         <link rel="stylesheet" href="{{.}}">
