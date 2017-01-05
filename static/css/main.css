@@ -72,9 +72,6 @@ body {
     padding-top: 0 !important;
   }
 }
-.icon {
-  text-rendering: geometricPrecision !important;
-}
 section {
   display: -webkit-flex;
   display: -moz-flex;
@@ -281,11 +278,11 @@ section.icons .content {
 section.icons .content a {
   margin-left: 6px;
   margin-right: 6px;
-  color: #555;
-  -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  opacity: 0.6;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 section.icons .content a:first-child {
   margin-left: 0;
@@ -294,13 +291,11 @@ section.icons .content a:last-child {
   margin-right: 0;
 }
 section.icons .content a:hover {
-  color: #111;
+  opacity: 0.8;
 }
 section.icons .content a .icon {
-  font-size: 20px;
-}
-section.icons .content a .icon.larger {
-  font-size: 22px;
+  width: 16px;
+  height: 16px;
 }
 @media (min-width: 600px) {
   section.icons {
@@ -315,16 +310,6 @@ section.icons .content a .icon.larger {
   section.icons .content a {
     margin-left: 3px;
     margin-right: 3px;
-    color: #666;
-  }
-  section.icons .content a:hover {
-    color: #333;
-  }
-  section.icons .content a .icon {
-    font-size: 18px;
-  }
-  section.icons .content a .icon.larger {
-    font-size: 20px;
   }
 }
 section.main .container {

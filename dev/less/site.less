@@ -39,13 +39,6 @@ body {
     }
 }
 
-// Ionicon classes
-
-.icon {
-    // INFO: Comment out if you see performance issues, especially on mobile
-    text-rendering: geometricPrecision !important;
-}
-
 // * Sections – the cornerstone of page elements
 // * Container – contains section contents
 //
@@ -220,8 +213,8 @@ section.icons {
         a {
             margin-left: 6px;
             margin-right: 6px;
-            color: @compensated-black;
-            .transition(~'color @{transition-speed-1} @{in-sine}');
+            opacity: 0.6;
+            .transition(~'opacity @{transition-speed-1} @{in-sine}');
 
             &:first-child {
                 margin-left: 0;
@@ -232,15 +225,12 @@ section.icons {
             }
 
             &:hover {
-                color: @compensated-black-hover;
+                opacity: 0.8;
             }
 
             .icon {
-                font-size: 20px;
-
-                &.larger {
-                    font-size: 22px;
-                }
+                width: 16px;
+                height: 16px;
             }
         }
     }
@@ -258,19 +248,6 @@ section.icons {
             a {
                 margin-left: 3px;
                 margin-right: 3px;
-                color: @gray;
-
-                &:hover {
-                    color: @black;
-                }
-
-                .icon {
-                    font-size: 18px;
-
-                    &.larger {
-                        font-size: 20px;
-                    }
-                }
             }
 
         }
