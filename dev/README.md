@@ -11,6 +11,8 @@ The theme will work even if this directory is removed.
 make css
 ```
 
+You may need to do `npm install -g lessc` if you do not have the less compiler installed.
+
 ### Versions in use
 
 ```

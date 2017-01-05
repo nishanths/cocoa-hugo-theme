@@ -26,8 +26,8 @@ Features are optional and can be individually enabled/disable in your [`config.t
 
 * [Getting Started](#getting-started)
 * [Usage](#usage)
+* [Development](#development)
 * [Changelog](#changelog)
-* [Contributing](#contributing)
 * [License](#license)
 
 ## Getting Started 
@@ -77,19 +77,15 @@ $ hugo new fixed/about.md
 
 An example site is available in `exampleSite/`.
 
+## Development
+
+Pull requests, bug fixes, and new features are welcome! If you're contributing CSS changes, please see [`dev/README.md`](dev/README.md).
+
+
 ## Changelog
 
 See [Changelog](https://github.com/nishanths/cocoa-hugo-theme/wiki/Changelog) in the wiki.
 
-## Contributing
-
-Pull requests, bug fixes, and new features are welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request on GitHub
 
 ## License
 
