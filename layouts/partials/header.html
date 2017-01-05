@@ -30,45 +30,31 @@
         <div class="content">
 
         {{ if .Site.Params.github }}
-            <a href="{{ .Site.Params.github }}" target="_blank">
-                <i class="icon ion-social-github"></i>
-            </a>
+            <a href="{{ .Site.Params.github }}" target="_blank"><img class="icon" src="/img/github.svg" alt="github" /></a>
         {{ end }}
         
         {{ if .Site.Params.twitter }}
-            <a href="{{ .Site.Params.twitter }}" target="_blank">
-                <i class="icon ion-social-twitter"></i>
-            </a>
+            <a href="{{ .Site.Params.twitter }}" target="_blank"><img class="icon" src="/img/twitter.svg" alt="twitter" /></a>
         {{ end }}
 
         {{ if .Site.Params.linkedin }}
-            <a href="{{ .Site.Params.linkedin }}" target="_blank">
-                <i class="icon ion-social-linkedin"></i>
-            </a>
+            <a href="{{ .Site.Params.linkedin }}" target="_blank"><img class="icon" src="/img/linkedin.svg" alt="linkedin" /></a>
         {{ end }}
 
         {{ if .Site.Params.facebook }}
-            <a href="{{ .Site.Params.facebook }}" target="_blank">
-                <i class="icon ion-social-facebook larger"></i>
-            </a>
+            <a href="{{ .Site.Params.facebook }}" target="_blank"><img class="icon" src="/img/facebook.svg" alt="facebook" /></a>
         {{ end }}
 
         {{ if .Site.Params.soundcloud }}
-            <a href="{{ .Site.Params.soundcloud }}" target="_blank">
-                <i class="icon ion-ios-musical-notes larger"></i>
-            </a>
+            <a href="{{ .Site.Params.soundcloud }}" target="_blank"><img class="icon" src="/img/soundcloud.svg" alt="soundcloud" /></a>
         {{ end }}
 
         {{ if .Site.Params.email }}
-            <a href="mailto:{{ .Site.Params.email }}">
-                <i class="icon ion-ios-email larger"></i>
-            </a>
+            <a href="mailto:{{ .Site.Params.email }}"><img class="icon" src="/img/email.svg" alt="email" /></a>
         {{ end }}
 
         {{ if .Site.RSSLink }}
-            <a href="{{ .Site.RSSLink }}">
-                <i class="icon ion-social-rss larger"></i>
-            </a>
+            <a href="{{ .Site.RSSLink }}"><img class="icon" src="/img/rss.svg" alt="rss" /></a>
         {{ end }}
         </div>
     </div>
