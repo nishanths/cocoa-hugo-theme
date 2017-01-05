@@ -14,24 +14,26 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
 {{ end }}
 
+<!-- Fonts and icon CSS -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 {{ if .Site.Params.cachebuster }}
-{{ $t := .Now.Unix }}
-<link rel="stylesheet" href="/css/reset.css?t={{$t}}">
-<link rel="stylesheet" href="/css/pygments.css?t={{$t}}">
-<link rel="stylesheet" href="/css/main.css?t={{$t}}">
-{{range .Site.Params.extracssfiles}}
-    <link rel="stylesheet" href="{{.}}?t={{$t}}">
-{{ end }}
+
+    {{ $t := .Now.Unix }}
+    <link rel="stylesheet" href="/css/main.css?t={{$t}}">
+    {{range .Site.Params.extracssfiles}}
+        <link rel="stylesheet" href="{{.}}?t={{$t}}">
+    {{ end }}
 
 {{ else }}
 
-<link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/pygments.css">
-<link rel="stylesheet" href="/css/main.css">
-{{range .Site.Params.extracssfiles}}
-    <link rel="stylesheet" href="{{.}}">
-{{end}}
+    <link rel="stylesheet" href="/css/main.css">
+    {{range .Site.Params.extracssfiles}}
+        <link rel="stylesheet" href="{{.}}">
+    {{end}}
+
 {{ end }}
 
 <!-- Icon -->
