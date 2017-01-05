@@ -44,12 +44,15 @@
     font-size: @font-size;
     font-family: @heading-font-stack;
     letter-spacing: -0.005rem;
-    text-transform: uppercase;
     font-weight: 700;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     color: @black;
+}
+
+.tt-upper() {
+    text-transform: uppercase;
 }
 
 .transition (@transition) {
@@ -206,6 +209,7 @@ section.header {
 
     .name {
         .heading();
+        .tt-upper();
         color: @compensated-black;
     }
 
@@ -373,6 +377,7 @@ section.main {
             .initials {
                 display: none;
                 .heading();
+                .tt-upper();
                 color: @gray;
 
                 a {
@@ -388,6 +393,7 @@ section.main {
 
         .page-heading {
             .heading();
+            .tt-upper();
             margin-bottom: floor(@vspacing/2);
         }
 
