@@ -30,9 +30,9 @@ lang         = "en"
 linkedin     = "//linkedin.com/in/you"
 twitter      = "//twitter.com/you"
 
-# gravatar             = ""     # do not use in the same time as avatar
-# avatar               = ""     # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
-# highlightjslanguages = ["go"] # additional languages not included in the "common" set
+# gravatar             = ""                # do not use in the same time as avatar
+avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+# highlightjslanguages = ["go"]            # additional languages not included in the "common" set
 
 extracssfiles = [ "/css/override.css" ] # In your `static` directory, add/remove files as necessary.
 
