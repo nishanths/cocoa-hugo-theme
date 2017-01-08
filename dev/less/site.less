@@ -31,10 +31,10 @@ body {
     body {
         .justify-content(center); // vertically center all sections
     }
-    
+
     .non-narrow {
         &.zero-top-spacing {
-            padding-top: 0 !important; 
+            padding-top: 0 !important;
         }
     }
 }
@@ -123,6 +123,13 @@ section.header {
         .heading();
         .tt-upper();
         color: @compensated-black;
+    }
+
+    h3.self-intro {
+      .heading(1em);
+      font-weight: 400;
+      color: @compensated-black;
+      margin-bottom: 1rem;
     }
 
     nav {
@@ -265,7 +272,7 @@ section.main {
     .content {
         color: @black-content;
         font-size: @base-font-size;
-        
+
         .title-container {
             .flex-display();
             .justify-content(space-between);
@@ -396,7 +403,7 @@ section.main {
                 .align-items(center);
                 display: list-item;
                 list-style: disc inside;
-                
+
                 .meta {
                     .meta();
                     display: none;
@@ -475,7 +482,7 @@ section.main {
 a {
     color: @accent;
     .transition(~'color @{transition-speed-1} @{in-sine}');
-    
+
     &:hover {
         color: @link-hover;
     }

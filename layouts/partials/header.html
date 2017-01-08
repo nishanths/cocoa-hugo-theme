@@ -5,7 +5,7 @@
 
 <body lang="{{ .Site.Params.lang }}">
 
-<section class="header"> 
+<section class="header">
     <div class="container">
         <div class="content">
             {{ if .Site.Params.gravatar }}
@@ -14,6 +14,9 @@
               <a href="/"><img class="avatar" src="/{{ .Site.Params.avatar }}" /></a>
             {{ end }}
             <a href="/"><div class="name">{{ .Site.Params.author }}</div></a>
+            {{ if .Site.Params.selfIntro }}
+              <h3 class="self-intro">{{ .Site.Params.selfIntro }}</h3>
+            {{ end }}
             <nav>
                 <ul>
                     <a href="/blog/"><li>Blog</li></a>
@@ -32,7 +35,7 @@
         {{ if .Site.Params.github }}
             <a href="{{ .Site.Params.github }}" target="_blank"><img class="icon" src="/img/github.svg" alt="github" /></a>
         {{ end }}
-        
+
         {{ if .Site.Params.twitter }}
             <a href="{{ .Site.Params.twitter }}" target="_blank"><img class="icon" src="/img/twitter.svg" alt="twitter" /></a>
         {{ end }}
