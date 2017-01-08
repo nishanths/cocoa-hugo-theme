@@ -190,6 +190,19 @@ section.header .name {
   text-transform: uppercase;
   color: #555;
 }
+section.header h3.self-intro {
+  font-size: 1em;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  letter-spacing: -0.005rem;
+  font-weight: 700;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: #333;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 1rem;
+}
 section.header nav {
   font-size: 14px;
   margin-bottom: 16px;
