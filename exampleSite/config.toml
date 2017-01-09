@@ -29,6 +29,7 @@ highlightjs  = true
 lang         = "en"
 linkedin     = "//linkedin.com/in/you"
 twitter      = "//twitter.com/you"
+selfIntro    = "" # appears in the site header when set to a non-empty string
 
 # gravatar             = ""                # do not use in the same time as avatar
 avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
