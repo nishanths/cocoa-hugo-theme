@@ -11,17 +11,23 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 * Suited for blogging and personal webpages
 * Disqus support
 * Built-in 404 page
-* Syntax highlighting, by @andy4thehuynh
-* Gravatar or static profile image, by @remeh
-* RSS feed and icon, by @mvrilo
+* Syntax highlighting (by @andy4thehuynh)
+* Gravatar/static profile image (by @remeh)
+* RSS feed and icon (by @mvrilo)
+* Optimized SVG icons (by @robinst)
 * Cache busting
 * Google Analytics
 ```
 
 Most features are optional and can be individually enabled/disabled in your [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml).
 
+## Screenshots
+
 <img src="https://raw.githubusercontent.com/nishanths/cocoa-hugo-theme/master/images/tn.png" width="800">
+
 <img src="http://i.imgur.com/jdstF9j.png" width="800">
+
+<img src="https://i.imgur.com/5jI8kEU.png" width="400">
 
 
 ## Table of Contents
@@ -64,15 +70,17 @@ For posts to appear on your site, you may need `draft = false` in the post's fro
 
 #### Creating fixed pages
 
-Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `content` directory.
+Fixed pages such as an About page should preferably go under `content/fixed` or be present at the root of the `content` directory.
 
 ````
-$ hugo new fixed/about.md
+hugo new fixed/about.md
 ````
 
 ## Development
 
-Pull requests, bug fixes, and new features are welcome! If you're contributing CSS changes, please see [`dev/README.md`](dev/README.md).
+This theme is built and improved upon by open source [contributions](https://github.com/nishanths/cocoa-hugo-theme/graphs/contributors). Pull requests, bug fixes, and new features are welcome! 
+
+If you're contributing CSS changes, please see the README at [`dev/`](dev).
 
 
 ## Changelog

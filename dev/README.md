@@ -1,20 +1,26 @@
-This directory contains files that are purely used in development.
-For instance, the `less` directory contains Less CSS files that
-that are compiled to CSS in the theme's `static/css` directory.
+This directory contains files that are purely used in development. 
 
-The theme will work even if this directory is removed.
+The theme should continue to work even if this directory is removed.
 
 ### Getting started
 
+To make CSS changes:
+
 ```sh
-# compile less files to css.
-make css
+# Install the less compiler
+$ npm install -g lessc
+
+# Make changes to .less files...
+$ vim dev/site.less
+
+# Compile dev/*.less files to static/css/*.css
+$ make css
 ```
 
-You may need to do `npm install -g lessc` if you do not have the less compiler installed.
+Commit both `dev/less` and `static/css`.
 
 ### Versions in use
 
 ```
-* lessc 2.7.1 (Less Compiler) [JavaScript]
+lessc 2.7.1 (Less Compiler) [JavaScript]
 ```
