@@ -218,17 +218,17 @@ section.header nav ul {
   display: -ms-inline-flex;
   display: inline-flex;
 }
-section.header nav ul a {
+section.header nav ul li {
   margin-left: 6px;
   margin-right: 6px;
 }
-section.header nav ul a:first-child {
+section.header nav ul li:first-child {
   margin-left: 0;
 }
-section.header nav ul a:last-child {
+section.header nav ul li:last-child {
   margin-right: 0;
 }
-section.header nav ul li {
+section.header nav ul a {
   color: #555;
   font-weight: 500;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -236,7 +236,7 @@ section.header nav ul li {
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
-section.header nav ul li:hover {
+section.header nav ul a:hover {
   color: #111;
 }
 @media (min-width: 600px) {
