@@ -265,10 +265,10 @@ section.header nav ul a:hover {
   section.header nav ul {
     text-align: left;
   }
-  section.header nav ul li {
+  section.header nav ul a {
     color: #666;
   }
-  section.header nav ul li:hover {
+  section.header nav ul a:hover {
     color: #333;
   }
 }
