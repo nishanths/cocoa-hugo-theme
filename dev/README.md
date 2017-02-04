@@ -8,7 +8,7 @@ To make CSS changes:
 
 ```sh
 $ npm install -g less          # install less compiler
-$ vim dev/main.less files      # make changes
+$ vim dev/main.less            # make changes
 $ make css                     # compile
 ```
 
