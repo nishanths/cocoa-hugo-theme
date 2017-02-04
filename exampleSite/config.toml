@@ -30,6 +30,7 @@ lang         = "en"
 linkedin     = "//linkedin.com/in/you"
 twitter      = "//twitter.com/you"
 selfIntro    = "" # appears in the site header when set to a non-empty string
+forcehttps   = true # use a script to detect whether visitors should be redirected to https
 
 # gravatar             = ""                # do not use in the same time as avatar
 avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
