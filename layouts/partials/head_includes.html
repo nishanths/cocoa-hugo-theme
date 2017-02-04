@@ -1,5 +1,6 @@
 <!-- HTTPS -->
 
+{{ if .Site.Params.forcehttps }}
 <script type="text/javascript">
     var baseURL = '{{ .Site.BaseURL }}';
     var host = baseURL.substring(0, baseURL.length - 1).replace(/\//g, '');
@@ -7,6 +8,7 @@
         window.location.protocol = 'https:';
     }
 </script>
+{{ end }}
 
 <!-- CSS -->
 
