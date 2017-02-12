@@ -17,26 +17,25 @@ fixed = ":title/"
 blog  = "blog/:slug/"
 
 [params]
-author       = "Arthur Dent"
-cachebuster  = true # add the current unix timestamp in query string for cache busting css assets
-dateform     = "Jan 2, 2006"
-dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-description  = "Don't panic"
-email        = "you@example.space"
-faviconfile  = "img/leaf.ico"
-github       = "//github.com/you"
-highlightjs  = true
-lang         = "en"
-linkedin     = "//linkedin.com/in/you"
-twitter      = "//twitter.com/you"
-selfIntro    = "" # appears in the site header when set to a non-empty string
-forcehttps   = true # use a script to detect whether visitors should be redirected to https
+author                 = "Arthur Dent"
+cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
+dateform               = "Jan 2, 2006"
+dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
+description            = "Don't panic"
+email                  = "you@example.space"
+extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
+faviconfile            = "img/leaf.ico"
+github                 = "//github.com/you"
+highlightjs            = true
+lang                   = "en"
+linkedin               = "//linkedin.com/in/you"
+noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
+selfintro              = ""                            # appears in the site header when set to a non-empty string
+twitter                = "//twitter.com/you"
+# highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
 
-# gravatar             = ""                # do not use in the same time as avatar
 avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
-# highlightjslanguages = ["go"]            # additional languages not included in the "common" set
-
-extracssfiles = [ "/css/override.css" ] # In your `static` directory, add/remove files as necessary.
+# gravatar             = ""                # do not use in the same time as avatar
 
 # The following are DEPRECATED.
 gatracker              = "XYZ" # use googleAnalytics instead
