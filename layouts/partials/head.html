@@ -1,6 +1,5 @@
 <head>
 {{ partial "meta.html" . }}
-<base href="{{ .Site.BaseURL }}">
 <title>
 {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
 {{ if eq $url "/" }}
