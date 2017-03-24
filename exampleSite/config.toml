@@ -16,6 +16,12 @@ googleAnalytics     = "UA-123-45"
 fixed = ":title/"
 blog  = "blog/:slug/"
 
+[[menu.main]]
+name                   = "Blog"
+weight                 = -120
+identifier             = "blog"
+url                    = "/blog/"
+
 [params]
 author                 = "Arthur Dent"
 cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
