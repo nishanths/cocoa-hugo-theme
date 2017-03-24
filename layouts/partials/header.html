@@ -21,7 +21,7 @@
                 <ul>
                     {{ $currentPage := . }}
                     {{ range .Site.Menus.main }}
-                        <li class="nav-{{ .Identifier }}"><a href="{{.URL|relLangURL}}">{{ .Pre }}<span>{{ .Name }}</span></a></li>
+                        <li class="nav-{{ .Identifier }}"><a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span></a></li>
                     {{ end }}
                 </ul>
             </nav>
