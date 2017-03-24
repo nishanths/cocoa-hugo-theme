@@ -2,6 +2,11 @@
 <section class="main">
     <div class="container">
         <div class="content">
+            {{ if .Content }}
+                <div class="markdown">
+                    {{ .Content }}
+                </div>
+            {{ end }}
             <div class="page-heading">Blog</div>
             <ul>
                 {{ range .Data.Pages.ByPublishDate }}
