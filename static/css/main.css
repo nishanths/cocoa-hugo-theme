@@ -494,6 +494,10 @@ section.main .container .content .post-item .meta {
   text-align: right;
   margin-right: 16px;
 }
+section.main .container .content .see-all {
+  color: transparent;
+  font-style: oblique;
+}
 section {
   padding: 0 16px;
 }
