@@ -19,7 +19,6 @@
             {{ end }}
             <nav>
                 <ul>
-                    {{ $currentPage := . }}
                     {{ range .Site.Menus.main }}
                         <li class="nav-{{ .Identifier }}"><a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span></a></li>
                     {{ end }}
