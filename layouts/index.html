@@ -17,7 +17,7 @@
                     {{ end }}
                     {{ if gt $totalpostscount $latestpostscount }}
                         {{ range where .Site.Menus.main "Identifier" "blog" }}
-                            <li class="post-item see-all">
+                            <li class="post-item no-bullet">
                                 <span class="meta"></span> <a {{ printf "href=%q " .URL | safeHTMLAttr }}><span>See more&hellip;</span></a>
                             </li>
                         {{ end }}
