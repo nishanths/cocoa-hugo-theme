@@ -7,7 +7,7 @@
                     {{ .Content }}
                 </div>
             {{ end }}
-            <div class="page-heading">Blog</div>
+	    <div class="page-heading">{{ i18n "blogHeading" }}</div>
             <ul>
             {{ range .Data.Pages.ByPublishDate }}
                 {{ if eq .Section "blog" }}
