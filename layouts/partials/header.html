@@ -9,9 +9,9 @@
     <div class="container">
         <div class="content">
             {{ if .Site.Params.gravatar }}
-              <a href="/"><img class="avatar" src="https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=50" /></a>
+            <a {{ printf "href=%q" ("/" | relLangURL) | safeHTMLAttr }}><img class="avatar" src="https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=50" /></a>
             {{ else if .Site.Params.avatar }}
-              <a href="/"><img class="avatar" src="/{{ .Site.Params.avatar }}" /></a>
+            <a {{ printf "href=%q" ("/" | relLangURL) | safeHTMLAttr }}><img class="avatar" src="/{{ .Site.Params.avatar }}" /></a>
             {{ end }}
             <a href="/"><div class="name">{{ .Site.Params.author }}</div></a>
             {{ if .Site.Params.selfintro }}
