@@ -35,6 +35,7 @@ identifier             = "code"
 url                    = "/code/"
 
 [params]
+latestpostscount       = 5                             # how many posts to display on the home page
 author                 = "Arthur Dent"
 cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
 dateform               = "Jan 2, 2006"

@@ -1,6 +1,6 @@
 ---
-- id: blogHeading
-  translation: "Artikeln"
+- id: latestPosts
+  translation: "Die aktuelsten Artikeln"
 
 - id: pageNotFound
   translation: "Sorry, this page does not exist."
