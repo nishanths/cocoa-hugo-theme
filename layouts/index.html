@@ -7,15 +7,24 @@
                     {{ .Content }}
                 </div>
             {{ end }}
-            <div class="page-heading">Blog</div>
-            <ul>
-            {{ range .Data.Pages.ByPublishDate }}
-                {{ if eq .Section "blog" }}
-                    {{ partial "li.html" . }}
-                {{ end }}
+            {{ $totalpostscount := len (where .Data.Pages "Section" "blog") }}
+            {{ $latestpostscount := .Site.Params.latestpostscount | default $totalpostscount }}
+            {{ if gt $latestpostscount 0 }}
+                <div class="page-heading">Latest posts</div>
+                <ul>
+                    {{ range (first $latestpostscount (where .Data.Pages.ByPublishDate "Section" "blog")) }}
+                        {{ partial "li.html" . }}
+                    {{ end }}
+                    {{ if gt $totalpostscount $latestpostscount }}
+                        {{ range where .Site.Menus.main "Identifier" "blog" }}
+                            <li class="post-item no-bullet">
+                                <a id="see-more" {{ printf "href=%q " .URL | safeHTMLAttr }}><span>See more&hellip;</span></a>
+                            </li>
+                        {{ end }}
+                    {{ end }}
+                </ul>
+                </div>
             {{ end }}
-            </ul>
-        </div>
     </div>
 </section>
 {{ partial "footer.html" . }}
