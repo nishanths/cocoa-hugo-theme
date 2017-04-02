@@ -7,7 +7,7 @@
                     {{ .Content }}
                 </div>
             {{ end }}
-            <div class="page-heading">Blog</div>
+	    <div class="page-heading">{{ i18n "blogHeading" }}</div>
             <ul>
                 {{ if eq .Site.Params.bloggroupby "month" }}
                     {{ $.Scratch.Set "datespec" "Jan, 2006" }}

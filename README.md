@@ -29,6 +29,9 @@ Most features are optional and can be individually enabled/disabled in your [`co
 
 <img src="https://i.imgur.com/5jI8kEU.png" width="400">
 
+### Switch between languages
+
+![german screenshot](https://raw.githubusercontent.com/lpancescu/cocoa-hugo-theme/i18n-flags/scr.de-fullpage.png) ![english screenshot](https://raw.githubusercontent.com/lpancescu/cocoa-hugo-theme/i18n-flags/scr.en-fullpage.png)
 
 ## Table of Contents
 

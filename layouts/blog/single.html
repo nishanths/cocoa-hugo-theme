@@ -15,14 +15,14 @@
                     <div class="date" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>{{ .Date.Format "Jan 2, 2006" }}</div>
                     {{ end }}
                     {{ if not .Site.Params.noshowreadtime }}
-                    <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
+		    <div class="reading-time"><div class="middot"></div>{{ i18n "readingTime" .ReadingTime }}</div>
                     {{ end }}
                 </div>
             </div>
             <div class="markdown">
                 {{ .Content }}
                 <br>
-                <p><a href="/blog/">Back to posts</a></p>
+		<p><a href="/blog/">{{ i18n "backToPosts" }}</a></p>
             </div>
             <br>
             <div class="disqus">
