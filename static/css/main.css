@@ -310,6 +310,9 @@ section.icons .content a .icon {
   width: 16px;
   height: 16px;
 }
+section.icons .content a .flag {
+  border-radius: 50%;
+}
 @media (min-width: 600px) {
   section.icons {
     background-color: transparent;

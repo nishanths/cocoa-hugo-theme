@@ -1,0 +1,17 @@
+---
+- id: latestPosts
+  translation: "Latest Posts"
+
+- id: pageNotFound
+  translation: "Sorry, this page does not exist."
+
+- id: visitHomePage
+  translation: "Visit home page"
+
+- id: readingTime
+  translation:
+    one: "One minute read"
+    other: "{{ .Count }} minutes read"
+
+- id: backToPosts
+  translation: "Back to posts"
