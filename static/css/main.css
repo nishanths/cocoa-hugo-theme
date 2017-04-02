@@ -389,7 +389,6 @@ section.main .content .front-matter .page-heading {
   margin-bottom: 0;
 }
 section.main .content .front-matter .meta {
-  font-size: 14px;
   color: #666;
   display: -webkit-flex;
   display: -moz-flex;
@@ -487,7 +486,6 @@ section.main .container .content .post-item {
   list-style: disc inside;
 }
 section.main .container .content .post-item .meta {
-  font-size: 14px;
   color: #666;
   display: none;
   min-width: 100px;
@@ -497,6 +495,8 @@ section.main .container .content .post-item .meta {
 section.main .container .content .no-bullet {
   color: transparent;
   font-style: oblique;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 section.main .container .content .no-bullet .date {
   font-size: 18px;

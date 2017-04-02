@@ -21,7 +21,7 @@
                 {{ else }}
                     {{ range .Data.Pages.ByPublishDate.GroupByDate ($.Scratch.Get "datespec") "desc" }}
                         <li class="post-item no-bullet">
-                            <span class="meta"></span> <span class="date">{{ .Key }}</span>
+                            <span class="date">{{ .Key }}</span>
                         </li>
                         {{ range .Pages.ByPublishDate }}
                             {{ partial "li.html" . }}
