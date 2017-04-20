@@ -2,6 +2,9 @@
 - id: latestPosts
   translation: "Latest Posts"
 
+- id: blogHeading
+  translation: "Blog"
+
 - id: pageNotFound
   translation: "Sorry, this page does not exist."
 
