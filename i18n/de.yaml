@@ -2,6 +2,9 @@
 - id: latestPosts
   translation: "Die aktuelsten Artikeln"
 
+- id: blogHeading
+  translation: "Blog"
+
 - id: pageNotFound
   translation: "Sorry, this page does not exist."
 
@@ -11,7 +14,7 @@
 - id: readingTime
   translation:
     one: "Eine Minute Lesezeit"
-    other: "{{ .Count }} minutes read"
+    other: "{{ .Count }} Minuten Lesezeit"
 
 - id: backToPosts
   translation: "Zurück zum Artikelnverzeichnis"
