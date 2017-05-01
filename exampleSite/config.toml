@@ -52,6 +52,7 @@ linkedin               = "//linkedin.com/in/you"
 noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
 selfintro              = ""                            # appears in the site header when set to a non-empty string
 twitter                = "//twitter.com/you"
+mastodon               = "//example.com/@you"
 # highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
 
 avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
