@@ -54,6 +54,7 @@ selfintro              = ""                            # appears in the site hea
 twitter                = "//twitter.com/you"
 mastodon               = "//example.com/@you"
 # highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
+# highlightjsStyle     = "darcula"
 
 avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
 # gravatar             = ""                # do not use in the same time as avatar
