@@ -5,6 +5,7 @@ contentdir          = "content"
 languageCode        = "en-US"
 layoutdir           = "layouts"
 publishdir          = "public"
+theme               = "cocoa"
 author              = "Arthur Dent"
 title               = "Arthur Dent"
 pygmentsuseclasses  = true
