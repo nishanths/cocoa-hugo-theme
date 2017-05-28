@@ -670,10 +670,15 @@ section.main .content .markdown dd {
   margin-bottom: .5rem;
 }
 section.main .content .markdown ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-bottom: 1.25rem;
+}
+section.main .content .markdown ol {
+  list-style-type: decimal;
   margin-bottom: 1.25rem;
 }
 section.main .content .markdown li {
-  list-style-type: disc;
   list-style-position: inside;
 }
 section.main .content .markdown em {
