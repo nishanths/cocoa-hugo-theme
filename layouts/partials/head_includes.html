@@ -41,14 +41,19 @@
 
 {{ end }}
 
-<!-- Icon -->
-<link rel="shortcut icon"
+<!-- favicon for legacy Internet Explorer -->
+{{ `<!--[if IE]><link rel="shortcut icon"` | safeHTML }}
 {{ if .Site.Params.faviconfile }}
     href="/{{ .Site.Params.faviconfile }}"
 {{ else }}
     href="/img/favicon.ico"
 {{ end }}
->
+{{ `><![endif]-->` | safeHTML }}
+
+<!-- favicon for modern browser -->
+{{ if .Site.Params.favicon }}
+<link rel="icon" href="/{{ .Site.Params.favicon }}">
+{{ end }}
 
 <!-- RSS -->
 {{ if .RSSLink }}
