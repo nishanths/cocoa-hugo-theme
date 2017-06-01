@@ -1,12 +1,12 @@
 ---
 - id: latestPosts
-  translation: "Die aktuelsten Artikeln"
+  translation: "Die aktuellsten Artikel"
 
 - id: blogHeading
   translation: "Blog"
 
 - id: pageNotFound
-  translation: "Sorry, this page does not exist."
+  translation: "Entschuldigung, diese Seite existiert nicht."
 
 - id: visitHomePage
   translation: "Startseite besuchen"
@@ -17,4 +17,4 @@
     other: "{{ .Count }} Minuten Lesezeit"
 
 - id: backToPosts
-  translation: "Zurück zum Artikelnverzeichnis"
+  translation: "Zurück zum Artikelverzeichnis"
