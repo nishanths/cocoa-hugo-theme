@@ -48,6 +48,7 @@ extracssfiles          = [ "/css/override.css" ]       # In your `static` direct
 faviconfile            = "img/leaf.ico"
 github                 = "//github.com/you"
 highlightjs            = true
+instagram              = "//instagram.com/you"
 lang                   = "en"
 linkedin               = "//linkedin.com/in/you"
 noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
