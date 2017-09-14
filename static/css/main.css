@@ -674,7 +674,8 @@ section.main .content .markdown ul {
 }
 section.main .content .markdown li {
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
+  margin-left: 1em;
 }
 section.main .content .markdown em {
   font-style: italic;
