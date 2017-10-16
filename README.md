@@ -32,7 +32,8 @@ Most features are optional and can be individually enabled/disabled in your [`co
 
 ### Switch between languages
 
-![german screenshot](https://raw.githubusercontent.com/lpancescu/cocoa-hugo-theme/master/scr.de-fullpage.png) ![english screenshot](https://raw.githubusercontent.com/lpancescu/cocoa-hugo-theme/master/scr.en-fullpage.png)
+<img src="https://raw.githubusercontent.com/lpancescu/cocoa-hugo-theme/master/images/scr.de-fullpage.png" title="german screenshot" width="300">
+<img src="https://raw.githubusercontent.com/lpancescu/cocoa-hugo-theme/master/images/scr.en-fullpage.png" title="english screenshot" width="300">
 
 ## Table of Contents
 
