@@ -672,8 +672,13 @@ section.main .content .markdown dd {
 section.main .content .markdown ul {
   margin-bottom: 1.25rem;
 }
-section.main .content .markdown li {
+section.main .content .markdown ul li {
   list-style-type: disc;
+}
+section.main .content .markdown ol li {
+  list-style-type: decimal;
+}
+section.main .content .markdown li {
   list-style-position: outside;
   margin-left: 1em;
 }
