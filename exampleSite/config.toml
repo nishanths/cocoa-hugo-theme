@@ -60,6 +60,13 @@ mastodon               = "//example.com/@you"
 piwik				   = false                         # If true, Piwik integration is enabled
 # piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash
 # piwik_id			   = 2                             # Id of your site in Piwik
+gitalk                 = false
+# if gitalk is true, the following params should be set. These parameters could be retrieved from github OAuth
+gitalk_clientID        = "your client id"
+gitalk_clientSecret    = "your client secret"
+gitalk_repo            = "your repo url"
+gitalk_owner           = "the owner of this repo"
+gitalk_admin           = ['a', 'list', 'of', 'administrator']
 
 avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
 # gravatar             = ""                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar

@@ -30,18 +30,18 @@
             </div>
             {{ if .Site.Params.gitalk }}
             <div id="gitalk-container"></div>
-              <script type="text/javascript">
-                const gitalk = new Gitalk({
-                    clientID: {{ .Site.Params.gitalk_clientID }},
-                    clientSecret: {{ .Site.Params.gitalk_clientSecret }},
-                    repo: {{ .Site.Params.gitalk_repo }},
-                    owner: {{ .Site.Params.gitalk_owner }},
-                    admin: {{ .Site.Params.gitalk_admin }},
-                    // facebook-like distraction free mode
-                    distractionFreeMode: true
-                  })
-                  gitalk.render('gitalk-container')
-              </script>
+            <script type="text/javascript">
+              const gitalk = new Gitalk({
+                  clientID: "{{ .Site.Params.gitalk_clientID }}",
+                  clientSecret: "{{ .Site.Params.gitalk_clientSecret }}",
+                  repo: "{{ .Site.Params.gitalk_repo }}",
+                  owner: "{{ .Site.Params.gitalk_owner }}",
+                  admin: "{{ .Site.Params.gitalk_admin }}",
+                  // facebook-like distraction free mode
+                  distractionFreeMode: true
+                })
+                gitalk.render('gitalk-container')
+            </script>
             {{ end }}
         </div>
     </div>
