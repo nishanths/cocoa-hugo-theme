@@ -48,6 +48,7 @@ faviconfile            = "img/leaf.ico"
 github                 = "//github.com/you"
 highlightjs            = true
 instagram              = "//instagram.com/you"
+px500                 = "//500px.com/username"
 lang                   = "en"
 linkedin               = "//linkedin.com/in/you"
 noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
