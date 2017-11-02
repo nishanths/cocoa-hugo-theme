@@ -2,7 +2,7 @@
 
 A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typography. The primary typefaces are Open Sans, Raleway, and Ubuntu Mono.
 
-[__Demo__](http://themes.gohugo.io/theme/cocoa/)
+[__Demo__](http://themes.gohugo.io/theme/cocoa/) / [__Screenshots__](https://github.com/nishanths/cocoa-hugo-theme/blob/master/screenshots.md)
 
 #### Features
 
@@ -11,35 +11,22 @@ A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/
 * Suited for blogging and personal webpages
 * Disqus support
 * Built-in 404 page
-* Syntax highlighting (by @andy4thehuynh)
+* Syntax highlighting with highlightjs (by @andy4thehuynh)
 * Gravatar/static profile image (by @remeh)
 * RSS feed and icon (by @mvrilo)
-* Optimized SVG icons (by @robinst)
+* Optimized SVG icons (by @robinst) for Instagram, 500px, and more.
 * Cache busting
 * Google Analytics
-* Piwik
+* Piwik and Gitalk support
 ```
 
 Most features are optional and can be individually enabled/disabled in your [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml).
-
-## Screenshots
-
-<img src="https://raw.githubusercontent.com/nishanths/cocoa-hugo-theme/master/images/tn.png" width="800">
-
-<img src="http://i.imgur.com/jdstF9j.png" width="800">
-
-<img src="https://i.imgur.com/5jI8kEU.png" width="400">
-
-### Switch between languages
-
-<img src="https://raw.githubusercontent.com/nishanths/cocoa-hugo-theme/master/images/scr.de-fullpage.png" title="german screenshot" width="300"> <img src="https://raw.githubusercontent.com/nishanths/cocoa-hugo-theme/master/images/scr.en-fullpage.png" title="english screenshot" width="300">
 
 ## Table of Contents
 
 * [Quick start](#quick-start)
 * [Usage](#usage)
 * [Development](#development)
-* [Changelog](#changelog)
 * [License](#license)
 
 ## Quick start 
@@ -85,12 +72,6 @@ hugo new fixed/about.md
 This theme is built and improved upon by open source [contributions](https://github.com/nishanths/cocoa-hugo-theme/graphs/contributors). Pull requests, bug fixes, and new features are welcome! 
 
 If you're contributing CSS changes, please see the README at [`dev/`](dev).
-
-
-## Changelog
-
-See [Changelog](https://github.com/nishanths/cocoa-hugo-theme/wiki/Changelog) in the wiki.
-
 
 ## License
 
