@@ -47,7 +47,7 @@ extracssfiles          = [ "/css/override.css" ]       # In your `static` direct
 faviconfile            = "img/leaf.ico"
 github                 = "//github.com/you"
 instagram              = "//instagram.com/you"
-px500                 = "//500px.com/username"
+px500                  = "//500px.com/username"
 lang                   = "en"
 linkedin               = "//linkedin.com/in/you"
 noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
@@ -59,9 +59,9 @@ highlightjs            = true
 # highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
 # highlightjsStyle     = "darcula"
 
-piwik				   = false                         # If true, Piwik integration is enabled
+piwik                  = false                         # If true, Piwik integration is enabled
 # piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash
-# piwik_id			   = 2                             # Id of your site in Piwik
+# piwik_id             = 2                             # Id of your site in Piwik
 
 gitalk                 = false
 # if gitalk is true, the following params should be set. These parameters could be retrieved from github OAuth
