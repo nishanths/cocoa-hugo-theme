@@ -54,3 +54,10 @@
 {{ if .RSSLink }}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
+
+<!-- gitalk -->
+{{ if .Site.Params.gitalk }}
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+{{ end }}
+<!-- End gitalk Code -->
