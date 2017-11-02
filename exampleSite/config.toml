@@ -46,7 +46,6 @@ email                  = "you@example.space"
 extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
 faviconfile            = "img/leaf.ico"
 github                 = "//github.com/you"
-highlightjs            = true
 instagram              = "//instagram.com/you"
 px500                 = "//500px.com/username"
 lang                   = "en"
@@ -55,12 +54,15 @@ noshowreadtime         = false                         # if true, don't show "<x
 selfintro              = ""                            # appears in the site header when set to a non-empty string
 twitter                = "//twitter.com/you"
 mastodon               = "//example.com/@you"
+
+highlightjs            = true
 # highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
 # highlightjsStyle     = "darcula"
 
 piwik				   = false                         # If true, Piwik integration is enabled
 # piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash
 # piwik_id			   = 2                             # Id of your site in Piwik
+
 gitalk                 = false
 # if gitalk is true, the following params should be set. These parameters could be retrieved from github OAuth
 gitalk_clientID        = "your client id"
