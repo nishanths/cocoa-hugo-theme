@@ -65,6 +65,10 @@
         {{ if .Site.Params.instagram }}
             <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener"><img class="icon" src="/img/instagram.svg" alt="instagram" /></a>
         {{ end }}
+            
+        {{ if .Site.Params.px500 }}
+        <a href="{{ .Site.Params.px500 }}" target="_blank" rel="noopener"><img class="icon" src="/img/500px.svg" alt="500px" /></a>
+        {{ end }}
 
         {{ if .Site.Params.soundcloud }}
             <a href="{{ .Site.Params.soundcloud }}" target="_blank" rel="noopener"><img class="icon" src="/img/soundcloud.svg" alt="soundcloud" /></a>
