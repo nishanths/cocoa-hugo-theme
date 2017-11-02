@@ -5,7 +5,7 @@ description = "Consistent, responsive theme with clean typography"
 homepage    = "https://github.com/nishanths/cocoa-hugo-theme"
 tags        = ["open-sans", "minimal", "clean", "svg", "comments"]
 features    = ["blog", "responsive", "404", "icons", "disqus", "metadata"]
-min_version = 0.18
+min_version = 0.26
 
 [author]
   name      = "Nishanth Shanmugham"
