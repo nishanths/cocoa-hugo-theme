@@ -50,6 +50,10 @@
             <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener"><img class="icon" src="/img/twitter.svg" alt="twitter" /></a>
         {{ end }}
 
+        {{ if .Site.Params.calendar }}
+            <a href="{{ .Site.Params.calendar }}" target="_blank" rel="noopener"><img class="icon" src="/img/calendar.svg" alt="calendar" /></a>
+        {{ end }}
+
         {{ if .Site.Params.mastodon }}
             <a href="{{ .Site.Params.mastodon }}" target="_blank" rel="noopener"><img class="icon" src="/img/mastodon.svg" alt="mastodon" /></a>
         {{ end }}
