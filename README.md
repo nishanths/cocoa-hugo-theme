@@ -2,7 +2,7 @@
 
 A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typography. The primary typefaces are Open Sans, Raleway, and Ubuntu Mono.
 
-[__Demo__](http://themes.gohugo.io/theme/cocoa/) / [__Screenshots__](https://github.com/nishanths/cocoa-hugo-theme/blob/master/screenshots.md)
+[__Demo__](https://themes.gohugo.io/theme/cocoa/) / [__Screenshots__](https://github.com/nishanths/cocoa-hugo-theme/blob/master/screenshots.md)
 
 #### Features
 
