@@ -26,7 +26,6 @@
   box-sizing: border-box;
 }
 a,
-a:visited,
 a:focus,
 a:active {
   text-decoration: none;
@@ -183,9 +182,6 @@ section.header .name {
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   color: #333;
   text-transform: uppercase;
   color: #555;
@@ -195,9 +191,6 @@ section.header h3.self-intro {
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   color: #333;
   font-weight: 400;
   color: #555;
@@ -235,6 +228,7 @@ section.header nav ul a {
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 section.header nav ul a:hover {
   color: #111;
@@ -296,6 +290,7 @@ section.icons .content a {
   -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 section.icons .content a:first-child {
   margin-left: 0;
@@ -359,9 +354,6 @@ section.main .content .title-container .initials {
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   color: #333;
   text-transform: uppercase;
   color: #666;
@@ -372,6 +364,7 @@ section.main .content .title-container .initials a {
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 section.main .content .title-container .initials a:hover {
   color: #333;
@@ -381,9 +374,6 @@ section.main .content .page-heading {
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   color: #333;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -506,9 +496,6 @@ section.main .container .content .no-bullet .date {
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   color: #333;
   color: #666 !important;
   font-style: normal;
@@ -562,6 +549,7 @@ a {
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 a:hover {
   color: #2a6496;
@@ -591,9 +579,6 @@ section.main .content .markdown h6 {
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   color: #333;
   text-transform: none;
   margin-top: 1.75rem;
