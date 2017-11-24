@@ -23,18 +23,18 @@
 {{ if .Site.Params.cachebuster }}
 
     {{ $t := now }}
-    <link rel="stylesheet" href="/css/reset.css?t={{$t}}">
-    <link rel="stylesheet" href="/css/pygments.css?t={{$t}}">
-    <link rel="stylesheet" href="/css/main.css?t={{$t}}">
+    <link rel="stylesheet" href="{{ .Site.BaseURL  }}css/reset.css?t={{$t}}">
+    <link rel="stylesheet" href="{{ .Site.BaseURL  }}css/pygments.css?t={{$t}}">
+    <link rel="stylesheet" href="{{ .Site.BaseURL  }}css/main.css?t={{$t}}">
     {{range .Site.Params.extracssfiles}}
         <link rel="stylesheet" href="{{.}}?t={{$t}}">
     {{ end }}
 
 {{ else }}
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/pygments.css">
-    <link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL  }}css/reset.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL  }}css/pygments.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL  }}css/main.css">
     {{range .Site.Params.extracssfiles}}
         <link rel="stylesheet" href="{{.}}">
     {{end}}
@@ -46,7 +46,7 @@
 {{ if .Site.Params.faviconfile }}
     href="/{{ .Site.Params.faviconfile }}"
 {{ else }}
-    href="/img/favicon.ico"
+    href="{{ .Site.BaseURL  }}img/favicon.ico"
 {{ end }}
 >
 
