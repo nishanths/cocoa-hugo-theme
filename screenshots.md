@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/nishanths/cocoa-hugo-theme/master/images/tn.png" width="800">
 
-<img src="http://i.imgur.com/jdstF9j.png" width="800">
+<img src="https://i.imgur.com/jdstF9j.png" width="800">
 
 ### Smaller screen width
 
