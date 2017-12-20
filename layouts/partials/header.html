@@ -81,7 +81,7 @@
             <a href="mailto:{{ .Site.Params.email }}"><img class="icon" src="/img/email.svg" alt="email" /></a>
         {{ end }}
 
-        {{ if and .Site.Params.includerss .RSSLink }}
+        {{ if and .Site.Params.include_rss .RSSLink }}
             <a href="{{ .RSSLink }}"><img class="icon" src="/img/rss.svg" alt="rss" /></a>
         {{ end }}
 
