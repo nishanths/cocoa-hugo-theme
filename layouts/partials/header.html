@@ -9,7 +9,7 @@
     <div class="container">
         <div class="content">
             {{ if .Site.Params.gravatar }}
-            <a {{ printf "href=%q" ("/" | relLangURL) | safeHTMLAttr }}><img class="avatar" src="https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=50" rcset="https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=100 2x, https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=150 3x, https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=200 4x"></a>
+            <a href="{{ .RelPermalink }}"><img class="avatar" src="https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=50" rcset="https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=100 2x, https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=150 3x, https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=200 4x"></a>
             {{ else if .Site.Params.avatar }}
                 {{ $.Scratch.Add "srcset" (slice (printf "%s 1x" (.Site.Params.avatar|absURL))) }}
                 {{ $directory := replaceRE "^(.*)/[^/]+$" "$1" .Site.Params.avatar }}
@@ -21,9 +21,9 @@
                     {{ end }}
                 {{ end }}
                 {{ $srcset := delimit ($.Scratch.Get "srcset") "," }}
-                <a {{ printf "href=%q" ("/" | relLangURL) | safeHTMLAttr }}><img class="avatar" src="/{{ .Site.Params.avatar }}" {{ printf "srcset=%q" $srcset | safeHTMLAttr }}></a>
+                <a href="{{ .RelPermalink }}"><img class="avatar" src="/{{ .Site.Params.avatar }}" {{ printf "srcset=%q" $srcset | safeHTMLAttr }}></a>
             {{ end }}
-            <a href="/"><div class="name">{{ .Site.Params.author }}</div></a>
+            <a href="{{ .RelPermalink }}"><div class="name">{{ .Site.Params.author }}</div></a>
             {{ if .Site.Params.selfintro }}
               <h3 class="self-intro">{{ .Site.Params.selfintro }}</h3>
             {{ end }}
@@ -68,7 +68,7 @@
         {{ if .Site.Params.instagram }}
             <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener"><img class="icon" src="/img/instagram.svg" alt="instagram" /></a>
         {{ end }}
-            
+
         {{ if .Site.Params.px500 }}
             <a href="{{ .Site.Params.px500 }}" target="_blank" rel="noopener"><img class="icon" src="/img/500px.svg" alt="500px" /></a>
         {{ end }}
