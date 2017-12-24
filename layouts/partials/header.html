@@ -23,7 +23,7 @@
                 {{ $srcset := delimit ($.Scratch.Get "srcset") "," }}
                 <a {{ printf "href=%q" ("/" | relLangURL) | safeHTMLAttr }}><img class="avatar" src="/{{ .Site.Params.avatar }}" {{ printf "srcset=%q" $srcset | safeHTMLAttr }}></a>
             {{ end }}
-            <a href="/"><div class="name">{{ .Site.Params.author }}</div></a>
+            <a {{ printf "href=%q" ("/" | relLangURL) | safeHTMLAttr }}><div class="name">{{ .Site.Params.author }}</div></a>
             {{ if .Site.Params.selfintro }}
               <h3 class="self-intro">{{ .Site.Params.selfintro }}</h3>
             {{ end }}
@@ -68,7 +68,7 @@
         {{ if .Site.Params.instagram }}
             <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener"><img class="icon" src="/img/instagram.svg" alt="instagram" /></a>
         {{ end }}
-            
+
         {{ if .Site.Params.px500 }}
             <a href="{{ .Site.Params.px500 }}" target="_blank" rel="noopener"><img class="icon" src="/img/500px.svg" alt="500px" /></a>
         {{ end }}
