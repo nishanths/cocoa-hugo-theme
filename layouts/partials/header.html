@@ -49,6 +49,10 @@
             <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener"><img class="icon" src="/img/twitter.svg" alt="twitter" /></a>
         {{ end }}
 
+	{{ if .Site.Params.keybase }}
+            <a href="{{ .Site.Params.keybase }}" target="_blank" rel="noopener"><img class="icon" src="/img/keybase.svg" alt="keybase" /></a>
+	{{ end }}
+
         {{ if .Site.Params.calendar }}
             <a href="{{ .Site.Params.calendar }}" target="_blank" rel="noopener"><img class="icon" src="/img/calendar.svg" alt="calendar" /></a>
         {{ end }}
