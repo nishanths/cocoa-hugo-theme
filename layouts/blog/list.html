@@ -15,7 +15,7 @@
                     {{ $.Scratch.Set "datespec" "2006" }}
                 {{ end }}
                 {{ if not ($.Scratch.Get "datespec") }}
-                    {{ range .Data.Pages.ByPublishDate }}
+                    {{ range .Data.Pages.ByPublishDate.Reverse }}
                     {{ partial "li.html" . }}
                     {{ end }}
                 {{ else }}
@@ -23,7 +23,7 @@
                         <li class="post-item no-bullet">
                             <span class="date">{{ .Key }}</span>
                         </li>
-                        {{ range .Pages.ByPublishDate }}
+                        {{ range .Pages.ByPublishDate.Reverse }}
                             {{ partial "li.html" . }}
                         {{ end }}
                     {{ end }}
