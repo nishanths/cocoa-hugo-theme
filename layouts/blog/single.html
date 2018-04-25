@@ -22,7 +22,16 @@
             <div class="markdown">
                 {{ .Content }}
                 <br>
-		<p class="back-to-posts"><a href="/blog/">{{ i18n "backToPosts" }}</a></p>
+                {{ if .Params.tags }}
+                  <div class="tags">
+                    <strong>Tags:</strong>
+                  {{range .Params.tags}}
+                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                  {{end}}
+                  </div>
+                  <br />
+                {{end}}
+                <p class="back-to-posts"><a href="/blog/">{{ i18n "backToPosts" }}</a></p>
             </div>
             <br>
             <div class="disqus">
