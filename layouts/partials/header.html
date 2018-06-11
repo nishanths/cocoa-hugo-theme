@@ -45,6 +45,10 @@
             <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener"><img class="icon" src="/img/github.svg" alt="github" /></a>
         {{ end }}
 
+        {{ if .Site.Params.gitlab }}
+            <a href="{{ .Site.Params.gitlab }}" target="_blank" rel="noopener"><img class="icon" src="/img/gitlab.svg" alt="gitlab" /></a>
+        {{ end }}
+
         {{ if .Site.Params.twitter }}
             <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener"><img class="icon" src="/img/twitter.svg" alt="twitter" /></a>
         {{ end }}
