@@ -1,17 +1,6 @@
 <!-- Google Analytics -->
 {{ template "_internal/google_analytics_async.html" . }}
 
-{{ if .Site.Params.highlightjs }}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
-  {{ range .Site.Params.highlightjslanguages }}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/{{.}}.min.js"></script>
-  {{ end }}
-
-  <script type="text/javascript">
-    hljs.initHighlightingOnLoad();
-  </script>
-{{ end }}
-
 {{ if .Site.Params.piwik }}
 <!-- Piwik -->
 <script type="text/javascript">

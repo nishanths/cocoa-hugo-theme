@@ -25,7 +25,6 @@ Commit both `dev/less` and `static/css`.
 |File                 | Description                          |
 |---                  |---                                   |
 |reset.less           | CSS reset script                     |
-|pygments.less        | Syntax highlighting                  |
 |main.less            | Main file that @includes files below |
 |site.less            | Core styles                          |
 |markdown.less        | Styles for rendered Markdown content |
