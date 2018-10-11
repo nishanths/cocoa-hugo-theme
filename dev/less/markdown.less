@@ -41,13 +41,13 @@ h4, h5, h6 {
 code, pre {
     font-family: @monospace-font-stack;
     font-size: 1rem;
-    background-color: @background-gray;
 }
 
-code {
+code:not(.hljs) {
     /* enclosed by single backtick (`) */
     padding: .15em .5em;
     border-radius: 2px;
+    background-color: @background-gray;
 }
 
 pre {
@@ -55,7 +55,6 @@ pre {
     display: block;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    padding: 1rem;
     line-height: 1.5em;
     white-space: pre;
     white-space: pre-wrap;
@@ -65,7 +64,7 @@ pre {
 
 pre code {
     /* enclosed by 3 backticks (```) */
-    padding: 0;
+    padding: 1rem;
     font-size: 1rem;
 }
 
