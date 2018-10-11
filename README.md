@@ -10,6 +10,7 @@ A consistent and responsive [Hugo](https://gohugo.io) [theme](https://github.com
 * Suited for blogging and personal webpages
 * Disqus support
 * Built-in 404 page
+* Compatible with Hugo's Chroma syntax highlighting
 * Gravatar/static profile image (by @remeh)
 * RSS feed and icon (by @mvrilo)
 * Optimized SVG icons (by @robinst) for Instagram, 500px, and more

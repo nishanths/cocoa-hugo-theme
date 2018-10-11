@@ -58,10 +58,6 @@ twitter                = "//twitter.com/you"
 mastodon               = "//example.com/@you"
 telegram               = "//t.me/you"
 
-highlightjs            = true
-# highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
-# highlightjsStyle     = "darcula"
-
 piwik                  = false                         # If true, Piwik integration is enabled
 # piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash
 # piwik_id             = 2                             # Id of your site in Piwik
