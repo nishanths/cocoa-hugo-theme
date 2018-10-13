@@ -53,9 +53,9 @@
             <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener"><img class="icon" src="/img/twitter.svg" alt="twitter" /></a>
         {{ end }}
 
-	{{ if .Site.Params.keybase }}
+        {{ if .Site.Params.keybase }}
             <a href="{{ .Site.Params.keybase }}" target="_blank" rel="noopener"><img class="icon" src="/img/keybase.svg" alt="keybase" /></a>
-	{{ end }}
+        {{ end }}
 
         {{ if .Site.Params.calendar }}
             <a href="{{ .Site.Params.calendar }}" target="_blank" rel="noopener"><img class="icon" src="/img/calendar.svg" alt="calendar" /></a>
@@ -93,8 +93,8 @@
             <a href="mailto:{{ .Site.Params.email }}"><img class="icon" src="/img/email.svg" alt="email" /></a>
         {{ end }}
 
-        {{ if and .Site.Params.include_rss .RSSLink }}
-            <a href="{{ .RSSLink }}"><img class="icon" src="/img/rss.svg" alt="rss" /></a>
+        {{ if and .Site.Params.include_rss .Site.RSSLink }}
+            <a href="{{ .Site.RSSLink }}"><img class="icon" src="/img/rss.svg" alt="rss" /></a>
         {{ end }}
 
         {{ if and .Site.Params.i18n_flags .IsTranslated }}
