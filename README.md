@@ -1,5 +1,9 @@
 # Cocoa
 
+__Update: August 2020:__ I will be actively maintaining this theme again, reviewing pull requests, and updating the theme to align with current Hugo practices in the next 2 months. I apologize for any lack of activity and response earlier.
+
+---
+
 A consistent and responsive [Hugo](https://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typography. The primary typefaces are Open Sans, Raleway, and Ubuntu Mono.
 
 [__Demo__](https://themes.gohugo.io/theme/cocoa/) / [__Screenshots__](https://github.com/nishanths/cocoa-hugo-theme/blob/master/screenshots.md)
