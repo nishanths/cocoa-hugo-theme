@@ -569,6 +569,15 @@ img.profile {
 .page-heading a {
   color: #333;
 }
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
 section.main .content .markdown h1,
 section.main .content .markdown h2,
 section.main .content .markdown h3,
