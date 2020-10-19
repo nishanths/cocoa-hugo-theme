@@ -1,0 +1,20 @@
+---
+- id: latestPosts
+  translation: "最新文章"
+
+- id: blogHeading
+  translation: "部落格"
+
+- id: pageNotFound
+  translation: "抱歉，找不到所搜尋的頁面"
+
+- id: visitHomePage
+  translation: "瀏覽首頁"
+
+- id: readingTime
+  translation:
+    one: "閱讀時間 1 分鐘"
+    other: "閱讀時間 {{ .Count }} 分鐘"
+
+- id: backToPosts
+  translation: "回到文章列表"
