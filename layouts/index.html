@@ -20,7 +20,7 @@
                     {{ if gt $totalpostscount $latestpostscount }}
                         {{ range where .Site.Menus.main "Identifier" "blog" }}
                             <li class="post-item no-bullet">
-                                <a id="see-more" {{ printf "href=%q " .URL | safeHTMLAttr }}><span>See more&hellip;</span></a>
+                                <a id="see-more" {{ printf "href=%q " .RelPermalink | safeHTMLAttr }}><span>See more&hellip;</span></a>
                             </li>
                         {{ end }}
                     {{ end }}

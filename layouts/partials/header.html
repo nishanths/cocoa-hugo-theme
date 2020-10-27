@@ -30,6 +30,7 @@
             <nav>
                 <ul>
                     {{ range .Site.Menus.main }}
+                        {{/* TODO: use relLangURL instead of absLangURL? */}}
                         <li class="nav-{{ .Identifier }}"><a href="{{ .URL | absLangURL }}">{{ .Pre }}<span>{{ .Name }}</span></a></li>
                     {{ end }}
                 </ul>
