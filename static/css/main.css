@@ -603,12 +603,14 @@ section.main .content .markdown h6 {
   letter-spacing: none;
 }
 section.main .content .markdown code,
-section.main .content .markdown pre {
+section.main .content .markdown pre,
+section.main .content p .literal {
   font-family: 'Ubuntu Mono', 'Menlo', monospace;
   font-size: 1rem;
   background-color: #f7f7f7;
 }
-section.main .content .markdown code {
+section.main .content .markdown code,
+section.main .content p .literal {
   /* enclosed by single backtick (`) */
   padding: .15em .5em;
   border-radius: 2px;
@@ -624,6 +626,8 @@ section.main .content .markdown pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
+  overflow-x: auto;
+  white-space: pre;
 }
 section.main .content .markdown pre code {
   /* enclosed by 3 backticks (```) */
