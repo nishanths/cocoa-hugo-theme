@@ -6,7 +6,7 @@ __Update: August 2020:__ I will be actively maintaining this theme again, review
 
 A consistent and responsive [Hugo](https://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typography. The primary typefaces are Open Sans, Raleway, and Ubuntu Mono.
 
-[__Demo__](https://themes.gohugo.io/theme/cocoa/) / [__Screenshots__](https://github.com/nishanths/cocoa-hugo-theme/blob/master/screenshots.md)
+[__Demo__](https://cocoa-hugo-theme-demo.netlify.app/) / [__Screenshots__](https://github.com/nishanths/cocoa-hugo-theme/blob/master/screenshots.md)
 
 ## Features
 
