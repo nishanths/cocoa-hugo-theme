@@ -60,6 +60,8 @@ telegram               = "//t.me/you"
 highlightjs            = true
 # highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
 # highlightjsStyle     = "darcula"
+# highlightjs_url        = "/js/highlight.min.js"        # relative path to your self hosted highlight.js file 
+# highlightjs_css_url    = "css/default.min.css"         # relative path to your self hosted css config for highlight.js
 
 piwik                  = false                         # If true, Piwik integration is enabled
 # piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash

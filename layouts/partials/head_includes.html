@@ -13,7 +13,11 @@
 <!-- CSS -->
 
 {{ if .Site.Params.highlightjs }}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/{{ .Site.Params.highlightjsStyle | default "default" }}.min.css">
+  {{ if .Site.Params.highlightjs_css_url }}
+    <link rel="stylesheet" href="{{ .Site.Params.highlightjs_css_url }}">
+  {{ else }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/{{ .Site.Params.highlightjsStyle | default "default" }}.min.css">
+  {{ end }}
 {{ end }}
 
 <!-- Fonts and icon CSS -->
