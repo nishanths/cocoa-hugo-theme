@@ -93,8 +93,12 @@
             <a href="mailto:{{ .Site.Params.email }}"><img class="icon" src="/img/email.svg" alt="email" /></a>
         {{ end }}
 
-        {{ if and .Site.Params.include_rss .RSSLink }}
-            <a href="{{ .RSSLink }}"><img class="icon" src="/img/rss.svg" alt="rss" /></a>
+        {{ $RSSLink := "" }}
+        {{ with .OutputFormats.Get "RSS" }}
+        {{ $RSSLink = .RelPermalink }}
+        {{ end }}
+        {{ if and .Site.Params.include_rss $RSSLink }}
+            <a href="{{ $RSSLink }}"><img class="icon" src="/img/rss.svg" alt="rss" /></a>
         {{ end }}
 
         {{ if and .Site.Params.i18n_flags .IsTranslated }}
