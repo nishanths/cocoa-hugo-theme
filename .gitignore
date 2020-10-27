@@ -4,3 +4,6 @@
 
 # exampleSite
 exampleSite/public
+
+*.swp
+tags
