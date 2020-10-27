@@ -623,11 +623,9 @@ section.main .content .markdown pre {
   padding: 1rem;
   line-height: 1.5em;
   white-space: pre;
-  white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
   overflow-x: auto;
-  white-space: pre;
 }
 section.main .content .markdown pre code {
   /* enclosed by 3 backticks (```) */
