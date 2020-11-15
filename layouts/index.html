@@ -7,25 +7,34 @@
                     {{ .Content }}
                 </div>
             {{ end }}
-            {{ $totalpostscount := len (where .Data.Pages "Section" "blog") }}
-            {{ $latestpostscount := .Site.Params.latestpostscount | default $totalpostscount }}
-            {{ if gt $latestpostscount 0 }}
-                <div class="page-heading">{{ i18n "latestPosts" }}</div>
+
+            <div class="page-heading">{{ i18n "latestPosts" }}</div>
+            <div style="padding-bottom:20px;">
+                {{ $pag := .Paginate (where site.RegularPages "Type" "in" "blog") .Site.Params.Paginate }}
                 <ul>
-                    {{ range (first $latestpostscount (where .Data.Pages.ByPublishDate.Reverse "Section" "blog")) }}
-                        {{ range .Pages }}
-                            {{ partial "li.html" . }}
-                        {{ end }}
+                {{ range $pag.Pages }}
+                    {{ partial "li.html" . }}
+                {{ end }}
+                </ul>
+            </div>
+
+            {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+            <div class="row mt-5">
+                <ul>
+                    {{ if .Paginator.HasPrev }}
+                        <li class="previous">
+                        <a href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}/">&larr; {{ i18n "newerPosts" }}</a>
+                        </li>
                     {{ end }}
-                    {{ if gt $totalpostscount $latestpostscount }}
-                        {{ range where .Site.Menus.main "Identifier" "blog" }}
-                            <li class="post-item no-bullet">
-                                <a id="see-more" {{ printf "href=%q " .RelPermalink | safeHTMLAttr }}><span>See more&hellip;</span></a>
-                            </li>
-                        {{ end }}
+                    {{ if .Paginator.HasNext }}
+                    <li class="next">
+                        <a href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}/">{{ i18n "olderPosts" }} &rarr;</a>
+                    </li>
                     {{ end }}
                 </ul>
+            </div>
             {{ end }}
+
         </div>
     </div>
 </section>

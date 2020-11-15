@@ -18,3 +18,9 @@
 
 - id: backToPosts
   translation: "Back to posts"
+
+- id: newerPosts
+  translation: "Newer"
+
+- id: olderPosts
+  translation: "Older"
