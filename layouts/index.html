@@ -24,14 +24,14 @@
                 <div>
                     <ul>
                         {{ if .Paginator.HasPrev }}
-                            <li class="previous">
-                            <a href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}/">&larr; {{ i18n "newerPosts" }}</a>
+                            <li style="float:left;">
+                                <a href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}/">&larr; {{ i18n "newerPosts" }}</a>
                             </li>
                         {{ end }}
                         {{ if .Paginator.HasNext }}
-                        <li class="next">
-                            <a href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}/">{{ i18n "olderPosts" }} &rarr;</a>
-                        </li>
+                            <li style="float:right;">
+                                <a href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}/">{{ i18n "olderPosts" }} &rarr;</a>
+                            </li>
                         {{ end }}
                     </ul>
                 </div>
