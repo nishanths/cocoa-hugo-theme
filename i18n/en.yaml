@@ -24,3 +24,6 @@
 
 - id: olderPosts
   translation: "Older"
+
+- id: seeMore
+  translation: "See More"
