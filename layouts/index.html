@@ -7,24 +7,49 @@
                     {{ .Content }}
                 </div>
             {{ end }}
-            {{ $totalpostscount := len (where .Data.Pages "Section" "blog") }}
-            {{ $latestpostscount := .Site.Params.latestpostscount | default $totalpostscount }}
-            {{ if gt $latestpostscount 0 }}
-                <div class="page-heading">{{ i18n "latestPosts" }}</div>
-                <ul>
-                    {{ range (first $latestpostscount (where .Data.Pages.ByPublishDate.Reverse "Section" "blog")) }}
-                        {{ range .Pages }}
-                            {{ partial "li.html" . }}
-                        {{ end }}
+
+            <div class="page-heading">{{ i18n "latestPosts" }}</div>
+
+            {{ if isset .Site.Params "paginate" }}
+                <div style="padding-bottom:20px;">
+                    {{ $pag := .Paginate (where site.RegularPages "Type" "in" "blog") .Site.Params.Paginate }}
+                    <ul>
+                    {{ range $pag.Pages }}
+                        {{ partial "li.html" . }}
                     {{ end }}
-                    {{ if gt $totalpostscount $latestpostscount }}
-                        {{ range where .Site.Menus.main "Identifier" "blog" }}
-                            <li class="post-item no-bullet">
-                                <a id="see-more" {{ printf "href=%q " .RelPermalink | safeHTMLAttr }}><span>See more&hellip;</span></a>
+                    </ul>
+                </div>
+
+                {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+                <div>
+                    <ul>
+                        {{ if .Paginator.HasPrev }}
+                            <li style="float:left;">
+                                <a href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}/">&larr; {{ i18n "newerPosts" }}</a>
                             </li>
                         {{ end }}
-                    {{ end }}
-                </ul>
+                        {{ if .Paginator.HasNext }}
+                            <li style="float:right;">
+                                <a href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}/">{{ i18n "olderPosts" }} &rarr;</a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            {{ else }}
+                {{ $allPages := where site.RegularPages "Type" "in" "blog" }}
+                {{ $totalpostscount := len $allPages }}
+                {{ $latestpostscount := .Site.Params.latestpostscount | default $totalpostscount }}
+                {{ $paginator := .Paginate $allPages $latestpostscount }}
+                {{ $toShow := mul $paginator.PageNumber $paginator.PageSize }}
+                {{ range $index, $el := (first $toShow $allPages) }}
+                    <ul>{{ partial "li.html" . }}</ul>
+                {{ end }}
+                {{ if and (gt $paginator.TotalPages 1) ($paginator.HasNext) }}
+                    <div style="padding-top:20px">
+                        <a class="nextpage" href="{{ $paginator.Next.URL }}#newpage">{{ i18n "seeMore" }}</a>
+                    </div>
+                {{ end }}
             {{ end }}
         </div>
     </div>
