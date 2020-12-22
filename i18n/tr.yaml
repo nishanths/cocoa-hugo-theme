@@ -1,0 +1,29 @@
+---
+- id: latestPosts
+  translation: "Son gönderiler"
+
+- id: blogHeading
+  translation: "Blog"
+
+- id: pageNotFound
+  translation: "Üzgünüz, bu sayfa mevcut değil."
+
+- id: visitHomePage
+  translation: "Ana sayfayı ziyaret edin"
+
+- id: readingTime
+  translation:
+    one: "Bir dakikalık okuma süresi"
+    other: "{{ .Count }} dakikalık okuma süresi"
+
+- id: backToPosts
+  translation: "Gönderilere dönün"
+
+- id: newerPosts
+  translation: "Daha yeni"
+
+- id: olderPosts
+  translation: "Daha eski"
+
+- id: seeMore
+  translation: "Daha fazla görün"
