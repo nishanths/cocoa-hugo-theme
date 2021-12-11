@@ -1,5 +1,8 @@
 # Cocoa
 
+**NOTE:** I don't actively work on this theme now. Pull requests for bug fixes or new features are welcome however.
+Before working on a substantial change, please discuss it in an issue. Thanks. :)
+
 A consistent and responsive [Hugo](https://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typography. The primary typefaces are Open Sans, Raleway, and Ubuntu Mono.
 
 [__Demo__](https://cocoa-hugo-theme-demo.netlify.app/) / [__Screenshots__](https://github.com/nishanths/cocoa-hugo-theme/blob/master/screenshots.md)
