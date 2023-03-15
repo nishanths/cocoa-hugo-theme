@@ -8,7 +8,9 @@
                 </div>
             {{ end }}
 
-            <div class="page-heading">{{ i18n "latestPosts" }}</div>
+            {{ if isset .Site.Params "latestpostscount" }}
+                <div class="page-heading">{{ i18n "latestPosts" }}</div>
+            {{ end }}
 
             {{ if isset .Site.Params "paginate" }}
                 <div style="padding-bottom:20px;">
