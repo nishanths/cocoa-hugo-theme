@@ -1,0 +1,29 @@
+---
+- id: latestPosts
+  translation: "Publicaciones Recientes"
+
+- id: blogHeading
+  translation: "Blog"
+
+- id: pageNotFound
+  translation: "Lo siento, esta página no existe."
+
+- id: visitHomePage
+  translation: "Visita el Inicio"
+
+- id: readingTime
+  translation:
+    one: "Un minuto de lectura"
+    other: "{{ .Count }} minutos de lectura"
+
+- id: backToPosts
+  translation: "Volver a las publicaciones"
+
+- id: newerPosts
+  translation: "Nuevo"
+
+- id: olderPosts
+  translation: "Viejo"
+
+- id: seeMore
+  translation: "Lee la publicación completa"
