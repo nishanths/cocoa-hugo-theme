@@ -18,18 +18,21 @@ blog  = "blog/:slug/"
 
 [[menu.main]]
 name                   = "Blog"
+pre                    = '<i class="fa-solid fa-book"></i>'
 weight                 = -120
 identifier             = "blog"
 url                    = "/blog/"
 
 [[menu.main]]
 name                   = "About"
+pre                    = '<i class="fa-solid fa-user"></i>'
 weight                 = -110
 identifier             = "about"
 url                    = "/about/"
 
 [[menu.main]]
 name                   = "Code"
+pre                    = '<i class="fa-solid fa-code"></i>'
 weight                 = -100
 identifier             = "code"
 url                    = "/code/"
