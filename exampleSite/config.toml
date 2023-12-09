@@ -18,18 +18,21 @@ blog  = "blog/:slug/"
 
 [[menu.main]]
 name                   = "Blog"
+pre                    = '<i class="fa-solid fa-book"></i>'
 weight                 = -120
 identifier             = "blog"
 url                    = "/blog/"
 
 [[menu.main]]
 name                   = "About"
+pre                    = '<i class="fa-solid fa-user"></i>'
 weight                 = -110
 identifier             = "about"
 url                    = "/about/"
 
 [[menu.main]]
 name                   = "Code"
+pre                    = '<i class="fa-solid fa-code"></i>'
 weight                 = -100
 identifier             = "code"
 url                    = "/code/"
@@ -82,3 +85,10 @@ avatar                 = "img/profile.png" # path to image in static dir e.g img
 # The following are DEPRECATED.
 gatracker              = "XYZ" # use googleAnalytics instead
 initials               = "ad"  # displayed on single post page; deprecated in v0.3.0.
+
+# Mathematical formula support
+mathjax                = false
+
+# Fontawesome icons
+# Use them in header.html : <a href="mailto:{{ .Site.Params.email }}"><i class="fa-solid fa-envelope" style="color: #000000;"></i></a>
+fontawesome            = false
