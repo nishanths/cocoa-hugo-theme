@@ -85,3 +85,9 @@ avatar                 = "img/profile.png" # path to image in static dir e.g img
 # The following are DEPRECATED.
 gatracker              = "XYZ" # use googleAnalytics instead
 initials               = "ad"  # displayed on single post page; deprecated in v0.3.0.
+
+# Mathematical formula support
+mathjax                = false
+
+# Fontawesome icons
+fontawesome            = false
