@@ -1,9 +1,9 @@
 # Cocoa
 
-A responsive [Hugo][1] [theme][2]. The typefaces used are Open Sans,
-Raleway, and Ubuntu Mono.
+A responsive [Hugo][1] [theme][2]. The typefaces in the theme are
+Open Sans, Raleway, and Ubuntu Mono.
 
-See the "images" directory for screenshots of the theme.
+See the "screenshots" directory for screenshots of the theme.
 
 ## Features
 
