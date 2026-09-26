@@ -3,8 +3,6 @@
 A responsive [Hugo][1] [theme][2]. The typefaces in the theme are
 Open Sans, Raleway, and Ubuntu Mono.
 
-See the "screenshots" directory for screenshots of the theme.
-
 ## Features
 
 * Responsive
